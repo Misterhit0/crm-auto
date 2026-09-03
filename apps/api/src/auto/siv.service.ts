@@ -19,12 +19,15 @@ export class SivService {
 
 		if (apiKey && apiEndpoint) {
 			try {
-				const response = await fetch(`${apiEndpoint}?plate=${encodeURIComponent(cleanPlate)}`, {
-					headers: {
-						Authorization: `Bearer ${apiKey}`,
-						Accept: "application/json",
+				const response = await fetch(
+					`${apiEndpoint}?plate=${encodeURIComponent(cleanPlate)}`,
+					{
+						headers: {
+							Authorization: `Bearer ${apiKey}`,
+							Accept: "application/json",
+						},
 					},
-				});
+				);
 
 				if (response.ok) {
 					const data = (await response.json()) as Record<string, any>;
@@ -34,20 +37,25 @@ export class SivService {
 						brand: data.brand || data.make,
 						model: data.model,
 						version: data.version || data.finish,
-						firstRegistrationDate: data.firstRegistrationDate || data.circulationDate,
-						fiscalPower: data.fiscalPower ? Number(data.fiscalPower) : undefined,
+						firstRegistrationDate:
+							data.firstRegistrationDate || data.circulationDate,
+						fiscalPower: data.fiscalPower
+							? Number(data.fiscalPower)
+							: undefined,
 						fuelType: data.fuelType || "ESSENCE",
 						rawPayload: data,
 					};
 				}
 			} catch (error) {
-				this.logger.warn(`Erreur lors de l'appel à l'API SIV externe : ${error}`);
+				this.logger.warn(
+					`Erreur lors de l'appel à l'API SIV externe : ${error}`,
+				);
 			}
 		}
 
 		// Mode Référence / Mock intelligent de démonstration (Véhicules courants du parc français)
 		const mockVehicles: Record<string, Partial<SivLookupOutput>> = {
-			"AB123CD": {
+			AB123CD: {
 				brand: "PEUGEOT",
 				model: "208 II",
 				version: "1.2 PureTech 100ch Allure S&S",
@@ -56,7 +64,7 @@ export class SivService {
 				fuelType: "ESSENCE",
 				vin: "VF3UPHNKMPW123456",
 			},
-			"EF456GH": {
+			EF456GH: {
 				brand: "RENAULT",
 				model: "CLIO V",
 				version: "1.0 TCe 90ch Intens",
@@ -65,7 +73,7 @@ export class SivService {
 				fuelType: "ESSENCE",
 				vin: "VF1RJA00564987123",
 			},
-			"IJ789KL": {
+			IJ789KL: {
 				brand: "VOLKSWAGEN",
 				model: "GOLF VIII",
 				version: "2.0 TDI 115ch Life 1st",
@@ -74,7 +82,7 @@ export class SivService {
 				fuelType: "DIESEL",
 				vin: "WVWZZZCDZMW009876",
 			},
-			"AA001AA": {
+			AA001AA: {
 				brand: "TESLA",
 				model: "MODEL 3",
 				version: "Propulsion 60 kWh",

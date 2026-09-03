@@ -1,1 +1,474 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md", "label": "crm-plan.md", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "label": "Plan \u2014 Agentic CRM (HubSpot replacement)", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front", "label": "1. Decisions up front", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L15"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_judgment_calls_worth_your_veto", "label": "Judgment calls worth your veto", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L27"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_repo_inconsistencies_found_while_surveying", "label": "Repo inconsistencies found while surveying", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L40"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_2_architecture", "label": "2. Architecture", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L55"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_dependencies_to_add", "label": "Dependencies to add", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L85"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model", "label": "3. Data model", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L102"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_timeline_semantics", "label": "Timeline semantics", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L288"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_pipeline_math", "label": "Pipeline math", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L296"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_4_the_agentic_layer_context_dev", "label": "4. The agentic layer (Context.dev)", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L305"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_5_trpc_contract", "label": "5. tRPC contract", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L363"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "label": "6. Frontend", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L400"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_routes", "label": "Routes", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L402"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_the_data_table", "label": "The data table", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L422"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_nuqs_conventions", "label": "nuqs conventions", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L442"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_server_rendering", "label": "Server rendering", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L457"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_company_detail_page", "label": "Company detail page", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L463"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "label": "7. Phases", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L484"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_0_plumbing_no_product_surface", "label": "Phase 0 \u2014 Plumbing (no product surface)", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L488"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_1_schema_and_seed", "label": "Phase 1 \u2014 Schema and seed", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L500"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_2_companies", "label": "Phase 2 \u2014 Companies", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L507"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_3_contacts", "label": "Phase 3 \u2014 Contacts", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L515"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_4_deals", "label": "Phase 4 \u2014 Deals", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L520"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_5_activity_tasks_and_dashboard", "label": "Phase 5 \u2014 Activity, tasks and dashboard", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L528"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_6_the_agent", "label": "Phase 6 \u2014 The agent", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L535"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_7_migration_and_polish", "label": "Phase 7 \u2014 Migration and polish", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L542"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_8_what_this_plan_deliberately_leaves_out", "label": "8. What this plan deliberately leaves out", "file_type": "document", "source_file": "docs/plan/crm-plan.md", "source_location": "L550"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md", "target": "users_cogepart_documents_crm_nil_docs_agents_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L10", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md", "target": "users_cogepart_documents_crm_nil_docs_plan_design_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L10", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md", "target": "users_cogepart_documents_crm_nil_docs_plan_api_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L11", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L15", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_judgment_calls_worth_your_veto", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L27", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_repo_inconsistencies_found_while_surveying", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L40", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_2_architecture", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L55", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_2_architecture", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_dependencies_to_add", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L85", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L102", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_timeline_semantics", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L288", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_pipeline_math", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L296", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_4_the_agentic_layer_context_dev", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L305", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_5_trpc_contract", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L363", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L400", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_routes", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L402", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_the_data_table", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L422", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_nuqs_conventions", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L442", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_server_rendering", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L457", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_company_detail_page", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L463", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L484", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_0_plumbing_no_product_surface", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L488", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_1_schema_and_seed", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L500", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_2_companies", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L507", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_3_contacts", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L515", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_4_deals", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L520", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_5_activity_tasks_and_dashboard", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L528", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_6_the_agent", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L535", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_7_migration_and_polish", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L542", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_8_what_this_plan_deliberately_leaves_out", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/crm-plan.md", "source_location": "L550", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md",
+			"label": "crm-plan.md",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"label": "Plan \u2014 Agentic CRM (HubSpot replacement)",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front",
+			"label": "1. Decisions up front",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L15"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_judgment_calls_worth_your_veto",
+			"label": "Judgment calls worth your veto",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L27"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_repo_inconsistencies_found_while_surveying",
+			"label": "Repo inconsistencies found while surveying",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L40"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_2_architecture",
+			"label": "2. Architecture",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L55"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_dependencies_to_add",
+			"label": "Dependencies to add",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L85"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model",
+			"label": "3. Data model",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L102"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_timeline_semantics",
+			"label": "Timeline semantics",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L288"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_pipeline_math",
+			"label": "Pipeline math",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L296"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_4_the_agentic_layer_context_dev",
+			"label": "4. The agentic layer (Context.dev)",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L305"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_5_trpc_contract",
+			"label": "5. tRPC contract",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L363"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"label": "6. Frontend",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L400"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_routes",
+			"label": "Routes",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L402"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_the_data_table",
+			"label": "The data table",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L422"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_nuqs_conventions",
+			"label": "nuqs conventions",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L442"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_server_rendering",
+			"label": "Server rendering",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L457"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_company_detail_page",
+			"label": "Company detail page",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L463"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"label": "7. Phases",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L484"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_0_plumbing_no_product_surface",
+			"label": "Phase 0 \u2014 Plumbing (no product surface)",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L488"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_1_schema_and_seed",
+			"label": "Phase 1 \u2014 Schema and seed",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L500"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_2_companies",
+			"label": "Phase 2 \u2014 Companies",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L507"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_3_contacts",
+			"label": "Phase 3 \u2014 Contacts",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L515"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_4_deals",
+			"label": "Phase 4 \u2014 Deals",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L520"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_5_activity_tasks_and_dashboard",
+			"label": "Phase 5 \u2014 Activity, tasks and dashboard",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L528"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_6_the_agent",
+			"label": "Phase 6 \u2014 The agent",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L535"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_7_migration_and_polish",
+			"label": "Phase 7 \u2014 Migration and polish",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L542"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_8_what_this_plan_deliberately_leaves_out",
+			"label": "8. What this plan deliberately leaves out",
+			"file_type": "document",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L550"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md",
+			"target": "users_cogepart_documents_crm_nil_docs_agents_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L10",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_design_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L10",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_api_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L11",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L15",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_judgment_calls_worth_your_veto",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L27",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_1_decisions_up_front",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_repo_inconsistencies_found_while_surveying",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L40",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_2_architecture",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L55",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_2_architecture",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_dependencies_to_add",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L85",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L102",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_timeline_semantics",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L288",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_3_data_model",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_pipeline_math",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L296",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_4_the_agentic_layer_context_dev",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L305",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_5_trpc_contract",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L363",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L400",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_routes",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L402",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_the_data_table",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L422",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_nuqs_conventions",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L442",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_server_rendering",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L457",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_6_frontend",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_company_detail_page",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L463",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L484",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_0_plumbing_no_product_surface",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L488",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_1_schema_and_seed",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L500",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_2_companies",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L507",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_3_contacts",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L515",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_4_deals",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L520",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_5_activity_tasks_and_dashboard",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L528",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_6_the_agent",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L535",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_7_phases",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_phase_7_migration_and_polish",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L542",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_plan_agentic_crm_hubspot_replacement",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_8_what_this_plan_deliberately_leaves_out",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/crm-plan.md",
+			"source_location": "L550",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

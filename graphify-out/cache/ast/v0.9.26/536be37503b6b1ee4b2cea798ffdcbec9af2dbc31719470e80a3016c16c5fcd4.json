@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_agent_panel_md", "label": "agent-panel.md", "file_type": "document", "source_file": "docs/agent-panel.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_panel_the_agent_panel_read_when_touching_the_record_sheet_s_agent_tab", "label": "The Agent panel \u2014 read when touching the record sheet's Agent tab", "file_type": "document", "source_file": "docs/agent-panel.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_agent_panel_md", "target": "users_cogepart_documents_crm_nil_docs_agent_panel_the_agent_panel_read_when_touching_the_record_sheet_s_agent_tab", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent-panel.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_panel_md",
+			"label": "agent-panel.md",
+			"file_type": "document",
+			"source_file": "docs/agent-panel.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_panel_the_agent_panel_read_when_touching_the_record_sheet_s_agent_tab",
+			"label": "The Agent panel \u2014 read when touching the record sheet's Agent tab",
+			"file_type": "document",
+			"source_file": "docs/agent-panel.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_panel_md",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_panel_the_agent_panel_read_when_touching_the_record_sheet_s_agent_tab",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent-panel.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

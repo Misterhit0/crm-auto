@@ -132,7 +132,9 @@ export function DossierSheet({
 								</span>
 							</DetailSheetProperty>
 							<DetailSheetProperty label="Version / Finition">
-								<span className="text-slate-300">{dossier.vehicle.version}</span>
+								<span className="text-slate-300">
+									{dossier.vehicle.version}
+								</span>
 							</DetailSheetProperty>
 							<DetailSheetProperty label="1ère Mise en circ.">
 								<span>{dossier.vehicle.firstReg}</span>
@@ -153,7 +155,9 @@ export function DossierSheet({
 					<DetailSheetSection title="Profil Conducteur Principal">
 						<DetailSheetProperties>
 							<DetailSheetProperty label="Titulaire">
-								<span className="font-semibold text-white">{dossier.client.name}</span>
+								<span className="font-semibold text-white">
+									{dossier.client.name}
+								</span>
 							</DetailSheetProperty>
 							<DetailSheetProperty label="Coefficient CRM">
 								<span className="font-bold text-emerald-400">
@@ -197,9 +201,13 @@ export function DossierSheet({
 							<div className="flex items-start gap-3">
 								<AlertCircle className="size-5 text-amber-400 shrink-0 mt-0.5" />
 								<div>
-									<h4 className="text-sm font-semibold">Pièce bloquante : {dossier.missingDoc}</h4>
+									<h4 className="text-sm font-semibold">
+										Pièce bloquante : {dossier.missingDoc}
+									</h4>
 									<p className="text-xs text-amber-300/80 mt-1">
-										Dossier en attente depuis {dossier.daysWaiting} jours. La tarification définitive et l'émission de la carte verte exigent ce document.
+										Dossier en attente depuis {dossier.daysWaiting} jours. La
+										tarification définitive et l'émission de la carte verte
+										exigent ce document.
 									</p>
 								</div>
 							</div>
@@ -211,7 +219,9 @@ export function DossierSheet({
 									className="flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold text-xs transition-all active:scale-95 disabled:opacity-50"
 								>
 									<Send className="size-3.5" />
-									{relanceSent ? "Relance envoyée par SMS" : "Relancer le client (SMS + Email)"}
+									{relanceSent
+										? "Relance envoyée par SMS"
+										: "Relancer le client (SMS + Email)"}
 								</button>
 								<button className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white text-xs font-medium transition-all">
 									<Upload className="size-3.5" />
@@ -227,8 +237,12 @@ export function DossierSheet({
 								<div className="flex items-center gap-2.5">
 									<CheckCircle2 className="size-4 text-emerald-400" />
 									<div>
-										<p className="font-semibold text-white">Certificat d'immatriculation (Carte Grise)</p>
-										<p className="text-[11px] text-slate-400">Validé via API SIV • AB-123-CD</p>
+										<p className="font-semibold text-white">
+											Certificat d'immatriculation (Carte Grise)
+										</p>
+										<p className="text-[11px] text-slate-400">
+											Validé via API SIV • AB-123-CD
+										</p>
 									</div>
 								</div>
 								<span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -240,8 +254,12 @@ export function DossierSheet({
 								<div className="flex items-center gap-2.5">
 									<CheckCircle2 className="size-4 text-emerald-400" />
 									<div>
-										<p className="font-semibold text-white">Permis de conduire (Recto / Verso)</p>
-										<p className="text-[11px] text-slate-400">Vérifié OCR • Date d'obtention 2014</p>
+										<p className="font-semibold text-white">
+											Permis de conduire (Recto / Verso)
+										</p>
+										<p className="text-[11px] text-slate-400">
+											Vérifié OCR • Date d'obtention 2014
+										</p>
 									</div>
 								</div>
 								<span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -257,7 +275,9 @@ export function DossierSheet({
 										<CheckCircle2 className="size-4 text-emerald-400" />
 									)}
 									<div>
-										<p className="font-semibold text-white">Relevé d'Information (36 mois)</p>
+										<p className="font-semibold text-white">
+											Relevé d'Information (36 mois)
+										</p>
 										<p className="text-[11px] text-slate-400">
 											{dossier.missingDoc?.includes("Relevé")
 												? "En attente retour assuré"
@@ -272,7 +292,9 @@ export function DossierSheet({
 											: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
 									}`}
 								>
-									{dossier.missingDoc?.includes("Relevé") ? "Manquant" : "Conforme"}
+									{dossier.missingDoc?.includes("Relevé")
+										? "Manquant"
+										: "Conforme"}
 								</span>
 							</div>
 						</div>
@@ -288,7 +310,9 @@ export function DossierSheet({
 					<DetailSheetSection title="Offre & Grossiste Retenu">
 						<DetailSheetProperties>
 							<DetailSheetProperty label="Partenaire">
-								<span className="font-semibold text-white">{dossier.partner}</span>
+								<span className="font-semibold text-white">
+									{dossier.partner}
+								</span>
 							</DetailSheetProperty>
 							<DetailSheetProperty label="Formule">
 								<span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-bold text-xs">
@@ -393,7 +417,10 @@ export function DossierSheet({
 						))}
 					</div>
 
-					<form onSubmit={handleAgentSend} className="mt-4 flex gap-2 pt-2 border-t border-white/[0.08]">
+					<form
+						onSubmit={handleAgentSend}
+						className="mt-4 flex gap-2 pt-2 border-t border-white/[0.08]"
+					>
 						<input
 							type="text"
 							placeholder="Demandez à l'agent (ex: Rédige le SMS de relance pour le RI...)"

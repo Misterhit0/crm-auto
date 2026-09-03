@@ -1,1 +1,677 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "label": "contact-intelligence-agent.md", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "label": "Plan \u2014 Contact intelligence agent (v2)", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are", "label": "0. Where we actually are", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L30"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_two_enrichment_stacks_one_job", "label": "Two enrichment stacks, one job", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L34"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_is_a_worker_with_a_numbered_list", "label": "The \"agent\" is a worker with a numbered list", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L54"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_confidence_is_computed_then_thrown_away", "label": "Confidence is computed, then thrown away", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L67"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_there_is_no_provenance_store_and_no_way_to_see_the_agent_think", "label": "There is no provenance store, and no way to see the agent think", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L75"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_1_what_better_than_hubspot_and_salesforce_has_to_mean", "label": "1. What \"better than HubSpot and Salesforce\" has to mean", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L84"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_2_decisions_that_carry_the_design", "label": "2. Decisions that carry the design", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L106"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_judgment_calls_worth_your_veto", "label": "Judgment calls worth your veto", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L141"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_3_data_model", "label": "3. Data model", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L162"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write", "label": "4. Capabilities: what eve gives us, what we write", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L266"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_from_the_harness_a_sandbox_is_all_it_takes", "label": "From the harness (a sandbox is all it takes)", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L268"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_authored_tools_only_where_the_harness_cannot_go", "label": "Authored tools \u2014 only where the harness cannot go", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L283"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_context_control", "label": "Context control", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L297"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_egress_boundary", "label": "The egress boundary", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L310"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model", "label": "5. The confidence model", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L324"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_evidence_weighted", "label": "Evidence, weighted", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L326"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_bands", "label": "Bands", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L354"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_enforced_by_the_approval_policy_not_the_prompt", "label": "Enforced by the approval policy, not the prompt", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L363"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet", "label": "6. The contact sheet", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L394"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_background_section", "label": "The Background section", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L400"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_how_confidence_reads", "label": "How confidence reads", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L423"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_live_panel", "label": "The live panel", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L440"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "label": "7. Not static: how the agent chooses", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L462"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_one_dispatcher_not_two_cron_prompts", "label": "One dispatcher, not two cron prompts", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L464"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_writes_its_own_rows", "label": "The agent writes its own rows", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L471"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_events_jump_the_queue", "label": "Events jump the queue", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L483"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_depth_is_a_decision_budget_is_state", "label": "Depth is a decision, budget is state", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L491"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_fan_out_for_briefs", "label": "Fan-out for briefs", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L504"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_8_what_stays_deterministic", "label": "8. What stays deterministic", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L515"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_9_evals_or_the_confidence_number_means_nothing", "label": "9. Evals, or the confidence number means nothing", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L535"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_10_retiring_the_api_path", "label": "10. Retiring the API path", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L559"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_11_phases", "label": "11. Phases", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L583"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_12_risks", "label": "12. Risks", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L603"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_13_open_questions", "label": "13. Open questions", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L620"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us", "label": "14. What each phase actually taught us", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L640"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phases_1_4_2026_08_01", "label": "Phases 1\u20134 (2026-08-01)", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L645"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phase_6_2026_08_01", "label": "Phase 6 (2026-08-01)", "file_type": "document", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L697"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_agents_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L8", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_docs_api_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L8", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_docs_design_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L9", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L9", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_docs_plan_gmail_calendar_plan_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L10", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L11", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L30", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_two_enrichment_stacks_one_job", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L34", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_is_a_worker_with_a_numbered_list", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L54", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_confidence_is_computed_then_thrown_away", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L67", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_there_is_no_provenance_store_and_no_way_to_see_the_agent_think", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L75", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_1_what_better_than_hubspot_and_salesforce_has_to_mean", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L84", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_2_decisions_that_carry_the_design", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L106", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_2_decisions_that_carry_the_design", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_judgment_calls_worth_your_veto", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L141", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_3_data_model", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L162", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L266", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_from_the_harness_a_sandbox_is_all_it_takes", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L268", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_authored_tools_only_where_the_harness_cannot_go", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L283", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_context_control", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L297", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_egress_boundary", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L310", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L324", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_evidence_weighted", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L326", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_bands", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L354", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_enforced_by_the_approval_policy_not_the_prompt", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L363", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L394", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_background_section", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L400", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_how_confidence_reads", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L423", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_live_panel", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L440", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L462", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_one_dispatcher_not_two_cron_prompts", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L464", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_writes_its_own_rows", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L471", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_events_jump_the_queue", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L483", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_depth_is_a_decision_budget_is_state", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L491", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_fan_out_for_briefs", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L504", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_8_what_stays_deterministic", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L515", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_9_evals_or_the_confidence_number_means_nothing", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L535", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_10_retiring_the_api_path", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L559", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_11_phases", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L583", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_12_risks", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L603", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_13_open_questions", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L620", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L640", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phases_1_4_2026_08_01", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L645", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us", "target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phase_6_2026_08_01", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/contact-intelligence-agent.md", "source_location": "L697", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"label": "contact-intelligence-agent.md",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"label": "Plan \u2014 Contact intelligence agent (v2)",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are",
+			"label": "0. Where we actually are",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L30"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_two_enrichment_stacks_one_job",
+			"label": "Two enrichment stacks, one job",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L34"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_is_a_worker_with_a_numbered_list",
+			"label": "The \"agent\" is a worker with a numbered list",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L54"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_confidence_is_computed_then_thrown_away",
+			"label": "Confidence is computed, then thrown away",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L67"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_there_is_no_provenance_store_and_no_way_to_see_the_agent_think",
+			"label": "There is no provenance store, and no way to see the agent think",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L75"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_1_what_better_than_hubspot_and_salesforce_has_to_mean",
+			"label": "1. What \"better than HubSpot and Salesforce\" has to mean",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L84"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_2_decisions_that_carry_the_design",
+			"label": "2. Decisions that carry the design",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L106"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_judgment_calls_worth_your_veto",
+			"label": "Judgment calls worth your veto",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L141"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_3_data_model",
+			"label": "3. Data model",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L162"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write",
+			"label": "4. Capabilities: what eve gives us, what we write",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L266"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_from_the_harness_a_sandbox_is_all_it_takes",
+			"label": "From the harness (a sandbox is all it takes)",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L268"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_authored_tools_only_where_the_harness_cannot_go",
+			"label": "Authored tools \u2014 only where the harness cannot go",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L283"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_context_control",
+			"label": "Context control",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L297"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_egress_boundary",
+			"label": "The egress boundary",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L310"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model",
+			"label": "5. The confidence model",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L324"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_evidence_weighted",
+			"label": "Evidence, weighted",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L326"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_bands",
+			"label": "Bands",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L354"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_enforced_by_the_approval_policy_not_the_prompt",
+			"label": "Enforced by the approval policy, not the prompt",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L363"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet",
+			"label": "6. The contact sheet",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L394"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_background_section",
+			"label": "The Background section",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L400"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_how_confidence_reads",
+			"label": "How confidence reads",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L423"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_live_panel",
+			"label": "The live panel",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L440"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"label": "7. Not static: how the agent chooses",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L462"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_one_dispatcher_not_two_cron_prompts",
+			"label": "One dispatcher, not two cron prompts",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L464"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_writes_its_own_rows",
+			"label": "The agent writes its own rows",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L471"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_events_jump_the_queue",
+			"label": "Events jump the queue",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L483"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_depth_is_a_decision_budget_is_state",
+			"label": "Depth is a decision, budget is state",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L491"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_fan_out_for_briefs",
+			"label": "Fan-out for briefs",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L504"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_8_what_stays_deterministic",
+			"label": "8. What stays deterministic",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L515"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_9_evals_or_the_confidence_number_means_nothing",
+			"label": "9. Evals, or the confidence number means nothing",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L535"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_10_retiring_the_api_path",
+			"label": "10. Retiring the API path",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L559"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_11_phases",
+			"label": "11. Phases",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L583"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_12_risks",
+			"label": "12. Risks",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L603"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_13_open_questions",
+			"label": "13. Open questions",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L620"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us",
+			"label": "14. What each phase actually taught us",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L640"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phases_1_4_2026_08_01",
+			"label": "Phases 1\u20134 (2026-08-01)",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L645"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phase_6_2026_08_01",
+			"label": "Phase 6 (2026-08-01)",
+			"file_type": "document",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L697"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_agents_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L8",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_api_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L8",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_design_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L9",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_crm_plan_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L9",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_gmail_calendar_plan_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L10",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L11",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L30",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_two_enrichment_stacks_one_job",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L34",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_is_a_worker_with_a_numbered_list",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L54",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_confidence_is_computed_then_thrown_away",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L67",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_0_where_we_actually_are",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_there_is_no_provenance_store_and_no_way_to_see_the_agent_think",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L75",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_1_what_better_than_hubspot_and_salesforce_has_to_mean",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L84",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_2_decisions_that_carry_the_design",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L106",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_2_decisions_that_carry_the_design",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_judgment_calls_worth_your_veto",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L141",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_3_data_model",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L162",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L266",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_from_the_harness_a_sandbox_is_all_it_takes",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L268",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_authored_tools_only_where_the_harness_cannot_go",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L283",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_context_control",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L297",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_4_capabilities_what_eve_gives_us_what_we_write",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_egress_boundary",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L310",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L324",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_evidence_weighted",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L326",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_bands",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L354",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_5_the_confidence_model",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_enforced_by_the_approval_policy_not_the_prompt",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L363",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L394",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_background_section",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L400",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_how_confidence_reads",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L423",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_6_the_contact_sheet",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_live_panel",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L440",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L462",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_one_dispatcher_not_two_cron_prompts",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L464",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_the_agent_writes_its_own_rows",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L471",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_events_jump_the_queue",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L483",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_depth_is_a_decision_budget_is_state",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L491",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_7_not_static_how_the_agent_chooses",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_fan_out_for_briefs",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L504",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_8_what_stays_deterministic",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L515",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_9_evals_or_the_confidence_number_means_nothing",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L535",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_10_retiring_the_api_path",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L559",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_11_phases",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L583",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_12_risks",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L603",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_13_open_questions",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L620",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_plan_contact_intelligence_agent_v2",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L640",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phases_1_4_2026_08_01",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L645",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_14_what_each_phase_actually_taught_us",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_contact_intelligence_agent_phase_6_2026_08_01",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/contact-intelligence-agent.md",
+			"source_location": "L697",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

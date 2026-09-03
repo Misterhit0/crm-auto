@@ -1,1 +1,472 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_agent_md", "label": "agent.md", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "label": "Agent \u2014 `apps/agent`", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_model", "label": "Model", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L12"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_pictures_are_copied_never_linked", "label": "Pictures are copied, never linked", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L25"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "label": "Two lanes", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L46"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_dispatch_on_demand", "label": "Dispatch on demand", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L66"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_post_internal_crm_verify_key", "label": "`POST /internal/crm/verify-key`", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L94"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_blank_fields_are_filled_on_the_dispatch_tick", "label": "Blank fields are filled on the dispatch tick", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L104"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_stale_rows_are_closed_on_the_dispatch_tick", "label": "Stale rows are closed on the dispatch tick", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L125"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_backfills", "label": "Backfills", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L151"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_evidence_not_confidence", "label": "Evidence, not confidence", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L175"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_optional_by_default", "label": "Optional by default", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L211"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_budget_and_scheduling", "label": "Budget and scheduling", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L222"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends", "label": "Three records, no dead ends", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L234"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_preambles", "label": "Preambles", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L251"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_every_session_knows_who_we_are", "label": "Every session knows who *we* are", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L264"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_what_may_be_read_and_what_may_leave", "label": "What may be read, and what may leave", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L283"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_sandbox", "label": "Sandbox", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L295"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_team_agent_builder_and_runner", "label": "Team-agent builder and runner", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L304"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_the_bridge", "label": "The bridge", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L380"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_the_panel", "label": "The panel", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L402"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced", "label": "Continuation tokens are namespaced", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L409"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_conversations_are_kept", "label": "Conversations are kept", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L418"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_turning_it_on", "label": "Turning it on", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L509"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_checking_it_without_a_browser", "label": "Checking it without a browser", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L540"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work", "label": "Watching it work", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L560"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_nothing_is_researching_and_the_queue_only_grows", "label": "Nothing is researching, and the queue only grows", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L609"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_the_continuation_token_you_write_is_not_the_one_you_read", "label": "The continuation token you write is not the one you read", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L658"}, {"id": "users_cogepart_documents_crm_nil_docs_agent_tests", "label": "Tests", "file_type": "document", "source_file": "docs/agent.md", "source_location": "L691"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_agent_md", "target": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_model", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L12", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_pictures_are_copied_never_linked", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L25", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L46", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "target": "users_cogepart_documents_crm_nil_docs_agent_dispatch_on_demand", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L66", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "target": "users_cogepart_documents_crm_nil_docs_agent_post_internal_crm_verify_key", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L94", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "target": "users_cogepart_documents_crm_nil_docs_agent_blank_fields_are_filled_on_the_dispatch_tick", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L104", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "target": "users_cogepart_documents_crm_nil_docs_agent_stale_rows_are_closed_on_the_dispatch_tick", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L125", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes", "target": "users_cogepart_documents_crm_nil_docs_agent_backfills", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L151", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_evidence_not_confidence", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L175", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_optional_by_default", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L211", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_budget_and_scheduling", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L222", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L234", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends", "target": "users_cogepart_documents_crm_nil_docs_agent_preambles", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L251", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends", "target": "users_cogepart_documents_crm_nil_docs_agent_every_session_knows_who_we_are", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L264", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_what_may_be_read_and_what_may_leave", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L283", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_sandbox", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L295", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_team_agent_builder_and_runner", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L304", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_the_bridge", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L380", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_the_bridge", "target": "users_cogepart_documents_crm_nil_docs_agent_the_panel", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L402", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L409", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced", "target": "users_cogepart_documents_crm_nil_docs_agent_conversations_are_kept", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L418", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced", "target": "users_cogepart_documents_crm_nil_docs_agent_turning_it_on", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L509", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced", "target": "users_cogepart_documents_crm_nil_docs_agent_checking_it_without_a_browser", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L540", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L560", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work", "target": "users_cogepart_documents_crm_nil_docs_agent_nothing_is_researching_and_the_queue_only_grows", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L609", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_md", "target": "users_cogepart_documents_crm_nil_apps_agent_node_modules_eve_docs_schedules_mdx", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L612", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work", "target": "users_cogepart_documents_crm_nil_docs_agent_the_continuation_token_you_write_is_not_the_one_you_read", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L658", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent", "target": "users_cogepart_documents_crm_nil_docs_agent_tests", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/agent.md", "source_location": "L691", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_md",
+			"label": "agent.md",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"label": "Agent \u2014 `apps/agent`",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_model",
+			"label": "Model",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L12"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_pictures_are_copied_never_linked",
+			"label": "Pictures are copied, never linked",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L25"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"label": "Two lanes",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L46"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_dispatch_on_demand",
+			"label": "Dispatch on demand",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L66"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_post_internal_crm_verify_key",
+			"label": "`POST /internal/crm/verify-key`",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L94"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_blank_fields_are_filled_on_the_dispatch_tick",
+			"label": "Blank fields are filled on the dispatch tick",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L104"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_stale_rows_are_closed_on_the_dispatch_tick",
+			"label": "Stale rows are closed on the dispatch tick",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L125"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_backfills",
+			"label": "Backfills",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L151"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_evidence_not_confidence",
+			"label": "Evidence, not confidence",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L175"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_optional_by_default",
+			"label": "Optional by default",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L211"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_budget_and_scheduling",
+			"label": "Budget and scheduling",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L222"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends",
+			"label": "Three records, no dead ends",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L234"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_preambles",
+			"label": "Preambles",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L251"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_every_session_knows_who_we_are",
+			"label": "Every session knows who *we* are",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L264"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_what_may_be_read_and_what_may_leave",
+			"label": "What may be read, and what may leave",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L283"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_sandbox",
+			"label": "Sandbox",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L295"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_team_agent_builder_and_runner",
+			"label": "Team-agent builder and runner",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L304"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_the_bridge",
+			"label": "The bridge",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L380"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_the_panel",
+			"label": "The panel",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L402"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced",
+			"label": "Continuation tokens are namespaced",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L409"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_conversations_are_kept",
+			"label": "Conversations are kept",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L418"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_turning_it_on",
+			"label": "Turning it on",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L509"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_checking_it_without_a_browser",
+			"label": "Checking it without a browser",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L540"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work",
+			"label": "Watching it work",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L560"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_nothing_is_researching_and_the_queue_only_grows",
+			"label": "Nothing is researching, and the queue only grows",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L609"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_the_continuation_token_you_write_is_not_the_one_you_read",
+			"label": "The continuation token you write is not the one you read",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L658"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_agent_tests",
+			"label": "Tests",
+			"file_type": "document",
+			"source_file": "docs/agent.md",
+			"source_location": "L691"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_model",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L12",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_pictures_are_copied_never_linked",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L25",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L46",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_dispatch_on_demand",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L66",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_post_internal_crm_verify_key",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L94",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_blank_fields_are_filled_on_the_dispatch_tick",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L104",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_stale_rows_are_closed_on_the_dispatch_tick",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L125",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_two_lanes",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_backfills",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L151",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_evidence_not_confidence",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L175",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_optional_by_default",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L211",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_budget_and_scheduling",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L222",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L234",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_preambles",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L251",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_three_records_no_dead_ends",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_every_session_knows_who_we_are",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L264",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_what_may_be_read_and_what_may_leave",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L283",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_sandbox",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L295",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_team_agent_builder_and_runner",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L304",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_the_bridge",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L380",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_the_bridge",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_the_panel",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L402",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L409",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_conversations_are_kept",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L418",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_turning_it_on",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L509",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_continuation_tokens_are_namespaced",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_checking_it_without_a_browser",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L540",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L560",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_nothing_is_researching_and_the_queue_only_grows",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L609",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_md",
+			"target": "users_cogepart_documents_crm_nil_apps_agent_node_modules_eve_docs_schedules_mdx",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L612",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_watching_it_work",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_the_continuation_token_you_write_is_not_the_one_you_read",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L658",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_agent_agent_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_tests",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/agent.md",
+			"source_location": "L691",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

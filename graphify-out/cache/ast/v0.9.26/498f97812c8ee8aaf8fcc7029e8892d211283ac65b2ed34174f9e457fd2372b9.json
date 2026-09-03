@@ -1,1 +1,505 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_oxlintrc_json", "label": ".oxlintrc.json", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_schema", "label": "$schema", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L2"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_plugins", "label": "plugins", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L3"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_categories", "label": "categories", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L4"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_categories_correctness", "label": "correctness", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L5"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_jsplugins", "label": "jsPlugins", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L7"}, {"id": "ref_tools_oxlint_anti_slop_index_ts", "label": "./tools/oxlint/anti-slop/index.ts", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L7"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "label": "ignorePatterns", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_node_modules", "label": "**/node_modules/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_dist", "label": "**/dist/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_next", "label": "**/.next/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_eve", "label": "**/.eve/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_scratch", "label": "**/.scratch/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_agents", "label": ".agents/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_claude", "label": ".claude/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_apps_api_src_generated", "label": "apps/api/src/generated/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_packages_db_src_generated", "label": "packages/db/src/generated/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_packages_ui_src_components", "label": "packages/ui/src/components/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "ref_tools_oxlint_anti_slop", "label": "tools/oxlint/anti-slop/**", "file_type": "concept", "source_file": ".oxlintrc.json", "source_location": "L8"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules", "label": "rules", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L21"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_chained_type_assertions", "label": "anti-slop/no-chained-type-assertions", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L22"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_conditional_empty_object_spread", "label": "anti-slop/no-conditional-empty-object-spread", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L23"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_known_value_widening", "label": "anti-slop/no-known-value-widening", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L24"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_object_parameters", "label": "anti-slop/no-object-parameters", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L25"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_runtime_typeof", "label": "anti-slop/no-runtime-typeof", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L26"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_shape_in_symbol_names", "label": "anti-slop/no-shape-in-symbol-names", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L27"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_parameters", "label": "anti-slop/no-unknown-parameters", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L28"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_type_aliases", "label": "anti-slop/no-unknown-type-aliases", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L29"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unsafe_dictionary_type", "label": "anti-slop/no-unsafe-dictionary-type", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L30"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_widen_then_assert", "label": "anti-slop/no-widen-then-assert", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L31"}, {"id": "users_cogepart_documents_crm_nil_oxlintrc_overrides", "label": "overrides", "file_type": "code", "source_file": ".oxlintrc.json", "source_location": "L33"}], "edges": [{"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_schema", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L2", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_plugins", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L3", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_categories", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L4", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_categories", "target": "users_cogepart_documents_crm_nil_oxlintrc_categories_correctness", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L5", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_jsplugins", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L7", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_jsplugins", "target": "ref_tools_oxlint_anti_slop_index_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L7", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_node_modules", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_dist", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_next", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_eve", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_scratch", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_agents", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_claude", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_apps_api_src_generated", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_packages_db_src_generated", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_packages_ui_src_components", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns", "target": "ref_tools_oxlint_anti_slop", "relation": "extends", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L21", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_chained_type_assertions", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L22", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_conditional_empty_object_spread", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L23", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_known_value_widening", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L24", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_object_parameters", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L25", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_runtime_typeof", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L26", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_shape_in_symbol_names", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L27", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_parameters", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L28", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_type_aliases", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L29", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unsafe_dictionary_type", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L30", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_rules", "target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_widen_then_assert", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L31", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_oxlintrc_json", "target": "users_cogepart_documents_crm_nil_oxlintrc_overrides", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".oxlintrc.json", "source_location": "L33", "weight": 1.0}]}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"label": ".oxlintrc.json",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_schema",
+			"label": "$schema",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L2"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_plugins",
+			"label": "plugins",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L3"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_categories",
+			"label": "categories",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L4"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_categories_correctness",
+			"label": "correctness",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L5"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_jsplugins",
+			"label": "jsPlugins",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L7"
+		},
+		{
+			"id": "ref_tools_oxlint_anti_slop_index_ts",
+			"label": "./tools/oxlint/anti-slop/index.ts",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L7"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"label": "ignorePatterns",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_node_modules",
+			"label": "**/node_modules/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_dist",
+			"label": "**/dist/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_next",
+			"label": "**/.next/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_eve",
+			"label": "**/.eve/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_scratch",
+			"label": "**/.scratch/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_agents",
+			"label": ".agents/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_claude",
+			"label": ".claude/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_apps_api_src_generated",
+			"label": "apps/api/src/generated/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_packages_db_src_generated",
+			"label": "packages/db/src/generated/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_packages_ui_src_components",
+			"label": "packages/ui/src/components/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_tools_oxlint_anti_slop",
+			"label": "tools/oxlint/anti-slop/**",
+			"file_type": "concept",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"label": "rules",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_chained_type_assertions",
+			"label": "anti-slop/no-chained-type-assertions",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L22"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_conditional_empty_object_spread",
+			"label": "anti-slop/no-conditional-empty-object-spread",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L23"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_known_value_widening",
+			"label": "anti-slop/no-known-value-widening",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L24"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_object_parameters",
+			"label": "anti-slop/no-object-parameters",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L25"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_runtime_typeof",
+			"label": "anti-slop/no-runtime-typeof",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L26"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_shape_in_symbol_names",
+			"label": "anti-slop/no-shape-in-symbol-names",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L27"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_parameters",
+			"label": "anti-slop/no-unknown-parameters",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L28"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_type_aliases",
+			"label": "anti-slop/no-unknown-type-aliases",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L29"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unsafe_dictionary_type",
+			"label": "anti-slop/no-unsafe-dictionary-type",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L30"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_widen_then_assert",
+			"label": "anti-slop/no-widen-then-assert",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L31"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_oxlintrc_overrides",
+			"label": "overrides",
+			"file_type": "code",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L33"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_schema",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L2",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_plugins",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L3",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_categories",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L4",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_categories",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_categories_correctness",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L5",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_jsplugins",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L7",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_jsplugins",
+			"target": "ref_tools_oxlint_anti_slop_index_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L7",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_node_modules",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_dist",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_next",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_eve",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_scratch",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_agents",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_claude",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_apps_api_src_generated",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_packages_db_src_generated",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_packages_ui_src_components",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_ignorepatterns",
+			"target": "ref_tools_oxlint_anti_slop",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L21",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_chained_type_assertions",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L22",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_conditional_empty_object_spread",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L23",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_known_value_widening",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L24",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_object_parameters",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L25",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_runtime_typeof",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L26",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_shape_in_symbol_names",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L27",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_parameters",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L28",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unknown_type_aliases",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L29",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_unsafe_dictionary_type",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L30",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_rules",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_rules_anti_slop_no_widen_then_assert",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L31",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_oxlintrc_json",
+			"target": "users_cogepart_documents_crm_nil_oxlintrc_overrides",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".oxlintrc.json",
+			"source_location": "L33",
+			"weight": 1.0
+		}
+	]
+}

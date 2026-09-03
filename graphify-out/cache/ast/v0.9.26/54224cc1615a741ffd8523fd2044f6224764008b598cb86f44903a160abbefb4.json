@@ -1,1 +1,127 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_md", "label": "recherche-colis-edi.md", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi", "label": "R\u00e8gle d'Investigation : Recherche de Colis, Codes-Barres et Flux EDI", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_contexte_distinctions_fondamentales", "label": "\ud83c\udfaf Contexte & Distinctions Fondamentales", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L3"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire", "label": "\ud83d\udd0d M\u00e9thodologie d'Investigation Obligatoire", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L14"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_1_recherche_dans_edi_incoming_payloads_edi", "label": "\u00c9tape 1 : Recherche dans `edi.incoming` (Payloads EDI)", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L18"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_2_croisement_avec_cogepart_dispatch", "label": "\u00c9tape 2 : Croisement avec `cogepart.dispatch`", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L34"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_3_diagnostics_fr\u00e9quents_lors_des_r\u00e9clamations_chauffeurs_agences", "label": "\u00c9tape 3 : Diagnostics Fr\u00e9quents lors des R\u00e9clamations Chauffeurs / Agences", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L44"}, {"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_plan_d_action_recommand\u00e9_aux_exploitants", "label": "\ud83d\ude80 Plan d'Action Recommand\u00e9 aux Exploitants", "file_type": "document", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L56"}], "edges": [{"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_md", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_contexte_distinctions_fondamentales", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L3", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L14", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_1_recherche_dans_edi_incoming_payloads_edi", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L18", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_2_croisement_avec_cogepart_dispatch", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L34", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_3_diagnostics_fr\u00e9quents_lors_des_r\u00e9clamations_chauffeurs_agences", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L44", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi", "target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_plan_d_action_recommand\u00e9_aux_exploitants", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/rules/recherche-colis-edi.md", "source_location": "L56", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_md",
+			"label": "recherche-colis-edi.md",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi",
+			"label": "R\u00e8gle d'Investigation : Recherche de Colis, Codes-Barres et Flux EDI",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_contexte_distinctions_fondamentales",
+			"label": "\ud83c\udfaf Contexte & Distinctions Fondamentales",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L3"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire",
+			"label": "\ud83d\udd0d M\u00e9thodologie d'Investigation Obligatoire",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L14"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_1_recherche_dans_edi_incoming_payloads_edi",
+			"label": "\u00c9tape 1 : Recherche dans `edi.incoming` (Payloads EDI)",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L18"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_2_croisement_avec_cogepart_dispatch",
+			"label": "\u00c9tape 2 : Croisement avec `cogepart.dispatch`",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L34"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_3_diagnostics_fr\u00e9quents_lors_des_r\u00e9clamations_chauffeurs_agences",
+			"label": "\u00c9tape 3 : Diagnostics Fr\u00e9quents lors des R\u00e9clamations Chauffeurs / Agences",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L44"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_plan_d_action_recommand\u00e9_aux_exploitants",
+			"label": "\ud83d\ude80 Plan d'Action Recommand\u00e9 aux Exploitants",
+			"file_type": "document",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L56"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_md",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_contexte_distinctions_fondamentales",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L3",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L14",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_1_recherche_dans_edi_incoming_payloads_edi",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L18",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_2_croisement_avec_cogepart_dispatch",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L34",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_m\u00e9thodologie_d_investigation_obligatoire",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_\u00e9tape_3_diagnostics_fr\u00e9quents_lors_des_r\u00e9clamations_chauffeurs_agences",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L44",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_r\u00e8gle_d_investigation_recherche_de_colis_codes_barres_et_flux_edi",
+			"target": "users_cogepart_documents_crm_nil_agents_rules_recherche_colis_edi_plan_d_action_recommand\u00e9_aux_exploitants",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/rules/recherche-colis-edi.md",
+			"source_location": "L56",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

@@ -141,7 +141,9 @@ export const CreateDriverProfileInputSchema = z.object({
 	cancellationHistory: z.string().optional(),
 	suspensionHistory: z.boolean().default(false),
 });
-export type CreateDriverProfileInput = z.infer<typeof CreateDriverProfileInputSchema>;
+export type CreateDriverProfileInput = z.infer<
+	typeof CreateDriverProfileInputSchema
+>;
 
 // ==========================================
 // DOSSIER ASSURANCE
@@ -168,14 +170,18 @@ export const CreateInsuranceDossierInputSchema = z.object({
 	effectiveDate: z.date().optional(),
 	anniversaryDate: z.date().optional(),
 });
-export type CreateInsuranceDossierInput = z.infer<typeof CreateInsuranceDossierInputSchema>;
+export type CreateInsuranceDossierInput = z.infer<
+	typeof CreateInsuranceDossierInputSchema
+>;
 
 export const UpdateDossierStatusInputSchema = z.object({
 	dossierId: z.string(),
 	status: DossierStatusSchema,
 	policeNumber: z.string().optional(),
 });
-export type UpdateDossierStatusInput = z.infer<typeof UpdateDossierStatusInputSchema>;
+export type UpdateDossierStatusInput = z.infer<
+	typeof UpdateDossierStatusInputSchema
+>;
 
 // ==========================================
 // COMMISSIONS & BORDEREAUX
@@ -183,7 +189,12 @@ export type UpdateDossierStatusInput = z.infer<typeof UpdateDossierStatusInputSc
 
 export const ImportCommissionStatementInputSchema = z.object({
 	brokerPartnerId: z.string(),
-	statementPeriod: z.string().regex(/^\d{4}-\d{2}$/, "Format de période attendu : YYYY-MM (ex: 2026-09)"),
+	statementPeriod: z
+		.string()
+		.regex(
+			/^\d{4}-\d{2}$/,
+			"Format de période attendu : YYYY-MM (ex: 2026-09)",
+		),
 	originalFilename: z.string(),
 	fileUrl: z.string().optional(),
 	lines: z.array(
@@ -197,4 +208,6 @@ export const ImportCommissionStatementInputSchema = z.object({
 		}),
 	),
 });
-export type ImportCommissionStatementInput = z.infer<typeof ImportCommissionStatementInputSchema>;
+export type ImportCommissionStatementInput = z.infer<
+	typeof ImportCommissionStatementInputSchema
+>;

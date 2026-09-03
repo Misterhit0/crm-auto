@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_md", "label": "global_menu_and_cascade_crud_checkpoint.md", "file_type": "document", "source_file": ".agents/memories/global_menu_and_cascade_crud_checkpoint.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_checkpoint_menu_global_unifi\u00e9_filtres_avanc\u00e9s_par_objet_et_cascade_hi\u00e9rarchique", "label": "Checkpoint : Menu Global Unifi\u00e9, Filtres Avanc\u00e9s par Objet et Cascade Hi\u00e9rarchique", "file_type": "document", "source_file": ".agents/memories/global_menu_and_cascade_crud_checkpoint.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_md", "target": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_checkpoint_menu_global_unifi\u00e9_filtres_avanc\u00e9s_par_objet_et_cascade_hi\u00e9rarchique", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/memories/global_menu_and_cascade_crud_checkpoint.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_md",
+			"label": "global_menu_and_cascade_crud_checkpoint.md",
+			"file_type": "document",
+			"source_file": ".agents/memories/global_menu_and_cascade_crud_checkpoint.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_checkpoint_menu_global_unifi\u00e9_filtres_avanc\u00e9s_par_objet_et_cascade_hi\u00e9rarchique",
+			"label": "Checkpoint : Menu Global Unifi\u00e9, Filtres Avanc\u00e9s par Objet et Cascade Hi\u00e9rarchique",
+			"file_type": "document",
+			"source_file": ".agents/memories/global_menu_and_cascade_crud_checkpoint.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_md",
+			"target": "users_cogepart_documents_crm_nil_agents_memories_global_menu_and_cascade_crud_checkpoint_checkpoint_menu_global_unifi\u00e9_filtres_avanc\u00e9s_par_objet_et_cascade_hi\u00e9rarchique",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/memories/global_menu_and_cascade_crud_checkpoint.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

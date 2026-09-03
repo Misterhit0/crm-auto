@@ -1,1 +1,61 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_doctor_config_json", "label": "doctor.config.json", "file_type": "code", "source_file": "doctor.config.json", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_doctor_config_schema", "label": "$schema", "file_type": "code", "source_file": "doctor.config.json", "source_location": "L2"}, {"id": "users_cogepart_documents_crm_nil_doctor_config_ignore", "label": "ignore", "file_type": "code", "source_file": "doctor.config.json", "source_location": "L3"}, {"id": "users_cogepart_documents_crm_nil_doctor_config_ignore_overrides", "label": "overrides", "file_type": "code", "source_file": "doctor.config.json", "source_location": "L4"}], "edges": [{"source": "users_cogepart_documents_crm_nil_doctor_config_json", "target": "users_cogepart_documents_crm_nil_doctor_config_schema", "relation": "contains", "confidence": "EXTRACTED", "source_file": "doctor.config.json", "source_location": "L2", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_doctor_config_json", "target": "users_cogepart_documents_crm_nil_doctor_config_ignore", "relation": "contains", "confidence": "EXTRACTED", "source_file": "doctor.config.json", "source_location": "L3", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_doctor_config_ignore", "target": "users_cogepart_documents_crm_nil_doctor_config_ignore_overrides", "relation": "contains", "confidence": "EXTRACTED", "source_file": "doctor.config.json", "source_location": "L4", "weight": 1.0}]}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_doctor_config_json",
+			"label": "doctor.config.json",
+			"file_type": "code",
+			"source_file": "doctor.config.json",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_doctor_config_schema",
+			"label": "$schema",
+			"file_type": "code",
+			"source_file": "doctor.config.json",
+			"source_location": "L2"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_doctor_config_ignore",
+			"label": "ignore",
+			"file_type": "code",
+			"source_file": "doctor.config.json",
+			"source_location": "L3"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_doctor_config_ignore_overrides",
+			"label": "overrides",
+			"file_type": "code",
+			"source_file": "doctor.config.json",
+			"source_location": "L4"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_doctor_config_json",
+			"target": "users_cogepart_documents_crm_nil_doctor_config_schema",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "doctor.config.json",
+			"source_location": "L2",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_doctor_config_json",
+			"target": "users_cogepart_documents_crm_nil_doctor_config_ignore",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "doctor.config.json",
+			"source_location": "L3",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_doctor_config_ignore",
+			"target": "users_cogepart_documents_crm_nil_doctor_config_ignore_overrides",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "doctor.config.json",
+			"source_location": "L4",
+			"weight": 1.0
+		}
+	]
+}

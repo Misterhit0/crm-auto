@@ -1,1 +1,47 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_design_md", "label": "design.md", "file_type": "document", "source_file": "docs/design.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_design_design_rules_for_ai_agents", "label": "Design \u2014 Rules for AI Agents", "file_type": "document", "source_file": "docs/design.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_design_colour", "label": "Colour", "file_type": "document", "source_file": "docs/design.md", "source_location": "L16"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_design_md", "target": "users_cogepart_documents_crm_nil_docs_design_design_rules_for_ai_agents", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/design.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_design_design_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_design_colour", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/design.md", "source_location": "L16", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_design_md",
+			"label": "design.md",
+			"file_type": "document",
+			"source_file": "docs/design.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_design_design_rules_for_ai_agents",
+			"label": "Design \u2014 Rules for AI Agents",
+			"file_type": "document",
+			"source_file": "docs/design.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_design_colour",
+			"label": "Colour",
+			"file_type": "document",
+			"source_file": "docs/design.md",
+			"source_location": "L16"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_design_md",
+			"target": "users_cogepart_documents_crm_nil_docs_design_design_rules_for_ai_agents",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/design.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_design_design_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_design_colour",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/design.md",
+			"source_location": "L16",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

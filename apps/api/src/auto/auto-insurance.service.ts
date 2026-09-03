@@ -1,4 +1,9 @@
-import { Inject, Injectable, NotFoundException, BadRequestException } from "@nestjs/common";
+import {
+	Inject,
+	Injectable,
+	NotFoundException,
+	BadRequestException,
+} from "@nestjs/common";
 import { type Db } from "@crm/db";
 import { InjectDatabase } from "../database/database.constants";
 import {
@@ -95,7 +100,8 @@ export class AutoInsuranceService {
 		const reference = `DOS-${year}-${String(count + 1).padStart(5, "0")}`;
 
 		// Date anniversaire par défaut à J+365 pour la loi Hamon
-		const anniversaryDate = input.anniversaryDate || new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
+		const anniversaryDate =
+			input.anniversaryDate || new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
 
 		const dossier = await this.db.insuranceDossier.create({
 			data: {
@@ -151,7 +157,13 @@ export class AutoInsuranceService {
 				driverProfile: true,
 				brokerPartner: true,
 				contact: {
-					select: { id: true, firstName: true, lastName: true, phone: true, email: true },
+					select: {
+						id: true,
+						firstName: true,
+						lastName: true,
+						phone: true,
+						email: true,
+					},
 				},
 				documents: true,
 				commissions: true,
@@ -235,7 +247,9 @@ export class AutoInsuranceService {
 			}
 
 			if (!matchedDossier && line.licensePlate) {
-				const cleanPlate = line.licensePlate.toUpperCase().replace(/[\s-]/g, "");
+				const cleanPlate = line.licensePlate
+					.toUpperCase()
+					.replace(/[\s-]/g, "");
 				matchedDossier = await this.db.insuranceDossier.findFirst({
 					where: {
 						vehicle: { licensePlate: cleanPlate },
@@ -256,7 +270,8 @@ export class AutoInsuranceService {
 			}
 
 			const isMatched = !!matchedDossier;
-			const hasDiscrepancy = isMatched && Math.abs(expectedAmount - line.actualAmount) > 0.5;
+			const hasDiscrepancy =
+				isMatched && Math.abs(expectedAmount - line.actualAmount) > 0.5;
 
 			const status = isMatched
 				? hasDiscrepancy

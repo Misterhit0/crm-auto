@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_currency_md", "label": "currency.md", "file_type": "document", "source_file": "docs/currency.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_currency_currency_read_when_touching_deal_amounts_totals_or_rates", "label": "Currency \u2014 read when touching deal amounts, totals, or rates", "file_type": "document", "source_file": "docs/currency.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_currency_md", "target": "users_cogepart_documents_crm_nil_docs_currency_currency_read_when_touching_deal_amounts_totals_or_rates", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/currency.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_currency_md",
+			"label": "currency.md",
+			"file_type": "document",
+			"source_file": "docs/currency.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_currency_currency_read_when_touching_deal_amounts_totals_or_rates",
+			"label": "Currency \u2014 read when touching deal amounts, totals, or rates",
+			"file_type": "document",
+			"source_file": "docs/currency.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_currency_md",
+			"target": "users_cogepart_documents_crm_nil_docs_currency_currency_read_when_touching_deal_amounts_totals_or_rates",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/currency.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

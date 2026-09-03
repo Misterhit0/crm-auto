@@ -37,22 +37,43 @@ export default function FullscreenChatPage() {
 		const userMsg = {
 			role: "user" as const,
 			text,
-			time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+			time: new Date().toLocaleTimeString([], {
+				hour: "2-digit",
+				minute: "2-digit",
+			}),
 		};
 
 		setMessages((prev) => [...prev, userMsg]);
 		if (!userText) setInput("");
 
 		setTimeout(() => {
-			let reply = "J'analyse les données du CRM pour répondre à votre requête...";
+			let reply =
+				"J'analyse les données du CRM pour répondre à votre requête...";
 			const q = text.toLowerCase();
 
-			if (q.includes("siv") || q.includes("plaque") || q.includes("ab-123-cd") || q.includes("peugeot")) {
-				reply = "🚗 **Qualification SIV Peugeot 208 II (AB-123-CD)** :\n\n- Finition : Allure 1.2 PureTech 100ch (5 CV)\n- Énergie : Essence | 1ère immat : 15/06/2022\n- Assuré : Alexandre Martin (Bonus 0.50)\n- Meilleure offre : April Auto Tous Risques (450 €/an)\n- Commission cabinet : 80 € (85% rétrocédé)";
-			} else if (q.includes("ri") || q.includes("relevé") || q.includes("manquant") || q.includes("relance")) {
-				reply = "⚠️ **Anomalie Documentaire Priorité A.1 Détectée** :\n\n- Dossier DOS-2026-0009 (Thomas Dubois, Golf VIII) : Relevé d'Information manquant depuis 3 jours.\n- Action automatique engagée : Relance SMS & Email envoyée ce matin avec lien de téléversement sécurisé.";
-			} else if (q.includes("commission") || q.includes("bordereau") || q.includes("rapprochement")) {
-				reply = "💶 **Rapprochement des Commissions du Mois** :\n\n- Volume global : 2 480 €\n- Taux de réconciliation automatique : 93.5%\n- Partenaires : April Auto (1 420 €), Maxance (620 €), Solly Azar (440 €)\n- Écart à pointer : 1 dossier Netvox en attente de validation (+15 €).";
+			if (
+				q.includes("siv") ||
+				q.includes("plaque") ||
+				q.includes("ab-123-cd") ||
+				q.includes("peugeot")
+			) {
+				reply =
+					"🚗 **Qualification SIV Peugeot 208 II (AB-123-CD)** :\n\n- Finition : Allure 1.2 PureTech 100ch (5 CV)\n- Énergie : Essence | 1ère immat : 15/06/2022\n- Assuré : Alexandre Martin (Bonus 0.50)\n- Meilleure offre : April Auto Tous Risques (450 €/an)\n- Commission cabinet : 80 € (85% rétrocédé)";
+			} else if (
+				q.includes("ri") ||
+				q.includes("relevé") ||
+				q.includes("manquant") ||
+				q.includes("relance")
+			) {
+				reply =
+					"⚠️ **Anomalie Documentaire Priorité A.1 Détectée** :\n\n- Dossier DOS-2026-0009 (Thomas Dubois, Golf VIII) : Relevé d'Information manquant depuis 3 jours.\n- Action automatique engagée : Relance SMS & Email envoyée ce matin avec lien de téléversement sécurisé.";
+			} else if (
+				q.includes("commission") ||
+				q.includes("bordereau") ||
+				q.includes("rapprochement")
+			) {
+				reply =
+					"💶 **Rapprochement des Commissions du Mois** :\n\n- Volume global : 2 480 €\n- Taux de réconciliation automatique : 93.5%\n- Partenaires : April Auto (1 420 €), Maxance (620 €), Solly Azar (440 €)\n- Écart à pointer : 1 dossier Netvox en attente de validation (+15 €).";
 			} else {
 				reply = `Demande prise en compte concernant : "${text}". L'agent a synchronisé le dossier associé et mis à jour le journal d'activité. Souhaitez-vous déclencher une action spécifique ?`;
 			}
@@ -62,7 +83,10 @@ export default function FullscreenChatPage() {
 				{
 					role: "assistant",
 					text: reply,
-					time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+					time: new Date().toLocaleTimeString([], {
+						hour: "2-digit",
+						minute: "2-digit",
+					}),
 				},
 			]);
 		}, 500);
@@ -116,36 +140,50 @@ export default function FullscreenChatPage() {
 					</span>
 
 					<button
-						onClick={() => handleSend("Faire un lookup SIV sur la plaque AB-123-CD")}
+						onClick={() =>
+							handleSend("Faire un lookup SIV sur la plaque AB-123-CD")
+						}
 						className="text-left p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.06] text-xs text-slate-200 transition-all space-y-1 group"
 					>
 						<div className="font-semibold text-blue-400 flex items-center gap-1.5">
 							<Search className="size-3.5" />
 							Lookup SIV Plaque
 						</div>
-						<p className="text-[11px] text-slate-400">Peugeot 208 II (AB-123-CD)</p>
+						<p className="text-[11px] text-slate-400">
+							Peugeot 208 II (AB-123-CD)
+						</p>
 					</button>
 
 					<button
-						onClick={() => handleSend("Vérifier les dossiers avec Relevé d'Information (RI) manquant")}
+						onClick={() =>
+							handleSend(
+								"Vérifier les dossiers avec Relevé d'Information (RI) manquant",
+							)
+						}
 						className="text-left p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.06] text-xs text-slate-200 transition-all space-y-1 group"
 					>
 						<div className="font-semibold text-amber-400 flex items-center gap-1.5">
 							<AlertCircle className="size-3.5" />
 							Priorité A.1 RI Manquant
 						</div>
-						<p className="text-[11px] text-slate-400">Relance automatique client J+3</p>
+						<p className="text-[11px] text-slate-400">
+							Relance automatique client J+3
+						</p>
 					</button>
 
 					<button
-						onClick={() => handleSend("Quel est le total des commissions rapprochées ?")}
+						onClick={() =>
+							handleSend("Quel est le total des commissions rapprochées ?")
+						}
 						className="text-left p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.06] text-xs text-slate-200 transition-all space-y-1 group"
 					>
 						<div className="font-semibold text-emerald-400 flex items-center gap-1.5">
 							<DollarSign className="size-3.5" />
 							Pointage Commissions
 						</div>
-						<p className="text-[11px] text-slate-400">Rapprochement bordereaux grossistes</p>
+						<p className="text-[11px] text-slate-400">
+							Rapprochement bordereaux grossistes
+						</p>
 					</button>
 				</div>
 
@@ -166,7 +204,9 @@ export default function FullscreenChatPage() {
 								>
 									{m.text}
 								</div>
-								<span className="text-[10px] text-slate-500 mt-1 px-1">{m.time}</span>
+								<span className="text-[10px] text-slate-500 mt-1 px-1">
+									{m.time}
+								</span>
 							</div>
 						))}
 					</div>

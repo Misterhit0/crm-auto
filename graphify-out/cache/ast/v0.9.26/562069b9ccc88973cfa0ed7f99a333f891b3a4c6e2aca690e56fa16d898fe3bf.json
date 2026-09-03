@@ -1,1 +1,834 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_apps_api_turbo_json", "label": "turbo.json", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_schema", "label": "$schema", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L2"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_extends", "label": "extends", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L3"}, {"id": "ref", "label": "//", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L3"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "label": "tasks", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L4"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build", "label": "build", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L5"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_build_dependson", "label": "dependsOn", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L6"}, {"id": "ref_turbo_extends", "label": "$TURBO_EXTENDS$", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L6"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_build_outputs", "label": "outputs", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L7"}, {"id": "ref_dist", "label": "dist/**", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L7"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_check_types", "label": "check-types", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L9"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson", "label": "dependsOn", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L10"}, {"id": "ref_trpc_generate", "label": "trpc:generate", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L10"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate", "label": "trpc:generate", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L12"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_dependson", "label": "dependsOn", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L13"}, {"id": "ref_build", "label": "^build", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L13"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_inputs", "label": "inputs", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L14"}, {"id": "ref_src_ts", "label": "src/**/*.ts", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L14"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_outputs", "label": "outputs", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L15"}, {"id": "ref_src_generated", "label": "src/generated/**", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L15"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev", "label": "dev", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L17"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_dependson", "label": "dependsOn", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L18"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_cache", "label": "cache", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L19"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_persistent", "label": "persistent", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L20"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "label": "passThroughEnv", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_auth_cookie_domain", "label": "AUTH_COOKIE_DOMAIN", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_auth_trusted_origins", "label": "AUTH_TRUSTED_ORIGINS", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_blob_read_write_token", "label": "BLOB_READ_WRITE_TOKEN", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_better_auth_secret", "label": "BETTER_AUTH_SECRET", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_better_auth_url", "label": "BETTER_AUTH_URL", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_cache_ttl_ms", "label": "CACHE_TTL_MS", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_database_url", "label": "DATABASE_URL", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_google_client_id", "label": "GOOGLE_CLIENT_ID", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_google_client_secret", "label": "GOOGLE_CLIENT_SECRET", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_microsoft_client_id", "label": "MICROSOFT_CLIENT_ID", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_microsoft_client_secret", "label": "MICROSOFT_CLIENT_SECRET", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_microsoft_tenant_id", "label": "MICROSOFT_TENANT_ID", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_port", "label": "PORT", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "ref_redis_url", "label": "REDIS_URL", "file_type": "concept", "source_file": "apps/api/turbo.json", "source_location": "L21"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_test", "label": "test", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L38"}, {"id": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "label": "passThroughEnv", "file_type": "code", "source_file": "apps/api/turbo.json", "source_location": "L39"}], "edges": [{"source": "users_cogepart_documents_crm_nil_apps_api_turbo_json", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_schema", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L2", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_json", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_extends", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L3", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_extends", "target": "ref", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L3", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_json", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L4", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L5", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_build_dependson", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L6", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_build_dependson", "target": "ref_turbo_extends", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L6", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_build_outputs", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L7", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_build_outputs", "target": "ref_dist", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L7", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_check_types", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L9", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_check_types", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L10", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson", "target": "ref_turbo_extends", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L10", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson", "target": "ref_trpc_generate", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L10", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L12", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_dependson", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L13", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_dependson", "target": "ref_build", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L13", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_inputs", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L14", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_inputs", "target": "ref_src_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L14", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_outputs", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L15", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_outputs", "target": "ref_src_generated", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L15", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L17", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_dependson", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L18", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_dependson", "target": "ref_turbo_extends", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L18", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_cache", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L19", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_persistent", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L20", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_auth_cookie_domain", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_auth_trusted_origins", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_blob_read_write_token", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_better_auth_secret", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_better_auth_url", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_cache_ttl_ms", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_database_url", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_google_client_id", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_google_client_secret", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_microsoft_client_id", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_microsoft_client_secret", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_microsoft_tenant_id", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_port", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv", "target": "ref_redis_url", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_test", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L38", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_test", "target": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_auth_cookie_domain", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_auth_trusted_origins", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_blob_read_write_token", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_better_auth_secret", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_better_auth_url", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_cache_ttl_ms", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_database_url", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_google_client_id", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_google_client_secret", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_microsoft_client_id", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_microsoft_client_secret", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_microsoft_tenant_id", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_port", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv", "target": "ref_redis_url", "relation": "extends", "confidence": "EXTRACTED", "source_file": "apps/api/turbo.json", "source_location": "L39", "weight": 1.0, "context": "import"}]}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_json",
+			"label": "turbo.json",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_schema",
+			"label": "$schema",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L2"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_extends",
+			"label": "extends",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L3"
+		},
+		{
+			"id": "ref",
+			"label": "//",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L3"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"label": "tasks",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L4"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build",
+			"label": "build",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L5"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_build_dependson",
+			"label": "dependsOn",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L6"
+		},
+		{
+			"id": "ref_turbo_extends",
+			"label": "$TURBO_EXTENDS$",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L6"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_build_outputs",
+			"label": "outputs",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L7"
+		},
+		{
+			"id": "ref_dist",
+			"label": "dist/**",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L7"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_check_types",
+			"label": "check-types",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L9"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson",
+			"label": "dependsOn",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L10"
+		},
+		{
+			"id": "ref_trpc_generate",
+			"label": "trpc:generate",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L10"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate",
+			"label": "trpc:generate",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L12"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_dependson",
+			"label": "dependsOn",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L13"
+		},
+		{
+			"id": "ref_build",
+			"label": "^build",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L13"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_inputs",
+			"label": "inputs",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L14"
+		},
+		{
+			"id": "ref_src_ts",
+			"label": "src/**/*.ts",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L14"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_outputs",
+			"label": "outputs",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L15"
+		},
+		{
+			"id": "ref_src_generated",
+			"label": "src/generated/**",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L15"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev",
+			"label": "dev",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L17"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_dependson",
+			"label": "dependsOn",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L18"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_cache",
+			"label": "cache",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L19"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_persistent",
+			"label": "persistent",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L20"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"label": "passThroughEnv",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_auth_cookie_domain",
+			"label": "AUTH_COOKIE_DOMAIN",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_auth_trusted_origins",
+			"label": "AUTH_TRUSTED_ORIGINS",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_blob_read_write_token",
+			"label": "BLOB_READ_WRITE_TOKEN",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_better_auth_secret",
+			"label": "BETTER_AUTH_SECRET",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_better_auth_url",
+			"label": "BETTER_AUTH_URL",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_cache_ttl_ms",
+			"label": "CACHE_TTL_MS",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_database_url",
+			"label": "DATABASE_URL",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_google_client_id",
+			"label": "GOOGLE_CLIENT_ID",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_google_client_secret",
+			"label": "GOOGLE_CLIENT_SECRET",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_microsoft_client_id",
+			"label": "MICROSOFT_CLIENT_ID",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_microsoft_client_secret",
+			"label": "MICROSOFT_CLIENT_SECRET",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_microsoft_tenant_id",
+			"label": "MICROSOFT_TENANT_ID",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_port",
+			"label": "PORT",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_redis_url",
+			"label": "REDIS_URL",
+			"file_type": "concept",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_test",
+			"label": "test",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L38"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"label": "passThroughEnv",
+			"file_type": "code",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_json",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_schema",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L2",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_json",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_extends",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L3",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_extends",
+			"target": "ref",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L3",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_json",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L4",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L5",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_build_dependson",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L6",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_build_dependson",
+			"target": "ref_turbo_extends",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L6",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_build",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_build_outputs",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L7",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_build_outputs",
+			"target": "ref_dist",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L7",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_check_types",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L9",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_check_types",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L10",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson",
+			"target": "ref_turbo_extends",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L10",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_check_types_dependson",
+			"target": "ref_trpc_generate",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L10",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L12",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_dependson",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L13",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_dependson",
+			"target": "ref_build",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L13",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_inputs",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L14",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_inputs",
+			"target": "ref_src_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L14",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_trpc_generate",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_outputs",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L15",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_trpc_generate_outputs",
+			"target": "ref_src_generated",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L15",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L17",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_dependson",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L18",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_dependson",
+			"target": "ref_turbo_extends",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L18",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_cache",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L19",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_persistent",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L20",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_dev",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_auth_cookie_domain",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_auth_trusted_origins",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_blob_read_write_token",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_better_auth_secret",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_better_auth_url",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_cache_ttl_ms",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_database_url",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_google_client_id",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_google_client_secret",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_microsoft_client_id",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_microsoft_client_secret",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_microsoft_tenant_id",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_port",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_dev_passthroughenv",
+			"target": "ref_redis_url",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_test",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L38",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_tasks_test",
+			"target": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_auth_cookie_domain",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_auth_trusted_origins",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_blob_read_write_token",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_better_auth_secret",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_better_auth_url",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_cache_ttl_ms",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_database_url",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_google_client_id",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_google_client_secret",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_microsoft_client_id",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_microsoft_client_secret",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_microsoft_tenant_id",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_port",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_turbo_test_passthroughenv",
+			"target": "ref_redis_url",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/turbo.json",
+			"source_location": "L39",
+			"weight": 1.0,
+			"context": "import"
+		}
+	]
+}

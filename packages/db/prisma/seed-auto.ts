@@ -4,7 +4,9 @@ import { db } from "../src/client";
 const prisma = db;
 
 async function main() {
-	console.log("🌱 Seeding des partenaires grossistes & données de démonstration...");
+	console.log(
+		"🌱 Seeding des partenaires grossistes & données de démonstration...",
+	);
 
 	// 1. Création des partenaires grossistes de référence en assurance auto
 	const partners = [
@@ -47,7 +49,9 @@ async function main() {
 	];
 
 	for (const p of partners) {
-		const existing = await prisma.brokerPartner.findFirst({ where: { name: p.name } });
+		const existing = await prisma.brokerPartner.findFirst({
+			where: { name: p.name },
+		});
 		if (!existing) {
 			await prisma.brokerPartner.create({ data: p });
 			console.log(`  + Grossiste ajouté : ${p.name}`);
@@ -55,7 +59,9 @@ async function main() {
 	}
 
 	// 2. Création d'un premier client contact
-	let contact = await prisma.contact.findFirst({ where: { email: "alexandre.martin@example.com" } });
+	let contact = await prisma.contact.findFirst({
+		where: { email: "alexandre.martin@example.com" },
+	});
 	if (!contact) {
 		contact = await prisma.contact.create({
 			data: {
@@ -65,11 +71,15 @@ async function main() {
 				phone: "06 12 34 56 78",
 			},
 		});
-		console.log(`  + Contact client créé : ${contact.firstName} ${contact.lastName}`);
+		console.log(
+			`  + Contact client créé : ${contact.firstName} ${contact.lastName}`,
+		);
 	}
 
 	// 3. Création du véhicule (Peugeot 208)
-	let vehicle = await prisma.vehicle.findFirst({ where: { licensePlate: "AB-123-CD" } });
+	let vehicle = await prisma.vehicle.findFirst({
+		where: { licensePlate: "AB-123-CD" },
+	});
 	if (!vehicle) {
 		vehicle = await prisma.vehicle.create({
 			data: {
@@ -87,11 +97,15 @@ async function main() {
 				vin: "VF3UPHNKMPW123456",
 			},
 		});
-		console.log(`  + Véhicule ajouté : ${vehicle.brand} ${vehicle.model} (${vehicle.licensePlate})`);
+		console.log(
+			`  + Véhicule ajouté : ${vehicle.brand} ${vehicle.model} (${vehicle.licensePlate})`,
+		);
 	}
 
 	// 4. Profil Conducteur (Bonus 0.50)
-	let driver = await prisma.driverProfile.findFirst({ where: { contactId: contact.id } });
+	let driver = await prisma.driverProfile.findFirst({
+		where: { contactId: contact.id },
+	});
 	if (!driver) {
 		driver = await prisma.driverProfile.create({
 			data: {
@@ -99,7 +113,7 @@ async function main() {
 				licenseNumber: "12AB34567",
 				licenseDate: new Date("2014-03-20"),
 				licenseType: "B",
-				crmCoefficient: 0.50,
+				crmCoefficient: 0.5,
 				claimsCount36Months: 0,
 				atFaultClaims: 0,
 				glassBreakageClaims: 0,
@@ -111,8 +125,12 @@ async function main() {
 	}
 
 	// 5. Création d'un dossier souscrit avec April Auto
-	const april = await prisma.brokerPartner.findFirst({ where: { name: "April Auto" } });
-	const existingDossier = await prisma.insuranceDossier.findFirst({ where: { contactId: contact.id } });
+	const april = await prisma.brokerPartner.findFirst({
+		where: { name: "April Auto" },
+	});
+	const existingDossier = await prisma.insuranceDossier.findFirst({
+		where: { contactId: contact.id },
+	});
 	if (!existingDossier && april) {
 		const dossier = await prisma.insuranceDossier.create({
 			data: {
@@ -131,7 +149,9 @@ async function main() {
 				policeNumber: "AP-AUTO-984512",
 			},
 		});
-		console.log(`  + Dossier souscrit créé : ${dossier.reference} (${dossier.policeNumber})`);
+		console.log(
+			`  + Dossier souscrit créé : ${dossier.reference} (${dossier.policeNumber})`,
+		);
 
 		// Ligne de commission
 		await prisma.commissionRecord.create({

@@ -21,7 +21,6 @@ export const schemas = {
 	slack,
 } as const;
 
-export * from "./auto-insurance";
 export type { ActivityMeta, ActivityMetaFields } from "./activity-meta";
 export type { CrmEventTask } from "./agent-events";
 export type {
@@ -42,6 +41,40 @@ export type {
 	InputRequested,
 	Permission,
 } from "./agents";
+export type {
+	CommissionStatus,
+	CommissionType,
+	CreateDriverProfileInput,
+	CreateInsuranceDossierInput,
+	CreateVehicleInput,
+	DocumentType,
+	DossierStatus,
+	FormulaType,
+	FuelType,
+	ImportCommissionStatementInput,
+	ParkingType,
+	SivLookupInput,
+	SivLookupOutput,
+	UpdateDossierStatusInput,
+	VehicleUsage,
+} from "./auto-insurance";
+export {
+	CommissionStatusSchema,
+	CommissionTypeSchema,
+	CreateDriverProfileInputSchema,
+	CreateInsuranceDossierInputSchema,
+	CreateVehicleInputSchema,
+	DocumentTypeSchema,
+	DossierStatusSchema,
+	FormulaTypeSchema,
+	FuelTypeSchema,
+	ImportCommissionStatementInputSchema,
+	ParkingTypeSchema,
+	SivLookupInputSchema,
+	SivLookupOutputSchema,
+	UpdateDossierStatusInputSchema,
+	VehicleUsageSchema,
+} from "./auto-insurance";
 export type {
 	BuilderQuestion,
 	BuilderQuestionOption,

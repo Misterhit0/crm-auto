@@ -42,15 +42,19 @@ export function DossierCrudDialog({
 		}
 	}, [ref, dossier]);
 	const [clientName, setClientName] = useState(dossier?.client.name || "");
-	const [clientPhone, setClientPhone] = useState(dossier?.client.phone || "06 12 34 56 78");
+	const [clientPhone, setClientPhone] = useState(
+		dossier?.client.phone || "06 12 34 56 78",
+	);
 	const [clientEmail, setClientEmail] = useState(dossier?.client.email || "");
-	const [bonusMalus, setBonusMalus] = useState(dossier?.client.bonusMalus || "Bonus 0.50 (50%)");
+	const [bonusMalus, setBonusMalus] = useState(
+		dossier?.client.bonusMalus || "Bonus 0.50 (50%)",
+	);
 	const [plate, setPlate] = useState(dossier?.vehicle.plate || "");
 	const [brand, setBrand] = useState(dossier?.vehicle.brand || "");
 	const [model, setModel] = useState(dossier?.vehicle.model || "");
-	const [formula, setFormula] = useState<"TIERS" | "TIERS_PLUS" | "TOUS_RISQUES">(
-		dossier?.formula || "TOUS_RISQUES",
-	);
+	const [formula, setFormula] = useState<
+		"TIERS" | "TIERS_PLUS" | "TOUS_RISQUES"
+	>(dossier?.formula || "TOUS_RISQUES");
 	const [partner, setPartner] = useState(dossier?.partner || "April Auto");
 	const [premium, setPremium] = useState(dossier?.annualPremium || "580 €/an");
 	const [comm, setComm] = useState(dossier?.commissionAmount || "85 €");
@@ -112,11 +116,17 @@ export function DossierCrudDialog({
 				<DialogHeader>
 					<div className="flex items-center gap-3">
 						<div className="p-2 rounded-xl bg-blue-600 text-white shadow-md shadow-blue-500/25">
-							{isEdit ? <Edit className="size-5" /> : <Plus className="size-5" />}
+							{isEdit ? (
+								<Edit className="size-5" />
+							) : (
+								<Plus className="size-5" />
+							)}
 						</div>
 						<div>
 							<DialogTitle className="text-lg font-bold text-white tracking-tight">
-								{isEdit ? `Modifier le Dossier ${dossier?.ref}` : "Créer un Nouveau Dossier Auto"}
+								{isEdit
+									? `Modifier le Dossier ${dossier?.ref}`
+									: "Créer un Nouveau Dossier Auto"}
 							</DialogTitle>
 							<DialogDescription className="text-xs text-slate-400">
 								{isEdit

@@ -1,1 +1,255 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_api_md", "label": "api.md", "file_type": "document", "source_file": "docs/api.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_api_api_rules", "label": "API Rules", "file_type": "document", "source_file": "docs/api.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_api_logging", "label": "Logging", "file_type": "document", "source_file": "docs/api.md", "source_location": "L3"}, {"id": "users_cogepart_documents_crm_nil_docs_api_intelligence_never_lives_in_the_api", "label": "Intelligence never lives in the API", "file_type": "document", "source_file": "docs/api.md", "source_location": "L20"}, {"id": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary", "label": "One organization, and it is not a tenancy boundary", "file_type": "document", "source_file": "docs/api.md", "source_location": "L34"}, {"id": "users_cogepart_documents_crm_nil_docs_api_gates_in_proxy_ts", "label": "Gates in `proxy.ts`", "file_type": "document", "source_file": "docs/api.md", "source_location": "L68"}, {"id": "users_cogepart_documents_crm_nil_docs_api_the_name_is_also_the_url", "label": "The name is also the URL", "file_type": "document", "source_file": "docs/api.md", "source_location": "L85"}, {"id": "users_cogepart_documents_crm_nil_docs_api_sso_is_a_row_not_a_deployment", "label": "SSO is a row, not a deployment", "file_type": "document", "source_file": "docs/api.md", "source_location": "L102"}, {"id": "users_cogepart_documents_crm_nil_docs_api_trpc_is_the_data_surface_rest_is_auth_and_health_only", "label": "tRPC is the data surface; REST is auth and health only", "file_type": "document", "source_file": "docs/api.md", "source_location": "L129"}, {"id": "users_cogepart_documents_crm_nil_docs_api_the_openapi_document_is_built_at_runtime_not_committed", "label": "The OpenAPI document is built at runtime, not committed", "file_type": "document", "source_file": "docs/api.md", "source_location": "L144"}, {"id": "users_cogepart_documents_crm_nil_docs_api_two_mail_providers_one_pipeline", "label": "Two mail providers, one pipeline", "file_type": "document", "source_file": "docs/api.md", "source_location": "L166"}, {"id": "users_cogepart_documents_crm_nil_docs_api_not_every_address_on_a_thread_is_a_person", "label": "Not every address on a thread is a person", "file_type": "document", "source_file": "docs/api.md", "source_location": "L198"}, {"id": "users_cogepart_documents_crm_nil_docs_api_people_on_a_deal", "label": "People on a deal", "file_type": "document", "source_file": "docs/api.md", "source_location": "L217"}, {"id": "users_cogepart_documents_crm_nil_docs_api_deleting_a_record_is_archive_first_purge_later", "label": "Deleting a record is archive first, purge later", "file_type": "document", "source_file": "docs/api.md", "source_location": "L232"}, {"id": "users_cogepart_documents_crm_nil_docs_api_money", "label": "Money", "file_type": "document", "source_file": "docs/api.md", "source_location": "L286"}, {"id": "users_cogepart_documents_crm_nil_docs_api_freshness_invalidate_the_query_don_t_disable_the_cache", "label": "Freshness: invalidate the query, don't disable the cache", "file_type": "document", "source_file": "docs/api.md", "source_location": "L294"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_api_md", "target": "users_cogepart_documents_crm_nil_docs_api_api_rules", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_logging", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L3", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_intelligence_never_lives_in_the_api", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L20", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L34", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary", "target": "users_cogepart_documents_crm_nil_docs_api_gates_in_proxy_ts", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L68", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary", "target": "users_cogepart_documents_crm_nil_docs_api_the_name_is_also_the_url", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L85", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_sso_is_a_row_not_a_deployment", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L102", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_trpc_is_the_data_surface_rest_is_auth_and_health_only", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L129", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_the_openapi_document_is_built_at_runtime_not_committed", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L144", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_two_mail_providers_one_pipeline", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L166", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_not_every_address_on_a_thread_is_a_person", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L198", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_people_on_a_deal", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L217", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_deleting_a_record_is_archive_first_purge_later", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L232", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_money", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L286", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_api_api_rules", "target": "users_cogepart_documents_crm_nil_docs_api_freshness_invalidate_the_query_don_t_disable_the_cache", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/api.md", "source_location": "L294", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_md",
+			"label": "api.md",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"label": "API Rules",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_logging",
+			"label": "Logging",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L3"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_intelligence_never_lives_in_the_api",
+			"label": "Intelligence never lives in the API",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L20"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary",
+			"label": "One organization, and it is not a tenancy boundary",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L34"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_gates_in_proxy_ts",
+			"label": "Gates in `proxy.ts`",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L68"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_the_name_is_also_the_url",
+			"label": "The name is also the URL",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L85"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_sso_is_a_row_not_a_deployment",
+			"label": "SSO is a row, not a deployment",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L102"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_trpc_is_the_data_surface_rest_is_auth_and_health_only",
+			"label": "tRPC is the data surface; REST is auth and health only",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L129"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_the_openapi_document_is_built_at_runtime_not_committed",
+			"label": "The OpenAPI document is built at runtime, not committed",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L144"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_two_mail_providers_one_pipeline",
+			"label": "Two mail providers, one pipeline",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L166"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_not_every_address_on_a_thread_is_a_person",
+			"label": "Not every address on a thread is a person",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L198"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_people_on_a_deal",
+			"label": "People on a deal",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L217"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_deleting_a_record_is_archive_first_purge_later",
+			"label": "Deleting a record is archive first, purge later",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L232"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_money",
+			"label": "Money",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L286"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_api_freshness_invalidate_the_query_don_t_disable_the_cache",
+			"label": "Freshness: invalidate the query, don't disable the cache",
+			"file_type": "document",
+			"source_file": "docs/api.md",
+			"source_location": "L294"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_md",
+			"target": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_logging",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L3",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_intelligence_never_lives_in_the_api",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L20",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L34",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary",
+			"target": "users_cogepart_documents_crm_nil_docs_api_gates_in_proxy_ts",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L68",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_one_organization_and_it_is_not_a_tenancy_boundary",
+			"target": "users_cogepart_documents_crm_nil_docs_api_the_name_is_also_the_url",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L85",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_sso_is_a_row_not_a_deployment",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L102",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_trpc_is_the_data_surface_rest_is_auth_and_health_only",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L129",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_the_openapi_document_is_built_at_runtime_not_committed",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L144",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_two_mail_providers_one_pipeline",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L166",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_not_every_address_on_a_thread_is_a_person",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L198",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_people_on_a_deal",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L217",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_deleting_a_record_is_archive_first_purge_later",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L232",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_money",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L286",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_api_api_rules",
+			"target": "users_cogepart_documents_crm_nil_docs_api_freshness_invalidate_the_query_don_t_disable_the_cache",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/api.md",
+			"source_location": "L294",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

@@ -1,1 +1,207 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_environment_md", "label": "environment.md", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_environment", "label": "Environment", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_one_env_at_the_repo_root", "label": "One `.env`, at the repo root", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L5"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_a_new_variable_has_three_homes_not_two", "label": "A new variable has three homes, not two", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L19"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_required", "label": "Required", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L30"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_where_things_are", "label": "Where things are", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L55"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_is_marketing_landing_page_flag_off_by_default", "label": "`IS_MARKETING` \u2014 landing page flag, off by default", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L87"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_typed_validated_env", "label": "Typed, validated env", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L97"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_optional_what_the_agent_can_do", "label": "Optional: what the agent can do", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L106"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_the_context_key_is_asked_for_not_configured", "label": "The Context key is asked for, not configured", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L124"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_mailbox_sync", "label": "Mailbox sync", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L149"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_telemetry_is_on_and_turning_it_off_is_one_variable", "label": "Telemetry is on, and turning it off is one variable", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L185"}, {"id": "users_cogepart_documents_crm_nil_docs_environment_not_env_vars", "label": "Not env vars", "file_type": "document", "source_file": "docs/environment.md", "source_location": "L206"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_environment_md", "target": "users_cogepart_documents_crm_nil_docs_environment_environment", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_one_env_at_the_repo_root", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L5", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_a_new_variable_has_three_homes_not_two", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L19", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_required", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L30", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_where_things_are", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L55", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_is_marketing_landing_page_flag_off_by_default", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L87", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_typed_validated_env", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L97", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_optional_what_the_agent_can_do", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L106", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_optional_what_the_agent_can_do", "target": "users_cogepart_documents_crm_nil_docs_environment_the_context_key_is_asked_for_not_configured", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L124", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_mailbox_sync", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L149", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_telemetry_is_on_and_turning_it_off_is_one_variable", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L185", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_environment_environment", "target": "users_cogepart_documents_crm_nil_docs_environment_not_env_vars", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/environment.md", "source_location": "L206", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_md",
+			"label": "environment.md",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"label": "Environment",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_one_env_at_the_repo_root",
+			"label": "One `.env`, at the repo root",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L5"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_a_new_variable_has_three_homes_not_two",
+			"label": "A new variable has three homes, not two",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L19"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_required",
+			"label": "Required",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L30"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_where_things_are",
+			"label": "Where things are",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L55"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_is_marketing_landing_page_flag_off_by_default",
+			"label": "`IS_MARKETING` \u2014 landing page flag, off by default",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L87"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_typed_validated_env",
+			"label": "Typed, validated env",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L97"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_optional_what_the_agent_can_do",
+			"label": "Optional: what the agent can do",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L106"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_the_context_key_is_asked_for_not_configured",
+			"label": "The Context key is asked for, not configured",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L124"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_mailbox_sync",
+			"label": "Mailbox sync",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L149"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_telemetry_is_on_and_turning_it_off_is_one_variable",
+			"label": "Telemetry is on, and turning it off is one variable",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L185"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_environment_not_env_vars",
+			"label": "Not env vars",
+			"file_type": "document",
+			"source_file": "docs/environment.md",
+			"source_location": "L206"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_md",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_one_env_at_the_repo_root",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L5",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_a_new_variable_has_three_homes_not_two",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L19",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_required",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L30",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_where_things_are",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L55",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_is_marketing_landing_page_flag_off_by_default",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L87",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_typed_validated_env",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L97",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_optional_what_the_agent_can_do",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L106",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_optional_what_the_agent_can_do",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_the_context_key_is_asked_for_not_configured",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L124",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_mailbox_sync",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L149",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_telemetry_is_on_and_turning_it_off_is_one_variable",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L185",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_environment_environment",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_not_env_vars",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/environment.md",
+			"source_location": "L206",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

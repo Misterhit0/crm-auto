@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_adrs_i18n_md", "label": "i18n.md", "file_type": "document", "source_file": "adrs/i18n.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_adrs_i18n_let_the_crm_speak_more_than_english", "label": "Let the CRM speak more than English", "file_type": "document", "source_file": "adrs/i18n.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_adrs_i18n_md", "target": "users_cogepart_documents_crm_nil_adrs_i18n_let_the_crm_speak_more_than_english", "relation": "contains", "confidence": "EXTRACTED", "source_file": "adrs/i18n.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_adrs_i18n_md",
+			"label": "i18n.md",
+			"file_type": "document",
+			"source_file": "adrs/i18n.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_adrs_i18n_let_the_crm_speak_more_than_english",
+			"label": "Let the CRM speak more than English",
+			"file_type": "document",
+			"source_file": "adrs/i18n.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_adrs_i18n_md",
+			"target": "users_cogepart_documents_crm_nil_adrs_i18n_let_the_crm_speak_more_than_english",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "adrs/i18n.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

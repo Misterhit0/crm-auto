@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_md", "label": "architecture_doc_checkpoint.md", "file_type": "document", "source_file": ".agents/memories/architecture_doc_checkpoint.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_checkpoint_r\u00e9daction_de_la_documentation_d_architecture_technique", "label": "Checkpoint : R\u00e9daction de la Documentation d'Architecture Technique", "file_type": "document", "source_file": ".agents/memories/architecture_doc_checkpoint.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_md", "target": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_checkpoint_r\u00e9daction_de_la_documentation_d_architecture_technique", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/memories/architecture_doc_checkpoint.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_md",
+			"label": "architecture_doc_checkpoint.md",
+			"file_type": "document",
+			"source_file": ".agents/memories/architecture_doc_checkpoint.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_checkpoint_r\u00e9daction_de_la_documentation_d_architecture_technique",
+			"label": "Checkpoint : R\u00e9daction de la Documentation d'Architecture Technique",
+			"file_type": "document",
+			"source_file": ".agents/memories/architecture_doc_checkpoint.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_md",
+			"target": "users_cogepart_documents_crm_nil_agents_memories_architecture_doc_checkpoint_checkpoint_r\u00e9daction_de_la_documentation_d_architecture_technique",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/memories/architecture_doc_checkpoint.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

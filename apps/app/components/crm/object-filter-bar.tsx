@@ -78,7 +78,8 @@ export function ObjectFilterBar({
 				<div className="flex items-center gap-2">
 					{totalResults !== undefined && (
 						<span className="text-xs text-slate-400 font-medium px-2.5 py-1 rounded-lg bg-white/[0.03] border border-white/[0.06]">
-							<strong className="text-white font-bold">{totalResults}</strong> résultat{totalResults > 1 ? "s" : ""}
+							<strong className="text-white font-bold">{totalResults}</strong>{" "}
+							résultat{totalResults > 1 ? "s" : ""}
 						</span>
 					)}
 
@@ -122,7 +123,9 @@ export function ObjectFilterBar({
 										{selectedInFacet.length}
 									</span>
 								)}
-								<ChevronDown className={`size-3 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+								<ChevronDown
+									className={`size-3 transition-transform ${isOpen ? "rotate-180" : ""}`}
+								/>
 							</button>
 
 							{/* Menu Popover des Options de la Facette */}

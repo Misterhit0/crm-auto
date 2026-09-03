@@ -47,7 +47,8 @@ export type NavSection = {
 export const GLOBAL_NAV_SECTIONS: NavSection[] = [
 	{
 		title: "Pilotage & Intelligence Artificielle",
-		description: "Supervision globale et interaction avec les agents d'exécution",
+		description:
+			"Supervision globale et interaction avec les agents d'exécution",
 		items: [
 			{
 				title: "Vue d'ensemble Cockpit",
@@ -84,7 +85,8 @@ export const GLOBAL_NAV_SECTIONS: NavSection[] = [
 			{
 				title: "Contacts & Clients",
 				href: "/contacts",
-				description: "Répertoire assuré, historique des échanges et fiches 360°",
+				description:
+					"Répertoire assuré, historique des échanges et fiches 360°",
 				icon: Users,
 			},
 			{
@@ -179,11 +181,15 @@ export function NavigationMenuSheet({
 							<Layers className="size-5" />
 						</div>
 						<div>
-							<SheetTitle size="default" className="text-white font-bold text-lg tracking-tight">
+							<SheetTitle
+								size="default"
+								className="text-white font-bold text-lg tracking-tight"
+							>
 								Catalogue des Modules & Pages
 							</SheetTitle>
 							<SheetDescription className="text-xs text-slate-400">
-								Accédez directement à tous les objets et fonctionnalités de la plateforme.
+								Accédez directement à tous les objets et fonctionnalités de la
+								plateforme.
 							</SheetDescription>
 						</div>
 					</div>
@@ -196,7 +202,9 @@ export function NavigationMenuSheet({
 								<h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
 									{section.title}
 								</h3>
-								<p className="text-[11px] text-slate-500">{section.description}</p>
+								<p className="text-[11px] text-slate-500">
+									{section.description}
+								</p>
 							</div>
 
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
@@ -235,7 +243,8 @@ export function NavigationMenuSheet({
 													{item.badge && (
 														<span
 															className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full border ${
-																item.badgeColor || "bg-white/10 text-white border-white/20"
+																item.badgeColor ||
+																"bg-white/10 text-white border-white/20"
 															}`}
 														>
 															{item.badge}

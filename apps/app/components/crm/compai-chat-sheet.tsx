@@ -8,7 +8,16 @@ import {
 	SheetTitle,
 	SheetDescription,
 } from "@/components/responsive-sheet";
-import { Bot, Sparkles, Send, CheckCircle2, ShieldCheck, Car, ExternalLink, HelpCircle } from "lucide-react";
+import {
+	Bot,
+	Sparkles,
+	Send,
+	CheckCircle2,
+	ShieldCheck,
+	Car,
+	ExternalLink,
+	HelpCircle,
+} from "lucide-react";
 import Link from "next/link";
 
 export function CompAiChatSheet({
@@ -20,7 +29,12 @@ export function CompAiChatSheet({
 }) {
 	const [input, setInput] = useState("");
 	const [messages, setMessages] = useState<
-		Array<{ role: "assistant" | "user"; text: string; time: string; action?: string }>
+		Array<{
+			role: "assistant" | "user";
+			text: string;
+			time: string;
+			action?: string;
+		}>
 	>([
 		{
 			role: "assistant",
@@ -43,15 +57,33 @@ export function CompAiChatSheet({
 		if (!textToSend) setInput("");
 
 		setTimeout(() => {
-			let reply = "J'ai bien analysé votre demande. Je vérifie les informations dans le CRM...";
+			let reply =
+				"J'ai bien analysé votre demande. Je vérifie les informations dans le CRM...";
 			const q = text.toLowerCase();
 
-			if (q.includes("siv") || q.includes("plaque") || q.includes("ab-123-cd") || q.includes("golf")) {
-				reply = "🔍 **Analyse SIV effectuée** :\n\n- Véhicule identifié : Peugeot 208 II 1.2 PureTech 100ch\n- Puissance fiscale : 5 CV (Essence)\n- Profil recommandé : April Auto Formule Tous Risques (450 €/an)\n- Commission estimée : 80 €";
-			} else if (q.includes("ri") || q.includes("relevé") || q.includes("document") || q.includes("relance")) {
-				reply = "📄 **Priorité A.1 Détectée** : Le Relevé d'Information (RI) est manquant sur le dossier DOS-2026-0009 (Thomas Dubois) depuis 3 jours. J'ai préparé un SMS et un email de relance avec lien sécurisé de téléversement smartphone.";
-			} else if (q.includes("commission") || q.includes("bordereau") || q.includes("rapprochement")) {
-				reply = "💶 **Rapprochement Financier** : Sur les 2 480 € de commissions du mois, 93.5% sont rapprochés automatiquement. 1 dossier April Auto nécessite un pointage d'écart de 15 €.";
+			if (
+				q.includes("siv") ||
+				q.includes("plaque") ||
+				q.includes("ab-123-cd") ||
+				q.includes("golf")
+			) {
+				reply =
+					"🔍 **Analyse SIV effectuée** :\n\n- Véhicule identifié : Peugeot 208 II 1.2 PureTech 100ch\n- Puissance fiscale : 5 CV (Essence)\n- Profil recommandé : April Auto Formule Tous Risques (450 €/an)\n- Commission estimée : 80 €";
+			} else if (
+				q.includes("ri") ||
+				q.includes("relevé") ||
+				q.includes("document") ||
+				q.includes("relance")
+			) {
+				reply =
+					"📄 **Priorité A.1 Détectée** : Le Relevé d'Information (RI) est manquant sur le dossier DOS-2026-0009 (Thomas Dubois) depuis 3 jours. J'ai préparé un SMS et un email de relance avec lien sécurisé de téléversement smartphone.";
+			} else if (
+				q.includes("commission") ||
+				q.includes("bordereau") ||
+				q.includes("rapprochement")
+			) {
+				reply =
+					"💶 **Rapprochement Financier** : Sur les 2 480 € de commissions du mois, 93.5% sont rapprochés automatiquement. 1 dossier April Auto nécessite un pointage d'écart de 15 €.";
 			} else {
 				reply = `Analyse terminée sur : "${text}". Tous les dossiers liés sont à jour dans le CRM. Souhaitez-vous déclencher une action ou ouvrir la fiche complète ?`;
 			}
@@ -104,19 +136,27 @@ export function CompAiChatSheet({
 				{/* Suggestions rapides en haut */}
 				<div className="p-3 border-b border-white/[0.06] bg-white/[0.02] flex items-center gap-2 overflow-x-auto text-[11px] no-scrollbar">
 					<button
-						onClick={() => handleSend("Vérifier les dossiers avec Relevé d'Information (RI) manquant")}
+						onClick={() =>
+							handleSend(
+								"Vérifier les dossiers avec Relevé d'Information (RI) manquant",
+							)
+						}
 						className="shrink-0 px-2.5 py-1 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 font-medium transition-all"
 					>
 						⚠️ Dossiers avec RI manquant
 					</button>
 					<button
-						onClick={() => handleSend("Faire un lookup SIV sur la plaque AB-123-CD")}
+						onClick={() =>
+							handleSend("Faire un lookup SIV sur la plaque AB-123-CD")
+						}
 						className="shrink-0 px-2.5 py-1 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/30 text-blue-300 font-medium transition-all"
 					>
 						🚗 Lookup SIV Peugeot 208
 					</button>
 					<button
-						onClick={() => handleSend("Quel est le total des commissions rapprochées ?")}
+						onClick={() =>
+							handleSend("Quel est le total des commissions rapprochées ?")
+						}
 						className="shrink-0 px-2.5 py-1 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 font-medium transition-all"
 					>
 						💶 Pointage Commissions
@@ -139,7 +179,9 @@ export function CompAiChatSheet({
 							>
 								{m.text}
 							</div>
-							<span className="text-[10px] text-slate-500 mt-1 px-1">{m.time}</span>
+							<span className="text-[10px] text-slate-500 mt-1 px-1">
+								{m.time}
+							</span>
 						</div>
 					))}
 				</div>

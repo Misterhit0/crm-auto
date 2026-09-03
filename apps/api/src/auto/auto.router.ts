@@ -46,7 +46,9 @@ export class AutoInsuranceRouter {
 		input: CreateVehicleInputSchema,
 		meta: restMeta("POST", "/auto/vehicles", ["Auto"]),
 	})
-	async createVehicle(@Input() input: z.infer<typeof CreateVehicleInputSchema>) {
+	async createVehicle(
+		@Input() input: z.infer<typeof CreateVehicleInputSchema>,
+	) {
 		return this.autoService.createVehicle(input);
 	}
 

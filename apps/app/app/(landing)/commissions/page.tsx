@@ -99,7 +99,8 @@ export default function CommissionsPage() {
 							Rapprochement des Bordereaux & Commissions
 						</h1>
 						<p className="text-sm text-slate-400">
-							Contrôlez les rétrocessions versées par les grossistes et détectez les anomalies en 1 clic.
+							Contrôlez les rétrocessions versées par les grossistes et détectez
+							les anomalies en 1 clic.
 						</p>
 					</div>
 				</div>
@@ -115,26 +116,38 @@ export default function CommissionsPage() {
 			{/* Cartes Synthétiques Commissions */}
 			<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 				<div className="p-5 rounded-2xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.06]">
-					<span className="text-xs text-slate-400 font-medium">Total Commissions Encaissées (Août 2026)</span>
+					<span className="text-xs text-slate-400 font-medium">
+						Total Commissions Encaissées (Août 2026)
+					</span>
 					<div className="mt-3 flex items-baseline gap-2">
 						<span className="text-3xl font-bold text-white">2 740,00 €</span>
-						<span className="text-xs text-emerald-400 font-medium">31 contrats pointés</span>
+						<span className="text-xs text-emerald-400 font-medium">
+							31 contrats pointés
+						</span>
 					</div>
 				</div>
 
 				<div className="p-5 rounded-2xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.06]">
-					<span className="text-xs text-slate-400 font-medium">Taux de Rapprochement Automatique</span>
+					<span className="text-xs text-slate-400 font-medium">
+						Taux de Rapprochement Automatique
+					</span>
 					<div className="mt-3 flex items-baseline gap-2">
 						<span className="text-3xl font-bold text-emerald-400">93.5%</span>
-						<span className="text-xs text-slate-400">29/31 lignes conformes</span>
+						<span className="text-xs text-slate-400">
+							29/31 lignes conformes
+						</span>
 					</div>
 				</div>
 
 				<div className="p-5 rounded-2xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.06]">
-					<span className="text-xs text-slate-400 font-medium">Écarts & Anomalies à Réclamer</span>
+					<span className="text-xs text-slate-400 font-medium">
+						Écarts & Anomalies à Réclamer
+					</span>
 					<div className="mt-3 flex items-baseline gap-2">
 						<span className="text-3xl font-bold text-amber-400">20,00 €</span>
-						<span className="text-xs text-amber-300 font-medium">1 dossier en écart</span>
+						<span className="text-xs text-amber-300 font-medium">
+							1 dossier en écart
+						</span>
 					</div>
 				</div>
 			</div>
@@ -153,7 +166,9 @@ export default function CommissionsPage() {
 							className="p-5 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] hover:border-white/[0.16] transition-all space-y-4"
 						>
 							<div className="flex items-center justify-between">
-								<h3 className="font-bold text-base text-white">{stmt.partner}</h3>
+								<h3 className="font-bold text-base text-white">
+									{stmt.partner}
+								</h3>
 								<span className="text-xs font-mono text-slate-400 bg-white/5 px-2 py-0.5 rounded">
 									{stmt.period}
 								</span>
@@ -162,7 +177,9 @@ export default function CommissionsPage() {
 							<div className="flex items-baseline justify-between pt-2 border-t border-white/[0.06]">
 								<div>
 									<span className="text-xs text-slate-400">Montant versé</span>
-									<p className="text-lg font-bold text-emerald-400">{stmt.total}</p>
+									<p className="text-lg font-bold text-emerald-400">
+										{stmt.total}
+									</p>
 								</div>
 								<div className="text-right">
 									<span className="text-xs text-slate-400">Lignes</span>
@@ -210,10 +227,15 @@ export default function CommissionsPage() {
 						</thead>
 						<tbody className="divide-y divide-white/[0.06]">
 							{sampleRecords.map((rec) => (
-								<tr key={rec.id} className="hover:bg-white/[0.02] transition-colors">
+								<tr
+									key={rec.id}
+									className="hover:bg-white/[0.02] transition-colors"
+								>
 									<td className="px-6 py-4">
 										<p className="font-semibold text-white">{rec.client}</p>
-										<span className="font-mono text-blue-400 text-[11px]">{rec.dossierRef}</span>
+										<span className="font-mono text-blue-400 text-[11px]">
+											{rec.dossierRef}
+										</span>
 									</td>
 									<td className="px-6 py-4 font-mono font-medium text-slate-200">
 										{rec.plate}
@@ -221,9 +243,7 @@ export default function CommissionsPage() {
 									<td className="px-6 py-4 font-medium text-slate-300">
 										{rec.partner}
 									</td>
-									<td className="px-6 py-4 text-slate-400">
-										{rec.type}
-									</td>
+									<td className="px-6 py-4 text-slate-400">{rec.type}</td>
 									<td className="px-6 py-4 font-mono text-slate-300">
 										{rec.expected}
 									</td>

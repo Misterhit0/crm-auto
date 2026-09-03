@@ -24,27 +24,41 @@ import {
 } from "lucide-react";
 import { DossierSheet, type DossierData } from "@/components/crm/dossier-sheet";
 import { MobileQuickIntake } from "@/components/auto/mobile-quick-intake";
-import { ObjectFilterBar, type FilterFacet } from "@/components/crm/object-filter-bar";
+import {
+	ObjectFilterBar,
+	type FilterFacet,
+} from "@/components/crm/object-filter-bar";
 import { DossierCrudDialog } from "@/components/crm/dossier-crud-dialog";
-import { CascadeDeleteDialog, type CascadeImpact } from "@/components/crm/cascade-delete-dialog";
+import {
+	CascadeDeleteDialog,
+	type CascadeImpact,
+} from "@/components/crm/cascade-delete-dialog";
 import { NavigationMenuSheet } from "@/components/navigation-menu-sheet";
 import { CompAiChatSheet } from "@/components/crm/compai-chat-sheet";
 
 export default function AutoDossiersPage() {
-	const [activeTab, setActiveTab] = useState<"kanban" | "siv" | "mobile">("kanban");
-	const [selectedDossier, setSelectedDossier] = useState<DossierData | null>(null);
+	const [activeTab, setActiveTab] = useState<"kanban" | "siv" | "mobile">(
+		"kanban",
+	);
+	const [selectedDossier, setSelectedDossier] = useState<DossierData | null>(
+		null,
+	);
 	const [sheetOpen, setSheetOpen] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [chatOpen, setChatOpen] = useState(false);
 	const [crudDialogOpen, setCrudDialogOpen] = useState(false);
-	const [editingDossier, setEditingDossier] = useState<DossierData | null>(null);
+	const [editingDossier, setEditingDossier] = useState<DossierData | null>(
+		null,
+	);
 	const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
 	const [deleteImpact, setDeleteImpact] = useState<CascadeImpact | null>(null);
 	const [dossierToDelete, setDossierToDelete] = useState<any>(null);
 
 	// Filtres avancés
 	const [searchQuery, setSearchQuery] = useState("");
-	const [selectedFilters, setSelectedFilters] = useState<Record<string, string[]>>({});
+	const [selectedFilters, setSelectedFilters] = useState<
+		Record<string, string[]>
+	>({});
 
 	const [sivPlate, setSivPlate] = useState("");
 	const [sivLoading, setSivLoading] = useState(false);
@@ -198,7 +212,9 @@ export default function AutoDossiersPage() {
 			}
 
 			if (selectedFilters.crm?.length) {
-				const isMalus = item.crm.includes("Malus") || parseFloat(item.crm.replace(/[^\d.]/g, "")) > 1.0;
+				const isMalus =
+					item.crm.includes("Malus") ||
+					parseFloat(item.crm.replace(/[^\d.]/g, "")) > 1.0;
 				const matchesCrm = selectedFilters.crm.some((val) => {
 					if (val === "MALUS") return isMalus;
 					if (val === "BONUS") return !isMalus;
@@ -370,7 +386,8 @@ export default function AutoDossiersPage() {
 								Assurance Automobile & Apporteur
 							</h1>
 							<p className="text-sm text-slate-400">
-								Pilotage des dossiers, qualification SIV instantanée et réconciliation de commissions.
+								Pilotage des dossiers, qualification SIV instantanée et
+								réconciliation de commissions.
 							</p>
 						</div>
 					</div>
@@ -463,8 +480,12 @@ export default function AutoDossiersPage() {
 						<FileText className="size-4 text-blue-400" />
 					</div>
 					<div className="mt-3 flex items-baseline gap-2">
-						<span className="text-3xl font-bold tracking-tight text-white">{filteredDossiers.length}</span>
-						<span className="text-xs text-slate-400">sur {customDossiers.length} dossiers</span>
+						<span className="text-3xl font-bold tracking-tight text-white">
+							{filteredDossiers.length}
+						</span>
+						<span className="text-xs text-slate-400">
+							sur {customDossiers.length} dossiers
+						</span>
 					</div>
 				</div>
 
@@ -474,8 +495,12 @@ export default function AutoDossiersPage() {
 						<DollarSign className="size-4 text-emerald-400" />
 					</div>
 					<div className="mt-3 flex items-baseline gap-2">
-						<span className="text-3xl font-bold tracking-tight text-white">2 480 €</span>
-						<span className="text-xs text-emerald-400 flex items-center font-medium">Objectif 85%</span>
+						<span className="text-3xl font-bold tracking-tight text-white">
+							2 480 €
+						</span>
+						<span className="text-xs text-emerald-400 flex items-center font-medium">
+							Objectif 85%
+						</span>
 					</div>
 				</div>
 
@@ -486,7 +511,10 @@ export default function AutoDossiersPage() {
 					</div>
 					<div className="mt-3 flex items-baseline gap-2">
 						<span className="text-3xl font-bold tracking-tight text-amber-400">
-							{filteredDossiers.filter((d) => d.missingDoc?.includes("Relevé")).length}
+							{
+								filteredDossiers.filter((d) => d.missingDoc?.includes("Relevé"))
+									.length
+							}
 						</span>
 						<span className="text-xs text-slate-400">Relance auto active</span>
 					</div>
@@ -498,8 +526,12 @@ export default function AutoDossiersPage() {
 						<Clock className="size-4 text-purple-400" />
 					</div>
 					<div className="mt-3 flex items-baseline gap-2">
-						<span className="text-3xl font-bold tracking-tight text-purple-300">8</span>
-						<span className="text-xs text-slate-400">À recontacter ce mois</span>
+						<span className="text-3xl font-bold tracking-tight text-purple-300">
+							8
+						</span>
+						<span className="text-xs text-slate-400">
+							À recontacter ce mois
+						</span>
 					</div>
 				</div>
 			</div>
@@ -524,13 +556,15 @@ export default function AutoDossiersPage() {
 							id: "DEVIS",
 							title: "Devis Soumis",
 							color: "border-purple-500/20 bg-purple-500/5",
-							badgeColor: "bg-purple-500/10 text-purple-500 border-purple-500/20",
+							badgeColor:
+								"bg-purple-500/10 text-purple-500 border-purple-500/20",
 						},
 						{
 							id: "ACTIF",
 							title: "Contrats Actifs & Cartes Vertes",
 							color: "border-emerald-500/20 bg-emerald-500/5",
-							badgeColor: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
+							badgeColor:
+								"bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
 						},
 					].map((col) => {
 						const colItems = filteredDossiers.filter((d) => d.colId === col.id);
@@ -542,8 +576,12 @@ export default function AutoDossiersPage() {
 							>
 								<div className="flex items-center justify-between px-1">
 									<div className="flex items-center gap-2">
-										<h2 className="text-sm font-semibold text-slate-200">{col.title}</h2>
-										<span className={`text-[11px] font-bold px-2 py-0.5 rounded-full border ${col.badgeColor}`}>
+										<h2 className="text-sm font-semibold text-slate-200">
+											{col.title}
+										</h2>
+										<span
+											className={`text-[11px] font-bold px-2 py-0.5 rounded-full border ${col.badgeColor}`}
+										>
 											{colItems.length}
 										</span>
 									</div>
@@ -571,10 +609,13 @@ export default function AutoDossiersPage() {
 															},
 															vehicle: {
 																plate: item.car.includes("(")
-																	? (item.car.split("(")[1]?.replace(")", "") ?? "AB-123-CD")
+																	? (item.car.split("(")[1]?.replace(")", "") ??
+																		"AB-123-CD")
 																	: "AB-123-CD",
 																brand: item.car.split(" ")[0] ?? "PEUGEOT",
-																model: item.car.split(" ").slice(1).join(" ") || "208 II",
+																model:
+																	item.car.split(" ").slice(1).join(" ") ||
+																	"208 II",
 																version: "Allure PureTech",
 																firstReg: "2021",
 																power: "5 CV",
@@ -586,7 +627,9 @@ export default function AutoDossiersPage() {
 															annualPremium: item.premium,
 															monthlyPremium: "42 €/mois",
 															commissionAmount: item.comm,
-															commissionStatus: item.comm.includes("Rapproché") ? "RECONCILED" : "PENDING",
+															commissionStatus: item.comm.includes("Rapproché")
+																? "RECONCILED"
+																: "PENDING",
 															status: col.id as any,
 															missingDoc: item.missingDoc,
 															daysWaiting: item.missingDoc ? 3 : 0,
@@ -619,10 +662,14 @@ export default function AutoDossiersPage() {
 																},
 																vehicle: {
 																	plate: item.car.includes("(")
-																		? (item.car.split("(")[1]?.replace(")", "") ?? "AB-123-CD")
+																		? (item.car
+																				.split("(")[1]
+																				?.replace(")", "") ?? "AB-123-CD")
 																		: "AB-123-CD",
 																	brand: item.car.split(" ")[0] ?? "PEUGEOT",
-																	model: item.car.split(" ").slice(1).join(" ") || "208 II",
+																	model:
+																		item.car.split(" ").slice(1).join(" ") ||
+																		"208 II",
 																	version: "Allure",
 																	firstReg: "2021",
 																	power: "5 CV",
@@ -690,10 +737,13 @@ export default function AutoDossiersPage() {
 														},
 														vehicle: {
 															plate: item.car.includes("(")
-																? (item.car.split("(")[1]?.replace(")", "") ?? "AB-123-CD")
+																? (item.car.split("(")[1]?.replace(")", "") ??
+																	"AB-123-CD")
 																: "AB-123-CD",
 															brand: item.car.split(" ")[0] ?? "PEUGEOT",
-															model: item.car.split(" ").slice(1).join(" ") || "208 II",
+															model:
+																item.car.split(" ").slice(1).join(" ") ||
+																"208 II",
 															version: "Allure PureTech",
 															firstReg: "2021",
 															power: "5 CV",
@@ -705,7 +755,9 @@ export default function AutoDossiersPage() {
 														annualPremium: item.premium,
 														monthlyPremium: "42 €/mois",
 														commissionAmount: item.comm,
-														commissionStatus: item.comm.includes("Rapproché") ? "RECONCILED" : "PENDING",
+														commissionStatus: item.comm.includes("Rapproché")
+															? "RECONCILED"
+															: "PENDING",
 														status: col.id as any,
 														missingDoc: item.missingDoc,
 														daysWaiting: item.missingDoc ? 3 : 0,
@@ -732,7 +784,9 @@ export default function AutoDossiersPage() {
 											<div className="pt-2 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-400">
 												<span>{item.crm}</span>
 												<div className="flex items-center gap-2">
-													<span className="font-semibold text-emerald-400">{item.comm}</span>
+													<span className="font-semibold text-emerald-400">
+														{item.comm}
+													</span>
 												</div>
 											</div>
 										</div>
@@ -748,9 +802,12 @@ export default function AutoDossiersPage() {
 			{activeTab === "siv" && (
 				<div className="max-w-3xl mx-auto p-8 rounded-3xl bg-white/[0.02] backdrop-blur-2xl border border-white/[0.08] shadow-2xl space-y-6">
 					<div>
-						<h2 className="text-xl font-bold text-white">Recherche SIV Immatriculation</h2>
+						<h2 className="text-xl font-bold text-white">
+							Recherche SIV Immatriculation
+						</h2>
 						<p className="text-xs text-slate-400 mt-1">
-							Interrogez la base d'immatriculation française pour pré-remplir instantanément la carte grise sans erreur.
+							Interrogez la base d'immatriculation française pour pré-remplir
+							instantanément la carte grise sans erreur.
 						</p>
 					</div>
 
@@ -782,8 +839,12 @@ export default function AutoDossiersPage() {
 										<CheckCircle2 className="size-5" />
 									</div>
 									<div>
-										<span className="text-xs text-blue-300 font-medium">Véhicule identifié</span>
-										<h3 className="text-lg font-bold text-white">{sivResult.brand} {sivResult.model}</h3>
+										<span className="text-xs text-blue-300 font-medium">
+											Véhicule identifié
+										</span>
+										<h3 className="text-lg font-bold text-white">
+											{sivResult.brand} {sivResult.model}
+										</h3>
 									</div>
 								</div>
 								<span className="px-3 py-1 font-mono font-bold text-sm rounded-lg bg-white/10 text-white border border-white/20">
@@ -794,23 +855,35 @@ export default function AutoDossiersPage() {
 							<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs">
 								<div>
 									<span className="text-slate-400">Version / Finition :</span>
-									<p className="font-medium text-slate-200 mt-0.5">{sivResult.version}</p>
+									<p className="font-medium text-slate-200 mt-0.5">
+										{sivResult.version}
+									</p>
 								</div>
 								<div>
-									<span className="text-slate-400">1ère Mise en circulation :</span>
-									<p className="font-medium text-slate-200 mt-0.5">{sivResult.firstReg}</p>
+									<span className="text-slate-400">
+										1ère Mise en circulation :
+									</span>
+									<p className="font-medium text-slate-200 mt-0.5">
+										{sivResult.firstReg}
+									</p>
 								</div>
 								<div>
 									<span className="text-slate-400">Puissance fiscale :</span>
-									<p className="font-medium text-slate-200 mt-0.5">{sivResult.power}</p>
+									<p className="font-medium text-slate-200 mt-0.5">
+										{sivResult.power}
+									</p>
 								</div>
 								<div>
 									<span className="text-slate-400">Énergie :</span>
-									<p className="font-medium text-slate-200 mt-0.5">{sivResult.fuel}</p>
+									<p className="font-medium text-slate-200 mt-0.5">
+										{sivResult.fuel}
+									</p>
 								</div>
 								<div className="col-span-2">
 									<span className="text-slate-400">Numéro de série VIN :</span>
-									<p className="font-mono text-slate-300 mt-0.5">{sivResult.vin}</p>
+									<p className="font-mono text-slate-300 mt-0.5">
+										{sivResult.vin}
+									</p>
 								</div>
 							</div>
 

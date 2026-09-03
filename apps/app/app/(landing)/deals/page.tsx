@@ -15,7 +15,10 @@ import {
 	CheckCircle2,
 } from "lucide-react";
 import { NavigationMenuSheet } from "@/components/navigation-menu-sheet";
-import { ObjectFilterBar, type FilterFacet } from "@/components/crm/object-filter-bar";
+import {
+	ObjectFilterBar,
+	type FilterFacet,
+} from "@/components/crm/object-filter-bar";
 
 type DealItem = {
 	id: string;
@@ -31,7 +34,9 @@ type DealItem = {
 export default function DealsPage() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [searchQuery, setSearchQuery] = useState("");
-	const [selectedFilters, setSelectedFilters] = useState<Record<string, string[]>>({});
+	const [selectedFilters, setSelectedFilters] = useState<
+		Record<string, string[]>
+	>({});
 
 	const [deals, setDeals] = useState<DealItem[]>([
 		{
@@ -109,10 +114,26 @@ export default function DealsPage() {
 	};
 
 	const stages = [
-		{ id: "QUALIFICATION", label: "1. Qualification", color: "border-blue-500/20 bg-blue-500/5" },
-		{ id: "DEVIS_EMIS", label: "2. Devis Émis", color: "border-purple-500/20 bg-purple-500/5" },
-		{ id: "NEGOCIATION", label: "3. Négociation", color: "border-amber-500/20 bg-amber-500/5" },
-		{ id: "GAGNE", label: "4. Gagné / Souscrit", color: "border-emerald-500/20 bg-emerald-500/5" },
+		{
+			id: "QUALIFICATION",
+			label: "1. Qualification",
+			color: "border-blue-500/20 bg-blue-500/5",
+		},
+		{
+			id: "DEVIS_EMIS",
+			label: "2. Devis Émis",
+			color: "border-purple-500/20 bg-purple-500/5",
+		},
+		{
+			id: "NEGOCIATION",
+			label: "3. Négociation",
+			color: "border-amber-500/20 bg-amber-500/5",
+		},
+		{
+			id: "GAGNE",
+			label: "4. Gagné / Souscrit",
+			color: "border-emerald-500/20 bg-emerald-500/5",
+		},
 	];
 
 	const filteredDeals = useMemo(() => {
@@ -125,10 +146,16 @@ export default function DealsPage() {
 					d.partner.toLowerCase().includes(q);
 				if (!match) return false;
 			}
-			if (selectedFilters.partner?.length && !selectedFilters.partner.includes(d.partner)) {
+			if (
+				selectedFilters.partner?.length &&
+				!selectedFilters.partner.includes(d.partner)
+			) {
 				return false;
 			}
-			if (selectedFilters.stage?.length && !selectedFilters.stage.includes(d.stage)) {
+			if (
+				selectedFilters.stage?.length &&
+				!selectedFilters.stage.includes(d.stage)
+			) {
 				return false;
 			}
 			return true;
@@ -148,7 +175,8 @@ export default function DealsPage() {
 							Opportunités & Deals Commerciaux
 						</h1>
 						<p className="text-sm text-slate-400">
-							Pipeline d'affaires, négociation des devis auto et suivi des commissions de conversion.
+							Pipeline d'affaires, négociation des devis auto et suivi des
+							commissions de conversion.
 						</p>
 					</div>
 				</div>
@@ -210,18 +238,28 @@ export default function DealsPage() {
 										className="p-4 rounded-2xl bg-slate-900/70 hover:bg-slate-900/90 backdrop-blur-md border border-white/[0.08] hover:border-indigo-500/40 transition-all duration-200 shadow-lg space-y-3"
 									>
 										<div className="flex items-center justify-between text-[11px]">
-											<span className="font-medium text-slate-400">{d.partner}</span>
-											<span className="font-bold text-emerald-400">+{d.commission}</span>
+											<span className="font-medium text-slate-400">
+												{d.partner}
+											</span>
+											<span className="font-bold text-emerald-400">
+												+{d.commission}
+											</span>
 										</div>
 
 										<div>
-											<h4 className="font-bold text-sm text-white">{d.title}</h4>
-											<p className="text-xs text-slate-300 mt-0.5">{d.clientName}</p>
+											<h4 className="font-bold text-sm text-white">
+												{d.title}
+											</h4>
+											<p className="text-xs text-slate-300 mt-0.5">
+												{d.clientName}
+											</p>
 										</div>
 
 										<div className="pt-2 border-t border-white/[0.06] flex items-center justify-between text-xs">
 											<span className="font-bold text-white">{d.value}</span>
-											<span className="text-[10px] text-slate-400">{d.date}</span>
+											<span className="text-[10px] text-slate-400">
+												{d.date}
+											</span>
 										</div>
 									</div>
 								))}

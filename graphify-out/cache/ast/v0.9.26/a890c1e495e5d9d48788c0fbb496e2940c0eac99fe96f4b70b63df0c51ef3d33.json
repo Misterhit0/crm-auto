@@ -1,1 +1,396 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "label": "people-enrichment-agent.md", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "label": "Plan \u2014 People enrichment agent (eve + LinkedIn)", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "label": "0. Phase 0 is done \u2014 what the API actually does", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L19"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_people_search_is_broken_do_not_build_on_it", "label": "People search is broken. Do not build on it.", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L25"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_does_work_and_works_well", "label": "What does work, and works well", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L37"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_the_architecture_this_forces_and_it_is_better", "label": "The architecture this forces \u2014 and it is better", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L47"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_hit_rate_is_partial_and_that_is_the_honest_headline", "label": "Hit rate is partial, and that is the honest headline", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L74"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_a_bug_this_spike_caught_in_already_shipped_code", "label": "A bug this spike caught in already-shipped code", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L89"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_1_what_this_is_actually_for", "label": "1. What this is actually for", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L98"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_exists_today_and_what_happens_to_it", "label": "What exists today, and what happens to it", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L125"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design", "label": "2. The decisions that carry the design", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L138"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_choice_table", "label": "Choice table", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L161"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_judgment_calls_worth_your_veto", "label": "Judgment calls worth your veto", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L178"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_3_where_it_lives", "label": "3. Where it lives", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L197"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_4_the_tools", "label": "4. The tools", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L240"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_5_identity_matching", "label": "5. Identity matching", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L271"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_6_writing_back_and_provenance", "label": "6. Writing back, and provenance", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L309"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_7_scheduling_and_coverage", "label": "7. Scheduling and coverage", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L349"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_8_what_this_does_not_touch", "label": "8. What this does *not* touch", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L378"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_9_the_part_to_decide_before_building", "label": "9. The part to decide before building", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L390"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_10_phases", "label": "10. Phases", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L420"}, {"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_11_open_questions", "label": "11. Open questions", "file_type": "document", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L442"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "target": "users_cogepart_documents_crm_nil_docs_agent_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L6", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "target": "users_cogepart_documents_crm_nil_agents_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L12", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "target": "users_cogepart_documents_crm_nil_docs_api_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L12", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "target": "users_cogepart_documents_crm_nil_docs_design_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L13", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md", "target": "users_cogepart_documents_crm_nil_docs_plan_gmail_calendar_plan_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L14", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L19", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_people_search_is_broken_do_not_build_on_it", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L25", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_does_work_and_works_well", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L37", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_the_architecture_this_forces_and_it_is_better", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L47", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_hit_rate_is_partial_and_that_is_the_honest_headline", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L74", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_a_bug_this_spike_caught_in_already_shipped_code", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L89", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_1_what_this_is_actually_for", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L98", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_1_what_this_is_actually_for", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_exists_today_and_what_happens_to_it", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L125", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L138", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_choice_table", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L161", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_judgment_calls_worth_your_veto", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L178", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_3_where_it_lives", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L197", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_4_the_tools", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L240", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_5_identity_matching", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L271", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_6_writing_back_and_provenance", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L309", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_7_scheduling_and_coverage", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L349", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_8_what_this_does_not_touch", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L378", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_9_the_part_to_decide_before_building", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L390", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_10_phases", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L420", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin", "target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_11_open_questions", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/plan/people-enrichment-agent.md", "source_location": "L442", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"label": "people-enrichment-agent.md",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"label": "Plan \u2014 People enrichment agent (eve + LinkedIn)",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"label": "0. Phase 0 is done \u2014 what the API actually does",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L19"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_people_search_is_broken_do_not_build_on_it",
+			"label": "People search is broken. Do not build on it.",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L25"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_does_work_and_works_well",
+			"label": "What does work, and works well",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L37"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_the_architecture_this_forces_and_it_is_better",
+			"label": "The architecture this forces \u2014 and it is better",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L47"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_hit_rate_is_partial_and_that_is_the_honest_headline",
+			"label": "Hit rate is partial, and that is the honest headline",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L74"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_a_bug_this_spike_caught_in_already_shipped_code",
+			"label": "A bug this spike caught in already-shipped code",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L89"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_1_what_this_is_actually_for",
+			"label": "1. What this is actually for",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L98"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_exists_today_and_what_happens_to_it",
+			"label": "What exists today, and what happens to it",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L125"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design",
+			"label": "2. The decisions that carry the design",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L138"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_choice_table",
+			"label": "Choice table",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L161"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_judgment_calls_worth_your_veto",
+			"label": "Judgment calls worth your veto",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L178"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_3_where_it_lives",
+			"label": "3. Where it lives",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L197"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_4_the_tools",
+			"label": "4. The tools",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L240"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_5_identity_matching",
+			"label": "5. Identity matching",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L271"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_6_writing_back_and_provenance",
+			"label": "6. Writing back, and provenance",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L309"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_7_scheduling_and_coverage",
+			"label": "7. Scheduling and coverage",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L349"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_8_what_this_does_not_touch",
+			"label": "8. What this does *not* touch",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L378"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_9_the_part_to_decide_before_building",
+			"label": "9. The part to decide before building",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L390"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_10_phases",
+			"label": "10. Phases",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L420"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_11_open_questions",
+			"label": "11. Open questions",
+			"file_type": "document",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L442"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_agent_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L6",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"target": "users_cogepart_documents_crm_nil_agents_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L12",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_api_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L12",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_design_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L13",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_md",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_gmail_calendar_plan_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L14",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L19",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_people_search_is_broken_do_not_build_on_it",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L25",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_does_work_and_works_well",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L37",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_the_architecture_this_forces_and_it_is_better",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L47",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_hit_rate_is_partial_and_that_is_the_honest_headline",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L74",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_0_phase_0_is_done_what_the_api_actually_does",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_a_bug_this_spike_caught_in_already_shipped_code",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L89",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_1_what_this_is_actually_for",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L98",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_1_what_this_is_actually_for",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_what_exists_today_and_what_happens_to_it",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L125",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L138",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_choice_table",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L161",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_2_the_decisions_that_carry_the_design",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_judgment_calls_worth_your_veto",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L178",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_3_where_it_lives",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L197",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_4_the_tools",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L240",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_5_identity_matching",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L271",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_6_writing_back_and_provenance",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L309",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_7_scheduling_and_coverage",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L349",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_8_what_this_does_not_touch",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L378",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_9_the_part_to_decide_before_building",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L390",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_10_phases",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L420",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_plan_people_enrichment_agent_eve_linkedin",
+			"target": "users_cogepart_documents_crm_nil_docs_plan_people_enrichment_agent_11_open_questions",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/plan/people-enrichment-agent.md",
+			"source_location": "L442",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

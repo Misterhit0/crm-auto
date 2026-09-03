@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_md", "label": "README.md", "file_type": "document", "source_file": "apps/agent/agent/sandbox/workspace/README.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_workspace", "label": "/workspace", "file_type": "document", "source_file": "apps/agent/agent/sandbox/workspace/README.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_md", "target": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_workspace", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/agent/agent/sandbox/workspace/README.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_md",
+			"label": "README.md",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/sandbox/workspace/README.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_workspace",
+			"label": "/workspace",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/sandbox/workspace/README.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_md",
+			"target": "users_cogepart_documents_crm_nil_apps_agent_agent_sandbox_workspace_readme_workspace",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/agent/agent/sandbox/workspace/README.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_md", "label": "postgres_docker_seed_checkpoint.md", "file_type": "document", "source_file": ".agents/memories/postgres_docker_seed_checkpoint.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_checkpoint_d\u00e9marrage_base_postgresql_seed_r\u00e9ussi", "label": "Checkpoint : D\u00e9marrage Base PostgreSQL & Seed R\u00e9ussi", "file_type": "document", "source_file": ".agents/memories/postgres_docker_seed_checkpoint.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_md", "target": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_checkpoint_d\u00e9marrage_base_postgresql_seed_r\u00e9ussi", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/memories/postgres_docker_seed_checkpoint.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_md",
+			"label": "postgres_docker_seed_checkpoint.md",
+			"file_type": "document",
+			"source_file": ".agents/memories/postgres_docker_seed_checkpoint.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_checkpoint_d\u00e9marrage_base_postgresql_seed_r\u00e9ussi",
+			"label": "Checkpoint : D\u00e9marrage Base PostgreSQL & Seed R\u00e9ussi",
+			"file_type": "document",
+			"source_file": ".agents/memories/postgres_docker_seed_checkpoint.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_md",
+			"target": "users_cogepart_documents_crm_nil_agents_memories_postgres_docker_seed_checkpoint_checkpoint_d\u00e9marrage_base_postgresql_seed_r\u00e9ussi",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/memories/postgres_docker_seed_checkpoint.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

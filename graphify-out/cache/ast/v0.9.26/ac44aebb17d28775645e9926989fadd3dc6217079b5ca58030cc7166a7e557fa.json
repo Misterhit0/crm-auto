@@ -1,1 +1,79 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_md", "label": "data-boundaries.md", "file_type": "document", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave", "label": "What you may read, and what may leave", "file_type": "document", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L5"}, {"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_you_may_read_everything", "label": "You may read everything", "file_type": "document", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L7"}, {"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_the_boundary_is_egress", "label": "The boundary is egress", "file_type": "document", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L19"}, {"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_belongs_on_a_record", "label": "What belongs on a record", "file_type": "document", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L37"}], "edges": [{"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_md", "target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L5", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave", "target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_you_may_read_everything", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L7", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave", "target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_the_boundary_is_egress", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L19", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave", "target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_belongs_on_a_record", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/agent/agent/skills/data-boundaries.md", "source_location": "L37", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_md",
+			"label": "data-boundaries.md",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave",
+			"label": "What you may read, and what may leave",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L5"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_you_may_read_everything",
+			"label": "You may read everything",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L7"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_the_boundary_is_egress",
+			"label": "The boundary is egress",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L19"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_belongs_on_a_record",
+			"label": "What belongs on a record",
+			"file_type": "document",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L37"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_md",
+			"target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L5",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave",
+			"target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_you_may_read_everything",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L7",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave",
+			"target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_the_boundary_is_egress",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L19",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_you_may_read_and_what_may_leave",
+			"target": "users_cogepart_documents_crm_nil_apps_agent_agent_skills_data_boundaries_what_belongs_on_a_record",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/agent/agent/skills/data-boundaries.md",
+			"source_location": "L37",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

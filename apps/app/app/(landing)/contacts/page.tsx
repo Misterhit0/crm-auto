@@ -16,8 +16,14 @@ import {
 	Search,
 } from "lucide-react";
 import { NavigationMenuSheet } from "@/components/navigation-menu-sheet";
-import { ObjectFilterBar, type FilterFacet } from "@/components/crm/object-filter-bar";
-import { CascadeDeleteDialog, type CascadeImpact } from "@/components/crm/cascade-delete-dialog";
+import {
+	ObjectFilterBar,
+	type FilterFacet,
+} from "@/components/crm/object-filter-bar";
+import {
+	CascadeDeleteDialog,
+	type CascadeImpact,
+} from "@/components/crm/cascade-delete-dialog";
 
 type ContactItem = {
 	id: string;
@@ -35,10 +41,14 @@ type ContactItem = {
 export default function ContactsPage() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [searchQuery, setSearchQuery] = useState("");
-	const [selectedFilters, setSelectedFilters] = useState<Record<string, string[]>>({});
+	const [selectedFilters, setSelectedFilters] = useState<
+		Record<string, string[]>
+	>({});
 	const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
 	const [deleteImpact, setDeleteImpact] = useState<CascadeImpact | null>(null);
-	const [contactToDelete, setContactToDelete] = useState<ContactItem | null>(null);
+	const [contactToDelete, setContactToDelete] = useState<ContactItem | null>(
+		null,
+	);
 
 	const [contacts, setContacts] = useState<ContactItem[]>([
 		{
@@ -134,7 +144,9 @@ export default function ContactsPage() {
 			}
 			if (selectedFilters.crm?.length) {
 				const isMalus = c.bonusMalus.includes("Malus");
-				const matchCrm = selectedFilters.crm.some((v) => (v === "MALUS" ? isMalus : !isMalus));
+				const matchCrm = selectedFilters.crm.some((v) =>
+					v === "MALUS" ? isMalus : !isMalus,
+				);
 				if (!matchCrm) return false;
 			}
 			if (selectedFilters.docs?.length) {
@@ -161,7 +173,8 @@ export default function ContactsPage() {
 							Contacts & Assurés
 						</h1>
 						<p className="text-sm text-slate-400">
-							Répertoire 360° des conducteurs, profils de bonus/malus et véhicules associés.
+							Répertoire 360° des conducteurs, profils de bonus/malus et
+							véhicules associés.
 						</p>
 					</div>
 				</div>
@@ -306,7 +319,9 @@ export default function ContactsPage() {
 				impact={deleteImpact}
 				onConfirm={() => {
 					if (contactToDelete) {
-						setContacts((prev) => prev.filter((c) => c.id !== contactToDelete.id));
+						setContacts((prev) =>
+							prev.filter((c) => c.id !== contactToDelete.id),
+						);
 						setDeleteDialogOpen(false);
 						setContactToDelete(null);
 					}

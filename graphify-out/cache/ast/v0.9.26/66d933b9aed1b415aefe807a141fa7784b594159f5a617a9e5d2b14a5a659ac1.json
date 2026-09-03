@@ -1,1 +1,255 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_docs_connections_md", "label": "connections.md", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "label": "Connections \u2014 rules for AI agents", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_the_one_rule_that_governs_everything_here", "label": "The one rule that governs everything here", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L10"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_removing_a_connection_is_an_owner_or_admin_decision", "label": "Removing a connection is an owner or admin decision", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L30"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_connecting_slack_is_refused_at_the_oauth_endpoints_not_in_the_ui", "label": "Connecting Slack is refused at the OAuth endpoints, not in the UI", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L43"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_direction_is_the_organising_idea", "label": "Direction is the organising idea", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L63"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_destinations_derived_or_chosen", "label": "Destinations: derived or chosen", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L72"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_slack_needs_two_grants_not_one", "label": "Slack needs two grants, not one", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L89"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_permissions_are_shown_in_groups_not_one_line_each", "label": "Permissions are shown in groups, not one line each", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L123"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_identity_matching_is_connection_level", "label": "Identity matching is connection-level", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L134"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_the_questionnaire", "label": "The Questionnaire", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L143"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_failure_is_on_the_surface", "label": "Failure is on the surface", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L166"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_irreversible_things_are_bounded_in_writing", "label": "Irreversible things are bounded in writing", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L174"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_layout", "label": "Layout", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L181"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_cards_versus_flat", "label": "Cards versus flat", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L205"}, {"id": "users_cogepart_documents_crm_nil_docs_connections_brand_marks", "label": "Brand marks", "file_type": "document", "source_file": "docs/connections.md", "source_location": "L217"}], "edges": [{"source": "users_cogepart_documents_crm_nil_docs_connections_md", "target": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_the_one_rule_that_governs_everything_here", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L10", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_removing_a_connection_is_an_owner_or_admin_decision", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L30", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_connecting_slack_is_refused_at_the_oauth_endpoints_not_in_the_ui", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L43", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_direction_is_the_organising_idea", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L63", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_destinations_derived_or_chosen", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L72", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_slack_needs_two_grants_not_one", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L89", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_permissions_are_shown_in_groups_not_one_line_each", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L123", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_identity_matching_is_connection_level", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L134", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_the_questionnaire", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L143", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_failure_is_on_the_surface", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L166", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_irreversible_things_are_bounded_in_writing", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L174", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_layout", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L181", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_cards_versus_flat", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L205", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents", "target": "users_cogepart_documents_crm_nil_docs_connections_brand_marks", "relation": "contains", "confidence": "EXTRACTED", "source_file": "docs/connections.md", "source_location": "L217", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_md",
+			"label": "connections.md",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"label": "Connections \u2014 rules for AI agents",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_the_one_rule_that_governs_everything_here",
+			"label": "The one rule that governs everything here",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L10"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_removing_a_connection_is_an_owner_or_admin_decision",
+			"label": "Removing a connection is an owner or admin decision",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L30"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_connecting_slack_is_refused_at_the_oauth_endpoints_not_in_the_ui",
+			"label": "Connecting Slack is refused at the OAuth endpoints, not in the UI",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L43"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_direction_is_the_organising_idea",
+			"label": "Direction is the organising idea",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L63"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_destinations_derived_or_chosen",
+			"label": "Destinations: derived or chosen",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L72"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_slack_needs_two_grants_not_one",
+			"label": "Slack needs two grants, not one",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L89"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_permissions_are_shown_in_groups_not_one_line_each",
+			"label": "Permissions are shown in groups, not one line each",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L123"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_identity_matching_is_connection_level",
+			"label": "Identity matching is connection-level",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L134"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_the_questionnaire",
+			"label": "The Questionnaire",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L143"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_failure_is_on_the_surface",
+			"label": "Failure is on the surface",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L166"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_irreversible_things_are_bounded_in_writing",
+			"label": "Irreversible things are bounded in writing",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L174"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_layout",
+			"label": "Layout",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L181"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_cards_versus_flat",
+			"label": "Cards versus flat",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L205"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_docs_connections_brand_marks",
+			"label": "Brand marks",
+			"file_type": "document",
+			"source_file": "docs/connections.md",
+			"source_location": "L217"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_md",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_the_one_rule_that_governs_everything_here",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L10",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_removing_a_connection_is_an_owner_or_admin_decision",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L30",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_connecting_slack_is_refused_at_the_oauth_endpoints_not_in_the_ui",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L43",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_direction_is_the_organising_idea",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L63",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_destinations_derived_or_chosen",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L72",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_slack_needs_two_grants_not_one",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L89",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_permissions_are_shown_in_groups_not_one_line_each",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L123",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_identity_matching_is_connection_level",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L134",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_the_questionnaire",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L143",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_failure_is_on_the_surface",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L166",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_irreversible_things_are_bounded_in_writing",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L174",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_layout",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L181",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_cards_versus_flat",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L205",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_docs_connections_connections_rules_for_ai_agents",
+			"target": "users_cogepart_documents_crm_nil_docs_connections_brand_marks",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "docs/connections.md",
+			"source_location": "L217",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

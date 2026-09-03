@@ -1,1 +1,711 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_knip_json", "label": "knip.json", "file_type": "code", "source_file": "knip.json", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_knip_schema", "label": "$schema", "file_type": "code", "source_file": "knip.json", "source_location": "L2"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces", "label": "workspaces", "file_type": "code", "source_file": "knip.json", "source_location": "L3"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api", "label": "apps/api", "file_type": "code", "source_file": "knip.json", "source_location": "L7"}, {"id": "users_cogepart_documents_crm_nil_knip_apps_api_entry", "label": "entry", "file_type": "code", "source_file": "knip.json", "source_location": "L8"}, {"id": "ref_api_index_ts", "label": "api/index.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L8"}, {"id": "ref_scripts_ts", "label": "scripts/*.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L8"}, {"id": "ref_test_spec_ts", "label": "test/**/*.spec.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L8"}, {"id": "users_cogepart_documents_crm_nil_knip_apps_api_project", "label": "project", "file_type": "code", "source_file": "knip.json", "source_location": "L9"}, {"id": "ref_src_ts", "label": "src/**/*.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L9"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent", "label": "apps/agent", "file_type": "code", "source_file": "knip.json", "source_location": "L11"}, {"id": "users_cogepart_documents_crm_nil_knip_apps_agent_entry", "label": "entry", "file_type": "code", "source_file": "knip.json", "source_location": "L12"}, {"id": "ref_agent_ts", "label": "agent/**/*.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L12"}, {"id": "ref_evals_eval_ts", "label": "evals/**/*.eval.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L12"}, {"id": "users_cogepart_documents_crm_nil_knip_apps_agent_project", "label": "project", "file_type": "code", "source_file": "knip.json", "source_location": "L18"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app", "label": "apps/app", "file_type": "code", "source_file": "knip.json", "source_location": "L20"}, {"id": "users_cogepart_documents_crm_nil_knip_apps_app_entry", "label": "entry", "file_type": "code", "source_file": "knip.json", "source_location": "L21"}, {"id": "ref_app_page_layout_route_error_not_found_loading_template_default_ts_tsx", "label": "app/**/{page,layout,route,error,not-found,loading,template,default}.{ts,tsx}", "file_type": "concept", "source_file": "knip.json", "source_location": "L21"}, {"id": "ref_test_spec_ts_tsx", "label": "test/**/*.spec.{ts,tsx}", "file_type": "concept", "source_file": "knip.json", "source_location": "L21"}, {"id": "users_cogepart_documents_crm_nil_knip_apps_app_project", "label": "project", "file_type": "code", "source_file": "knip.json", "source_location": "L25"}, {"id": "ref_ts_tsx", "label": "**/*.{ts,tsx}", "file_type": "concept", "source_file": "knip.json", "source_location": "L25"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces_packages", "label": "packages/*", "file_type": "code", "source_file": "knip.json", "source_location": "L27"}, {"id": "users_cogepart_documents_crm_nil_knip_packages_entry", "label": "entry", "file_type": "code", "source_file": "knip.json", "source_location": "L28"}, {"id": "users_cogepart_documents_crm_nil_knip_packages_project", "label": "project", "file_type": "code", "source_file": "knip.json", "source_location": "L29"}, {"id": "ref_src_ts_tsx", "label": "src/**/*.{ts,tsx}", "file_type": "concept", "source_file": "knip.json", "source_location": "L29"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db", "label": "packages/db", "file_type": "code", "source_file": "knip.json", "source_location": "L31"}, {"id": "users_cogepart_documents_crm_nil_knip_packages_db_entry", "label": "entry", "file_type": "code", "source_file": "knip.json", "source_location": "L32"}, {"id": "users_cogepart_documents_crm_nil_knip_packages_db_project", "label": "project", "file_type": "code", "source_file": "knip.json", "source_location": "L33"}, {"id": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui", "label": "packages/ui", "file_type": "code", "source_file": "knip.json", "source_location": "L35"}, {"id": "users_cogepart_documents_crm_nil_knip_packages_ui_entry", "label": "entry", "file_type": "code", "source_file": "knip.json", "source_location": "L36"}, {"id": "ref_src_components_tsx", "label": "src/components/**/*.tsx", "file_type": "concept", "source_file": "knip.json", "source_location": "L36"}, {"id": "ref_src_lib_ts", "label": "src/lib/*.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L36"}, {"id": "ref_src_hooks_ts", "label": "src/hooks/*.ts", "file_type": "concept", "source_file": "knip.json", "source_location": "L36"}, {"id": "users_cogepart_documents_crm_nil_knip_packages_ui_project", "label": "project", "file_type": "code", "source_file": "knip.json", "source_location": "L37"}, {"id": "users_cogepart_documents_crm_nil_knip_ignore", "label": "ignore", "file_type": "code", "source_file": "knip.json", "source_location": "L40"}, {"id": "ref_eve", "label": "**/.eve/**", "file_type": "concept", "source_file": "knip.json", "source_location": "L40"}, {"id": "ref_scratch", "label": "**/.scratch/**", "file_type": "concept", "source_file": "knip.json", "source_location": "L40"}, {"id": "ref_generated", "label": "**/generated/**", "file_type": "concept", "source_file": "knip.json", "source_location": "L40"}], "edges": [{"source": "users_cogepart_documents_crm_nil_knip_json", "target": "users_cogepart_documents_crm_nil_knip_schema", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L2", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_json", "target": "users_cogepart_documents_crm_nil_knip_workspaces", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L3", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces", "target": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L7", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api", "target": "users_cogepart_documents_crm_nil_knip_apps_api_entry", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L8", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_apps_api_entry", "target": "ref_api_index_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_api_entry", "target": "ref_scripts_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_api_entry", "target": "ref_test_spec_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api", "target": "users_cogepart_documents_crm_nil_knip_apps_api_project", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L9", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_apps_api_project", "target": "ref_src_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L9", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_api_project", "target": "ref_scripts_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L9", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces", "target": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L11", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent", "target": "users_cogepart_documents_crm_nil_knip_apps_agent_entry", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L12", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry", "target": "ref_agent_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L12", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry", "target": "ref_scripts_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L12", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry", "target": "ref_evals_eval_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L12", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry", "target": "ref_test_spec_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L12", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent", "target": "users_cogepart_documents_crm_nil_knip_apps_agent_project", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L18", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_apps_agent_project", "target": "ref_agent_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L18", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_agent_project", "target": "ref_scripts_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L18", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces", "target": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L20", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app", "target": "users_cogepart_documents_crm_nil_knip_apps_app_entry", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L21", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_apps_app_entry", "target": "ref_app_page_layout_route_error_not_found_loading_template_default_ts_tsx", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_apps_app_entry", "target": "ref_test_spec_ts_tsx", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L21", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app", "target": "users_cogepart_documents_crm_nil_knip_apps_app_project", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L25", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_apps_app_project", "target": "ref_ts_tsx", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L25", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces", "target": "users_cogepart_documents_crm_nil_knip_workspaces_packages", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L27", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages", "target": "users_cogepart_documents_crm_nil_knip_packages_entry", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L28", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_packages_entry", "target": "ref_src_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L28", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages", "target": "users_cogepart_documents_crm_nil_knip_packages_project", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L29", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_packages_project", "target": "ref_src_ts_tsx", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L29", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces", "target": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L31", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db", "target": "users_cogepart_documents_crm_nil_knip_packages_db_entry", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L32", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_packages_db_entry", "target": "ref_src_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L32", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db", "target": "users_cogepart_documents_crm_nil_knip_packages_db_project", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L33", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_packages_db_project", "target": "ref_src_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L33", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces", "target": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L35", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui", "target": "users_cogepart_documents_crm_nil_knip_packages_ui_entry", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L36", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_packages_ui_entry", "target": "ref_src_components_tsx", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L36", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_packages_ui_entry", "target": "ref_src_lib_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L36", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_packages_ui_entry", "target": "ref_src_hooks_ts", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L36", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui", "target": "users_cogepart_documents_crm_nil_knip_packages_ui_project", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L37", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_packages_ui_project", "target": "ref_src_ts_tsx", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L37", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_json", "target": "users_cogepart_documents_crm_nil_knip_ignore", "relation": "contains", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L40", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_knip_ignore", "target": "ref_eve", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L40", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_ignore", "target": "ref_scratch", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L40", "weight": 1.0, "context": "import"}, {"source": "users_cogepart_documents_crm_nil_knip_ignore", "target": "ref_generated", "relation": "extends", "confidence": "EXTRACTED", "source_file": "knip.json", "source_location": "L40", "weight": 1.0, "context": "import"}]}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_json",
+			"label": "knip.json",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_schema",
+			"label": "$schema",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L2"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"label": "workspaces",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L3"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api",
+			"label": "apps/api",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L7"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_apps_api_entry",
+			"label": "entry",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_api_index_ts",
+			"label": "api/index.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_scripts_ts",
+			"label": "scripts/*.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "ref_test_spec_ts",
+			"label": "test/**/*.spec.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L8"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_apps_api_project",
+			"label": "project",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L9"
+		},
+		{
+			"id": "ref_src_ts",
+			"label": "src/**/*.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L9"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent",
+			"label": "apps/agent",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L11"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_apps_agent_entry",
+			"label": "entry",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L12"
+		},
+		{
+			"id": "ref_agent_ts",
+			"label": "agent/**/*.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L12"
+		},
+		{
+			"id": "ref_evals_eval_ts",
+			"label": "evals/**/*.eval.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L12"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_apps_agent_project",
+			"label": "project",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L18"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app",
+			"label": "apps/app",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L20"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_apps_app_entry",
+			"label": "entry",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_app_page_layout_route_error_not_found_loading_template_default_ts_tsx",
+			"label": "app/**/{page,layout,route,error,not-found,loading,template,default}.{ts,tsx}",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "ref_test_spec_ts_tsx",
+			"label": "test/**/*.spec.{ts,tsx}",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L21"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_apps_app_project",
+			"label": "project",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L25"
+		},
+		{
+			"id": "ref_ts_tsx",
+			"label": "**/*.{ts,tsx}",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L25"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces_packages",
+			"label": "packages/*",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L27"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_packages_entry",
+			"label": "entry",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L28"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_packages_project",
+			"label": "project",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L29"
+		},
+		{
+			"id": "ref_src_ts_tsx",
+			"label": "src/**/*.{ts,tsx}",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L29"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db",
+			"label": "packages/db",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L31"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_packages_db_entry",
+			"label": "entry",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L32"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_packages_db_project",
+			"label": "project",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L33"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui",
+			"label": "packages/ui",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L35"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_packages_ui_entry",
+			"label": "entry",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L36"
+		},
+		{
+			"id": "ref_src_components_tsx",
+			"label": "src/components/**/*.tsx",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L36"
+		},
+		{
+			"id": "ref_src_lib_ts",
+			"label": "src/lib/*.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L36"
+		},
+		{
+			"id": "ref_src_hooks_ts",
+			"label": "src/hooks/*.ts",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L36"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_packages_ui_project",
+			"label": "project",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L37"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_knip_ignore",
+			"label": "ignore",
+			"file_type": "code",
+			"source_file": "knip.json",
+			"source_location": "L40"
+		},
+		{
+			"id": "ref_eve",
+			"label": "**/.eve/**",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L40"
+		},
+		{
+			"id": "ref_scratch",
+			"label": "**/.scratch/**",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L40"
+		},
+		{
+			"id": "ref_generated",
+			"label": "**/generated/**",
+			"file_type": "concept",
+			"source_file": "knip.json",
+			"source_location": "L40"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_json",
+			"target": "users_cogepart_documents_crm_nil_knip_schema",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L2",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_json",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L3",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L7",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api",
+			"target": "users_cogepart_documents_crm_nil_knip_apps_api_entry",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L8",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_api_entry",
+			"target": "ref_api_index_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_api_entry",
+			"target": "ref_scripts_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_api_entry",
+			"target": "ref_test_spec_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L8",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_api",
+			"target": "users_cogepart_documents_crm_nil_knip_apps_api_project",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L9",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_api_project",
+			"target": "ref_src_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L9",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_api_project",
+			"target": "ref_scripts_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L9",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L11",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_knip_apps_agent_entry",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L12",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry",
+			"target": "ref_agent_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L12",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry",
+			"target": "ref_scripts_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L12",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry",
+			"target": "ref_evals_eval_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L12",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_agent_entry",
+			"target": "ref_test_spec_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L12",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_agent",
+			"target": "users_cogepart_documents_crm_nil_knip_apps_agent_project",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L18",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_agent_project",
+			"target": "ref_agent_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L18",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_agent_project",
+			"target": "ref_scripts_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L18",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L20",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app",
+			"target": "users_cogepart_documents_crm_nil_knip_apps_app_entry",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L21",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_app_entry",
+			"target": "ref_app_page_layout_route_error_not_found_loading_template_default_ts_tsx",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_app_entry",
+			"target": "ref_test_spec_ts_tsx",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L21",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_apps_app",
+			"target": "users_cogepart_documents_crm_nil_knip_apps_app_project",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L25",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_apps_app_project",
+			"target": "ref_ts_tsx",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L25",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces_packages",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L27",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages",
+			"target": "users_cogepart_documents_crm_nil_knip_packages_entry",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L28",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_entry",
+			"target": "ref_src_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L28",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages",
+			"target": "users_cogepart_documents_crm_nil_knip_packages_project",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L29",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_project",
+			"target": "ref_src_ts_tsx",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L29",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L31",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db",
+			"target": "users_cogepart_documents_crm_nil_knip_packages_db_entry",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L32",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_db_entry",
+			"target": "ref_src_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L32",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_db",
+			"target": "users_cogepart_documents_crm_nil_knip_packages_db_project",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L33",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_db_project",
+			"target": "ref_src_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L33",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces",
+			"target": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L35",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui",
+			"target": "users_cogepart_documents_crm_nil_knip_packages_ui_entry",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L36",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_ui_entry",
+			"target": "ref_src_components_tsx",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L36",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_ui_entry",
+			"target": "ref_src_lib_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L36",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_ui_entry",
+			"target": "ref_src_hooks_ts",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L36",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_workspaces_packages_ui",
+			"target": "users_cogepart_documents_crm_nil_knip_packages_ui_project",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L37",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_packages_ui_project",
+			"target": "ref_src_ts_tsx",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L37",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_json",
+			"target": "users_cogepart_documents_crm_nil_knip_ignore",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L40",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_ignore",
+			"target": "ref_eve",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L40",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_ignore",
+			"target": "ref_scratch",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L40",
+			"weight": 1.0,
+			"context": "import"
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_knip_ignore",
+			"target": "ref_generated",
+			"relation": "extends",
+			"confidence": "EXTRACTED",
+			"source_file": "knip.json",
+			"source_location": "L40",
+			"weight": 1.0,
+			"context": "import"
+		}
+	]
+}

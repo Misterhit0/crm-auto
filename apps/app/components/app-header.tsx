@@ -65,7 +65,10 @@ export function AppHeader({ user }: { user: User }) {
 					>
 						<Logo className="size-5" />
 					</Link>
-					<Separator orientation="vertical" className="mx-1 h-5 bg-transparent" />
+					<Separator
+						orientation="vertical"
+						className="mx-1 h-5 bg-transparent"
+					/>
 					<span className="min-w-0 truncate font-medium text-sm">{label}</span>
 
 					<Button

@@ -17,8 +17,14 @@ import {
 	TrendingUp,
 } from "lucide-react";
 import { NavigationMenuSheet } from "@/components/navigation-menu-sheet";
-import { ObjectFilterBar, type FilterFacet } from "@/components/crm/object-filter-bar";
-import { CascadeDeleteDialog, type CascadeImpact } from "@/components/crm/cascade-delete-dialog";
+import {
+	ObjectFilterBar,
+	type FilterFacet,
+} from "@/components/crm/object-filter-bar";
+import {
+	CascadeDeleteDialog,
+	type CascadeImpact,
+} from "@/components/crm/cascade-delete-dialog";
 
 type CompanyItem = {
 	id: string;
@@ -35,10 +41,14 @@ type CompanyItem = {
 export default function CompaniesPage() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [searchQuery, setSearchQuery] = useState("");
-	const [selectedFilters, setSelectedFilters] = useState<Record<string, string[]>>({});
+	const [selectedFilters, setSelectedFilters] = useState<
+		Record<string, string[]>
+	>({});
 	const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
 	const [deleteImpact, setDeleteImpact] = useState<CascadeImpact | null>(null);
-	const [companyToDelete, setCompanyToDelete] = useState<CompanyItem | null>(null);
+	const [companyToDelete, setCompanyToDelete] = useState<CompanyItem | null>(
+		null,
+	);
 
 	const [companies, setCompanies] = useState<CompanyItem[]>([
 		{
@@ -128,10 +138,16 @@ export default function CompaniesPage() {
 					c.contactName.toLowerCase().includes(q);
 				if (!match) return false;
 			}
-			if (selectedFilters.type?.length && !selectedFilters.type.includes(c.type)) {
+			if (
+				selectedFilters.type?.length &&
+				!selectedFilters.type.includes(c.type)
+			) {
 				return false;
 			}
-			if (selectedFilters.status?.length && !selectedFilters.status.includes(c.status)) {
+			if (
+				selectedFilters.status?.length &&
+				!selectedFilters.status.includes(c.status)
+			) {
 				return false;
 			}
 			return true;
@@ -151,7 +167,8 @@ export default function CompaniesPage() {
 							Entreprises & Garages Apporteurs
 						</h1>
 						<p className="text-sm text-slate-400">
-							Réseau d'apporteurs d'affaires, concessions partenaires et gestion des flottes professionnelles.
+							Réseau d'apporteurs d'affaires, concessions partenaires et gestion
+							des flottes professionnelles.
 						</p>
 					</div>
 				</div>
@@ -201,7 +218,9 @@ export default function CompaniesPage() {
 										<Building2 className="size-5" />
 									</div>
 									<div>
-										<h3 className="text-sm font-bold text-white">{comp.name}</h3>
+										<h3 className="text-sm font-bold text-white">
+											{comp.name}
+										</h3>
 										<span className="text-[10px] text-slate-400 font-mono">
 											SIREN : {comp.siren}
 										</span>
@@ -226,19 +245,28 @@ export default function CompaniesPage() {
 								</p>
 								<p className="flex items-center gap-2 text-slate-400">
 									<Users className="size-3.5 text-slate-500" />
-									Référent : <strong className="text-white">{comp.contactName}</strong>
+									Référent :{" "}
+									<strong className="text-white">{comp.contactName}</strong>
 								</p>
 							</div>
 						</div>
 
 						<div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs">
 							<div>
-								<span className="text-slate-400 text-[11px]">Dossiers actifs</span>
-								<p className="font-bold text-white mt-0.5">{comp.activeDossiers} dossiers</p>
+								<span className="text-slate-400 text-[11px]">
+									Dossiers actifs
+								</span>
+								<p className="font-bold text-white mt-0.5">
+									{comp.activeDossiers} dossiers
+								</p>
 							</div>
 							<div className="text-right">
-								<span className="text-slate-400 text-[11px]">Commissions générées</span>
-								<p className="font-bold text-emerald-400 mt-0.5">{comp.totalRevenue}</p>
+								<span className="text-slate-400 text-[11px]">
+									Commissions générées
+								</span>
+								<p className="font-bold text-emerald-400 mt-0.5">
+									{comp.totalRevenue}
+								</p>
 							</div>
 
 							<div className="flex items-center gap-1">
@@ -282,7 +310,9 @@ export default function CompaniesPage() {
 				impact={deleteImpact}
 				onConfirm={() => {
 					if (companyToDelete) {
-						setCompanies((prev) => prev.filter((c) => c.id !== companyToDelete.id));
+						setCompanies((prev) =>
+							prev.filter((c) => c.id !== companyToDelete.id),
+						);
 						setDeleteDialogOpen(false);
 						setCompanyToDelete(null);
 					}

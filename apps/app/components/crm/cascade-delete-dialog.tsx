@@ -53,7 +53,9 @@ export function CascadeDeleteDialog({
 						Supprimer {impact.name} ?
 					</AlertDialogTitle>
 					<AlertDialogDescription className="text-xs text-slate-300 leading-relaxed">
-						Cette action est irréversible. En raison de la hiérarchie relationnelle de la base de données, la suppression entraînera les répercussions suivantes en cascade :
+						Cette action est irréversible. En raison de la hiérarchie
+						relationnelle de la base de données, la suppression entraînera les
+						répercussions suivantes en cascade :
 					</AlertDialogDescription>
 				</AlertDialogHeader>
 
@@ -96,7 +98,8 @@ export function CascadeDeleteDialog({
 					<div className="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs flex items-center gap-2 mb-2">
 						<ShieldAlert className="size-4 shrink-0" />
 						<span>
-							Suppression impossible : un contrat actif est actuellement en cours sur cet objet.
+							Suppression impossible : un contrat actif est actuellement en
+							cours sur cet objet.
 						</span>
 					</div>
 				)}
@@ -113,7 +116,9 @@ export function CascadeDeleteDialog({
 						onClick={onConfirm}
 						className="rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold shadow-lg shadow-rose-600/30 transition-all active:scale-95 disabled:opacity-40"
 					>
-						{isDeleting ? "Suppression en cours..." : "Confirmer la suppression en cascade"}
+						{isDeleting
+							? "Suppression en cours..."
+							: "Confirmer la suppression en cascade"}
 					</AlertDialogAction>
 				</AlertDialogFooter>
 			</AlertDialogContent>

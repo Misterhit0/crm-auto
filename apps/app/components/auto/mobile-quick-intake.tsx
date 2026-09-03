@@ -77,12 +77,18 @@ export function MobileQuickIntake({
 				<div className="size-14 mx-auto rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-500/20">
 					<CheckCircle2 className="size-8" />
 				</div>
-				<h3 className="text-xl font-bold text-white">Dossier Créé avec Succès !</h3>
+				<h3 className="text-xl font-bold text-white">
+					Dossier Créé avec Succès !
+				</h3>
 				<p className="text-xs text-slate-300">
-					Référence : <span className="font-mono font-bold text-emerald-400">DOS-2026-0042</span>
+					Référence :{" "}
+					<span className="font-mono font-bold text-emerald-400">
+						DOS-2026-0042
+					</span>
 				</p>
 				<p className="text-xs text-slate-400">
-					La demande a été ajoutée au Pipeline et les relances documentaires automatiques sont activées.
+					La demande a été ajoutée au Pipeline et les relances documentaires
+					automatiques sont activées.
 				</p>
 				<button
 					onClick={() => {
@@ -108,8 +114,12 @@ export function MobileQuickIntake({
 						<Car className="size-5" />
 					</div>
 					<div>
-						<h3 className="text-base font-bold text-white">Saisie Express Terrain</h3>
-						<p className="text-[11px] text-slate-400">Plaque SIV & Scan pièces en 30s</p>
+						<h3 className="text-base font-bold text-white">
+							Saisie Express Terrain
+						</h3>
+						<p className="text-[11px] text-slate-400">
+							Plaque SIV & Scan pièces en 30s
+						</p>
 					</div>
 				</div>
 				<span className="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-bold">
@@ -119,7 +129,9 @@ export function MobileQuickIntake({
 
 			{/* Étape 1 : Plaque d'immatriculation */}
 			<form onSubmit={handlePlateSearch} className="space-y-2">
-				<label className="text-xs font-semibold text-slate-300">1. Plaque d'immatriculation</label>
+				<label className="text-xs font-semibold text-slate-300">
+					1. Plaque d'immatriculation
+				</label>
 				<div className="flex gap-2">
 					<input
 						type="text"
@@ -145,15 +157,21 @@ export function MobileQuickIntake({
 						<span className="font-bold text-white">
 							{vehicleData.brand} {vehicleData.model}
 						</span>
-						<span className="text-[10px] text-blue-300 font-semibold">{vehicleData.power}</span>
+						<span className="text-[10px] text-blue-300 font-semibold">
+							{vehicleData.power}
+						</span>
 					</div>
-					<p className="text-[11px] text-slate-400 font-mono">VIN : {vehicleData.vin}</p>
+					<p className="text-[11px] text-slate-400 font-mono">
+						VIN : {vehicleData.vin}
+					</p>
 				</div>
 			)}
 
 			{/* Étape 2 : Coordonnées Client & Bonus */}
 			<div className="space-y-3 pt-1">
-				<label className="text-xs font-semibold text-slate-300">2. Assuré & Coefficient</label>
+				<label className="text-xs font-semibold text-slate-300">
+					2. Assuré & Coefficient
+				</label>
 				<div className="space-y-2">
 					<input
 						type="text"
@@ -189,7 +207,9 @@ export function MobileQuickIntake({
 
 			{/* Étape 3 : Prise de vue Photo Directe (Permis / RI) */}
 			<div className="space-y-2 pt-1">
-				<label className="text-xs font-semibold text-slate-300">3. Photos des pièces (Optionnel)</label>
+				<label className="text-xs font-semibold text-slate-300">
+					3. Photos des pièces (Optionnel)
+				</label>
 				<div className="grid grid-cols-2 gap-2">
 					<button
 						type="button"

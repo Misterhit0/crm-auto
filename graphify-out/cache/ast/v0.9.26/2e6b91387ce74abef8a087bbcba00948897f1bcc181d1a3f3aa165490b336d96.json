@@ -1,1 +1,120 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_apps_api_readme_md", "label": "README.md", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_apps_api_readme_api", "label": "`api`", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_apps_api_readme_running_it", "label": "Running it", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L5"}, {"id": "users_cogepart_documents_crm_nil_apps_api_readme_routes", "label": "Routes", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L32"}, {"id": "users_cogepart_documents_crm_nil_apps_api_readme_how_auth_is_wired", "label": "How auth is wired", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L42"}, {"id": "users_cogepart_documents_crm_nil_apps_api_readme_caching", "label": "Caching", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L71"}, {"id": "users_cogepart_documents_crm_nil_apps_api_readme_notes", "label": "Notes", "file_type": "document", "source_file": "apps/api/README.md", "source_location": "L80"}], "edges": [{"source": "users_cogepart_documents_crm_nil_apps_api_readme_md", "target": "users_cogepart_documents_crm_nil_apps_api_readme_api", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L1", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_readme_api", "target": "users_cogepart_documents_crm_nil_apps_api_readme_running_it", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L5", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_readme_md", "target": "users_cogepart_documents_crm_nil_docs_environment_md", "relation": "references", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L25", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_readme_api", "target": "users_cogepart_documents_crm_nil_apps_api_readme_routes", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L32", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_readme_api", "target": "users_cogepart_documents_crm_nil_apps_api_readme_how_auth_is_wired", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L42", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_readme_api", "target": "users_cogepart_documents_crm_nil_apps_api_readme_caching", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L71", "weight": 1.0}, {"source": "users_cogepart_documents_crm_nil_apps_api_readme_api", "target": "users_cogepart_documents_crm_nil_apps_api_readme_notes", "relation": "contains", "confidence": "EXTRACTED", "source_file": "apps/api/README.md", "source_location": "L80", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_md",
+			"label": "README.md",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"label": "`api`",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_running_it",
+			"label": "Running it",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L5"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_routes",
+			"label": "Routes",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L32"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_how_auth_is_wired",
+			"label": "How auth is wired",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L42"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_caching",
+			"label": "Caching",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L71"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_apps_api_readme_notes",
+			"label": "Notes",
+			"file_type": "document",
+			"source_file": "apps/api/README.md",
+			"source_location": "L80"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_md",
+			"target": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L1",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"target": "users_cogepart_documents_crm_nil_apps_api_readme_running_it",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L5",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_md",
+			"target": "users_cogepart_documents_crm_nil_docs_environment_md",
+			"relation": "references",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L25",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"target": "users_cogepart_documents_crm_nil_apps_api_readme_routes",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L32",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"target": "users_cogepart_documents_crm_nil_apps_api_readme_how_auth_is_wired",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L42",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"target": "users_cogepart_documents_crm_nil_apps_api_readme_caching",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L71",
+			"weight": 1.0
+		},
+		{
+			"source": "users_cogepart_documents_crm_nil_apps_api_readme_api",
+			"target": "users_cogepart_documents_crm_nil_apps_api_readme_notes",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": "apps/api/README.md",
+			"source_location": "L80",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}

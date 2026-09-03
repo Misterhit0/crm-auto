@@ -40,7 +40,8 @@ export default function AgentsBuilderPage() {
 			name: "Agent Relance Documentaire (Priorité A.1)",
 			category: "DOCUMENTAIRE",
 			status: "ACTIVE",
-			description: "Détecte automatiquement les Relevés d'Information (RI) et pièces d'identité manquants à J+3 et déclenche les relances SMS + email avec lien sécurisé smartphone.",
+			description:
+				"Détecte automatiquement les Relevés d'Information (RI) et pièces d'identité manquants à J+3 et déclenche les relances SMS + email avec lien sécurisé smartphone.",
 			trigger: "Quotidien à 08:30 + Événement nouveau dossier",
 			executionsCount: 342,
 			lastRun: "Il y a 14 min",
@@ -51,7 +52,8 @@ export default function AgentsBuilderPage() {
 			name: "Agent Qualification SIV & Carte Grise",
 			category: "SIV",
 			status: "ACTIVE",
-			description: "Interroge la base d'immatriculation nationale pour récupérer instantanément marque, modèle, puissance fiscale, VIN et date de mise en circulation sans saisie manuelle.",
+			description:
+				"Interroge la base d'immatriculation nationale pour récupérer instantanément marque, modèle, puissance fiscale, VIN et date de mise en circulation sans saisie manuelle.",
 			trigger: "À la frappe de la plaque (Web & Mobile)",
 			executionsCount: 890,
 			lastRun: "Il y a 2 min",
@@ -62,7 +64,8 @@ export default function AgentsBuilderPage() {
 			name: "Agent Rapprochement Bordereaux Grossistes",
 			category: "COMMISSIONS",
 			status: "ACTIVE",
-			description: "Compare ligne à ligne les fichiers de versements April, Maxance, Solly Azar avec les contrats enregistrés pour valider le virement ou pointer l'anomalie de commission.",
+			description:
+				"Compare ligne à ligne les fichiers de versements April, Maxance, Solly Azar avec les contrats enregistrés pour valider le virement ou pointer l'anomalie de commission.",
 			trigger: "Import CSV / Excel ou API Grossiste",
 			executionsCount: 156,
 			lastRun: "Il y a 1 heure",
@@ -73,7 +76,8 @@ export default function AgentsBuilderPage() {
 			name: "Agent Échéances Loi Hamon (J-45)",
 			category: "RELANCE",
 			status: "PAUSED",
-			description: "Identifie les contrats auto approchant leur date anniversaire de 45 jours pour proposer une réévaluation tarifaire proactive avant résiliation.",
+			description:
+				"Identifie les contrats auto approchant leur date anniversaire de 45 jours pour proposer une réévaluation tarifaire proactive avant résiliation.",
 			trigger: "Hebdomadaire le Lundi",
 			executionsCount: 78,
 			lastRun: "Il y a 4 jours",
@@ -104,7 +108,8 @@ export default function AgentsBuilderPage() {
 							Agent Builder & Compétences IA
 						</h1>
 						<p className="text-sm text-slate-400">
-							Orchestrez les agents autonomes de traitement documentaire, qualification SIV et rapprochement.
+							Orchestrez les agents autonomes de traitement documentaire,
+							qualification SIV et rapprochement.
 						</p>
 					</div>
 				</div>
@@ -139,7 +144,9 @@ export default function AgentsBuilderPage() {
 										<Bot className="size-5" />
 									</div>
 									<div>
-										<h3 className="text-sm font-bold text-white">{agent.name}</h3>
+										<h3 className="text-sm font-bold text-white">
+											{agent.name}
+										</h3>
 										<span className="text-[10px] text-slate-400 font-mono">
 											Déclencheur : {agent.trigger}
 										</span>
@@ -176,13 +183,19 @@ export default function AgentsBuilderPage() {
 						<div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-400">
 							<div className="flex items-center gap-4">
 								<span>
-									Exécutions : <strong className="text-white">{agent.executionsCount}</strong>
+									Exécutions :{" "}
+									<strong className="text-white">
+										{agent.executionsCount}
+									</strong>
 								</span>
 								<span>
-									Précision : <strong className="text-emerald-400">{agent.accuracy}</strong>
+									Précision :{" "}
+									<strong className="text-emerald-400">{agent.accuracy}</strong>
 								</span>
 							</div>
-							<span className="text-[11px] text-slate-500">{agent.lastRun}</span>
+							<span className="text-[11px] text-slate-500">
+								{agent.lastRun}
+							</span>
 						</div>
 					</div>
 				))}

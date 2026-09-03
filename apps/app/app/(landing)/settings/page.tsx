@@ -18,7 +18,9 @@ import { NavigationMenuSheet } from "@/components/navigation-menu-sheet";
 
 export default function SettingsPage() {
 	const [menuOpen, setMenuOpen] = useState(false);
-	const [activeTab, setActiveTab] = useState<"general" | "team" | "grossistes" | "api">("general");
+	const [activeTab, setActiveTab] = useState<
+		"general" | "team" | "grossistes" | "api"
+	>("general");
 
 	const [cabinetName, setCabinetName] = useState("Cabinet NIL Courtage Auto");
 	const [orias, setOrias] = useState("18004521");
@@ -44,7 +46,8 @@ export default function SettingsPage() {
 							Paramètres du Workspace
 						</h1>
 						<p className="text-sm text-slate-400">
-							Configuration générale du cabinet, partenaires grossistes, équipe et clés d'API.
+							Configuration générale du cabinet, partenaires grossistes, équipe
+							et clés d'API.
 						</p>
 					</div>
 				</div>
@@ -91,11 +94,15 @@ export default function SettingsPage() {
 			{activeTab === "general" && (
 				<form onSubmit={handleSave} className="max-w-2xl space-y-6">
 					<div className="p-6 rounded-3xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] shadow-xl space-y-4">
-						<h3 className="text-sm font-bold text-white">Identité du Cabinet de Courtage</h3>
+						<h3 className="text-sm font-bold text-white">
+							Identité du Cabinet de Courtage
+						</h3>
 
 						<div className="space-y-3">
 							<div>
-								<label className="text-xs text-slate-400 font-medium">Raison Sociale</label>
+								<label className="text-xs text-slate-400 font-medium">
+									Raison Sociale
+								</label>
 								<input
 									type="text"
 									value={cabinetName}
@@ -106,7 +113,9 @@ export default function SettingsPage() {
 
 							<div className="grid grid-cols-2 gap-3">
 								<div>
-									<label className="text-xs text-slate-400 font-medium">N° ORIAS</label>
+									<label className="text-xs text-slate-400 font-medium">
+										N° ORIAS
+									</label>
 									<input
 										type="text"
 										value={orias}
@@ -115,7 +124,9 @@ export default function SettingsPage() {
 									/>
 								</div>
 								<div>
-									<label className="text-xs text-slate-400 font-medium">SIREN</label>
+									<label className="text-xs text-slate-400 font-medium">
+										SIREN
+									</label>
 									<input
 										type="text"
 										value={siren}
@@ -151,12 +162,26 @@ export default function SettingsPage() {
 			{/* Contenu Onglet 2 : Équipe */}
 			{activeTab === "team" && (
 				<div className="p-6 rounded-3xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] shadow-xl space-y-4 max-w-3xl">
-					<h3 className="text-sm font-bold text-white">Courtiers & Collaborateurs</h3>
+					<h3 className="text-sm font-bold text-white">
+						Courtiers & Collaborateurs
+					</h3>
 					<div className="space-y-2 text-xs">
 						{[
-							{ name: "Benjamin Grégoire", role: "Courtier Titulaire (Admin)", email: "benjamin@nilcourtage.fr" },
-							{ name: "Sarah Benali", role: "Conseillère Souscription Auto", email: "sarah@nilcourtage.fr" },
-							{ name: "Agent Autonome Comp AI", role: "Agent IA Orchestrateur", email: "eve@compai.internal" },
+							{
+								name: "Benjamin Grégoire",
+								role: "Courtier Titulaire (Admin)",
+								email: "benjamin@nilcourtage.fr",
+							},
+							{
+								name: "Sarah Benali",
+								role: "Conseillère Souscription Auto",
+								email: "sarah@nilcourtage.fr",
+							},
+							{
+								name: "Agent Autonome Comp AI",
+								role: "Agent IA Orchestrateur",
+								email: "eve@compai.internal",
+							},
 						].map((u, idx) => (
 							<div
 								key={idx}
@@ -178,13 +203,35 @@ export default function SettingsPage() {
 			{/* Contenu Onglet 3 : Grossistes */}
 			{activeTab === "grossistes" && (
 				<div className="p-6 rounded-3xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] shadow-xl space-y-4 max-w-3xl">
-					<h3 className="text-sm font-bold text-white">Grossistes Partenaires Connectés</h3>
+					<h3 className="text-sm font-bold text-white">
+						Grossistes Partenaires Connectés
+					</h3>
 					<div className="space-y-2 text-xs">
 						{[
-							{ name: "April Auto", code: "APRIL-8841", status: "Actif (API Direct)", rate: "12.5% linéaire" },
-							{ name: "Maxance", code: "MAX-9012", status: "Actif (Bordereaux mensuels)", rate: "14.0% linéaire" },
-							{ name: "Solly Azar", code: "SAZ-3310", status: "Actif (Bordereaux mensuels)", rate: "11.0% linéaire" },
-							{ name: "Netvox", code: "NET-4512", status: "Actif", rate: "13.0% linéaire" },
+							{
+								name: "April Auto",
+								code: "APRIL-8841",
+								status: "Actif (API Direct)",
+								rate: "12.5% linéaire",
+							},
+							{
+								name: "Maxance",
+								code: "MAX-9012",
+								status: "Actif (Bordereaux mensuels)",
+								rate: "14.0% linéaire",
+							},
+							{
+								name: "Solly Azar",
+								code: "SAZ-3310",
+								status: "Actif (Bordereaux mensuels)",
+								rate: "11.0% linéaire",
+							},
+							{
+								name: "Netvox",
+								code: "NET-4512",
+								status: "Actif",
+								rate: "13.0% linéaire",
+							},
 						].map((g, idx) => (
 							<div
 								key={idx}
@@ -192,7 +239,9 @@ export default function SettingsPage() {
 							>
 								<div>
 									<p className="font-bold text-white">{g.name}</p>
-									<p className="text-slate-400 text-[11px]">Identifiant : {g.code}</p>
+									<p className="text-slate-400 text-[11px]">
+										Identifiant : {g.code}
+									</p>
 								</div>
 								<div className="text-right">
 									<span className="font-bold text-emerald-400">{g.rate}</span>
@@ -207,14 +256,22 @@ export default function SettingsPage() {
 			{/* Contenu Onglet 4 : API */}
 			{activeTab === "api" && (
 				<div className="p-6 rounded-3xl bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] shadow-xl space-y-4 max-w-2xl text-xs">
-					<h3 className="text-sm font-bold text-white">Intégrations & Webhooks</h3>
+					<h3 className="text-sm font-bold text-white">
+						Intégrations & Webhooks
+					</h3>
 					<div className="p-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] space-y-1">
-						<span className="text-slate-400 text-[11px]">Clé API SIV Immatriculation</span>
+						<span className="text-slate-400 text-[11px]">
+							Clé API SIV Immatriculation
+						</span>
 						<p className="font-mono text-slate-200">siv_live_9f81a7b64c2e01</p>
 					</div>
 					<div className="p-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] space-y-1">
-						<span className="text-slate-400 text-[11px]">Passerelle SMS Relances RI</span>
-						<p className="font-mono text-slate-200">sms_gateway_active (Twilio/Brevo)</p>
+						<span className="text-slate-400 text-[11px]">
+							Passerelle SMS Relances RI
+						</span>
+						<p className="font-mono text-slate-200">
+							sms_gateway_active (Twilio/Brevo)
+						</p>
 					</div>
 				</div>
 			)}

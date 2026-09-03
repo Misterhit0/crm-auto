@@ -1,1 +1,31 @@
-{"nodes": [{"id": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_md", "label": "clone_compai_crm_checkpoint.md", "file_type": "document", "source_file": ".agents/memories/clone_compai_crm_checkpoint.md", "source_location": "L1"}, {"id": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_checkpoint_cl\u00f4nage_int\u00e9gration_socle_base_comp_ai_crm", "label": "Checkpoint : Cl\u00f4nage & Int\u00e9gration Socle Base Comp AI CRM", "file_type": "document", "source_file": ".agents/memories/clone_compai_crm_checkpoint.md", "source_location": "L1"}], "edges": [{"source": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_md", "target": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_checkpoint_cl\u00f4nage_int\u00e9gration_socle_base_comp_ai_crm", "relation": "contains", "confidence": "EXTRACTED", "source_file": ".agents/memories/clone_compai_crm_checkpoint.md", "source_location": "L1", "weight": 1.0}], "input_tokens": 0, "output_tokens": 0}
+{
+	"nodes": [
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_md",
+			"label": "clone_compai_crm_checkpoint.md",
+			"file_type": "document",
+			"source_file": ".agents/memories/clone_compai_crm_checkpoint.md",
+			"source_location": "L1"
+		},
+		{
+			"id": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_checkpoint_cl\u00f4nage_int\u00e9gration_socle_base_comp_ai_crm",
+			"label": "Checkpoint : Cl\u00f4nage & Int\u00e9gration Socle Base Comp AI CRM",
+			"file_type": "document",
+			"source_file": ".agents/memories/clone_compai_crm_checkpoint.md",
+			"source_location": "L1"
+		}
+	],
+	"edges": [
+		{
+			"source": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_md",
+			"target": "users_cogepart_documents_crm_nil_agents_memories_clone_compai_crm_checkpoint_checkpoint_cl\u00f4nage_int\u00e9gration_socle_base_comp_ai_crm",
+			"relation": "contains",
+			"confidence": "EXTRACTED",
+			"source_file": ".agents/memories/clone_compai_crm_checkpoint.md",
+			"source_location": "L1",
+			"weight": 1.0
+		}
+	],
+	"input_tokens": 0,
+	"output_tokens": 0
+}
