@@ -139,7 +139,6 @@ const createPrismaClient = () => {
 // only instantiated on the first property access.
 
 declare global {
-	// biome-ignore lint/style/noVar: global augmentation requires var
 	var prisma: ReturnType<typeof createPrismaClient> | undefined;
 }
 

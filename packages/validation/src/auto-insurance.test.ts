@@ -1,20 +1,20 @@
 import { describe, expect, it } from "bun:test";
 import {
-	SivLookupInputSchema,
-	SivLookupOutputSchema,
-	CreateVehicleInputSchema,
-	CreateDriverProfileInputSchema,
-	CreateInsuranceDossierInputSchema,
-	UpdateDossierStatusInputSchema,
-	ImportCommissionStatementInputSchema,
-	FuelTypeSchema,
-	FormulaTypeSchema,
-	DocumentTypeSchema,
-	DossierStatusSchema,
-	VehicleUsageSchema,
-	ParkingTypeSchema,
 	CommissionStatusSchema,
 	CommissionTypeSchema,
+	CreateDriverProfileInputSchema,
+	CreateInsuranceDossierInputSchema,
+	CreateVehicleInputSchema,
+	DocumentTypeSchema,
+	DossierStatusSchema,
+	FormulaTypeSchema,
+	FuelTypeSchema,
+	ImportCommissionStatementInputSchema,
+	ParkingTypeSchema,
+	SivLookupInputSchema,
+	SivLookupOutputSchema,
+	UpdateDossierStatusInputSchema,
+	VehicleUsageSchema,
 } from "./auto-insurance";
 
 describe("QA Test Suite: Immatriculation SIV & Nettoyage des Plaques", () => {
@@ -29,7 +29,9 @@ describe("QA Test Suite: Immatriculation SIV & Nettoyage des Plaques", () => {
 	it("rejette les formats de plaques manifestement invalides", () => {
 		expect(() => SivLookupInputSchema.parse({ licensePlate: "A" })).toThrow();
 		expect(() =>
-			SivLookupInputSchema.parse({ licensePlate: "CETTEPLAQUEESTBEAUCOUPTROPLONGUE12345" }),
+			SivLookupInputSchema.parse({
+				licensePlate: "CETTEPLAQUEESTBEAUCOUPTROPLONGUE12345",
+			}),
 		).toThrow();
 	});
 
@@ -59,11 +61,14 @@ describe("QA Test Suite: CRM Conducteur & Bonus-Malus", () => {
 			claimsCount36Months: 0,
 			atFaultClaims: 0,
 		};
-		expect(CreateDriverProfileInputSchema.parse(profile).crmCoefficient).toBe(0.5);
+		expect(CreateDriverProfileInputSchema.parse(profile).crmCoefficient).toBe(
+			0.5,
+		);
 
 		// Malus maximal valide
 		expect(
-			CreateDriverProfileInputSchema.parse({ ...profile, crmCoefficient: 3.5 }).crmCoefficient,
+			CreateDriverProfileInputSchema.parse({ ...profile, crmCoefficient: 3.5 })
+				.crmCoefficient,
 		).toBe(3.5);
 
 		// En dessous du bonus maximum légal français (0.50) -> Rejet
