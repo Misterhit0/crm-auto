@@ -159,6 +159,98 @@ export const GLOBAL_NAV_SECTIONS: NavSection[] = [
 	},
 ];
 
+function NavigationMenuContent({
+	onOpenChange,
+}: {
+	onOpenChange: (open: boolean) => void;
+}) {
+	const [mounted, setMounted] = React.useState(false);
+	React.useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	let pathname = "";
+	try {
+		// eslint-disable-next-line react-hooks/rules-of-hooks
+		pathname = usePathname() || "";
+	} catch {
+		pathname = "";
+	}
+
+	return (
+		<div className="flex-1 overflow-y-auto p-6 space-y-8">
+			{GLOBAL_NAV_SECTIONS.map((section, idx) => (
+				<div key={idx} className="space-y-3">
+					<div className="flex flex-col">
+						<h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+							{section.title}
+						</h3>
+						<p className="text-[11px] text-slate-500">
+							{section.description}
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+						{section.items.map((item, itemIdx) => {
+							const IconComponent = item.icon;
+							const isCurrent =
+								mounted &&
+								(pathname === item.href ||
+									(item.href !== "/" && pathname.startsWith(item.href)));
+
+							return (
+								<Link
+									key={itemIdx}
+									href={item.href}
+									onClick={() => onOpenChange(false)}
+									className={`flex items-start gap-3 p-3.5 rounded-2xl border transition-all duration-200 group ${
+										isCurrent
+											? "bg-blue-600/15 border-blue-500/40 text-white shadow-lg shadow-blue-500/10"
+											: "bg-white/[0.02] border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.12] text-slate-200"
+									}`}
+								>
+									<div
+										className={`p-2 rounded-xl shrink-0 transition-colors ${
+											isCurrent
+												? "bg-blue-500 text-white shadow-md shadow-blue-500/30"
+												: "bg-white/[0.05] text-slate-400 group-hover:text-white group-hover:bg-white/[0.1]"
+										}`}
+									>
+										<IconComponent className="size-4" />
+									</div>
+
+									<div className="flex-1 min-w-0">
+										<div className="flex items-center gap-2">
+											<h4 className="text-xs font-semibold text-white group-hover:text-blue-300 transition-colors truncate">
+												{item.title}
+											</h4>
+											{item.badge && (
+												<span
+													className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full border ${
+														item.badgeColor ||
+														"bg-white/10 text-white border-white/20"
+													}`}
+												>
+													{item.badge}
+												</span>
+											)}
+										</div>
+										<p className="text-[11px] text-slate-400 mt-0.5 line-clamp-1">
+											{item.description}
+										</p>
+									</div>
+
+									<ChevronRight className="size-4 text-slate-600 group-hover:text-slate-300 group-hover:translate-x-0.5 transition-all shrink-0 mt-2" />
+								</Link>
+							);
+						})}
+					</div>
+				</div>
+			))}
+		</div>
+	);
+}
+
 export function NavigationMenuSheet({
 	open,
 	onOpenChange,
@@ -166,8 +258,6 @@ export function NavigationMenuSheet({
 	open: boolean;
 	onOpenChange: (open: boolean) => void;
 }) {
-	const pathname = usePathname();
-
 	return (
 		<Sheet open={open} onOpenChange={onOpenChange}>
 			<SheetContent
@@ -195,76 +285,11 @@ export function NavigationMenuSheet({
 					</div>
 				</SheetHeader>
 
-				<div className="flex-1 overflow-y-auto p-6 space-y-8">
-					{GLOBAL_NAV_SECTIONS.map((section, idx) => (
-						<div key={idx} className="space-y-3">
-							<div className="flex flex-col">
-								<h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
-									{section.title}
-								</h3>
-								<p className="text-[11px] text-slate-500">
-									{section.description}
-								</p>
-							</div>
-
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-								{section.items.map((item, itemIdx) => {
-									const IconComponent = item.icon;
-									const isCurrent =
-										pathname === item.href ||
-										(item.href !== "/" && pathname.startsWith(item.href));
-
-									return (
-										<Link
-											key={itemIdx}
-											href={item.href}
-											onClick={() => onOpenChange(false)}
-											className={`flex items-start gap-3 p-3.5 rounded-2xl border transition-all duration-200 group ${
-												isCurrent
-													? "bg-blue-600/15 border-blue-500/40 text-white shadow-lg shadow-blue-500/10"
-													: "bg-white/[0.02] border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.12] text-slate-200"
-											}`}
-										>
-											<div
-												className={`p-2 rounded-xl shrink-0 transition-colors ${
-													isCurrent
-														? "bg-blue-500 text-white shadow-md shadow-blue-500/30"
-														: "bg-white/[0.05] text-slate-400 group-hover:text-white group-hover:bg-white/[0.1]"
-												}`}
-											>
-												<IconComponent className="size-4" />
-											</div>
-
-											<div className="flex-1 min-w-0">
-												<div className="flex items-center gap-2">
-													<h4 className="text-xs font-semibold text-white group-hover:text-blue-300 transition-colors truncate">
-														{item.title}
-													</h4>
-													{item.badge && (
-														<span
-															className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full border ${
-																item.badgeColor ||
-																"bg-white/10 text-white border-white/20"
-															}`}
-														>
-															{item.badge}
-														</span>
-													)}
-												</div>
-												<p className="text-[11px] text-slate-400 mt-0.5 line-clamp-1">
-													{item.description}
-												</p>
-											</div>
-
-											<ChevronRight className="size-4 text-slate-600 group-hover:text-slate-300 group-hover:translate-x-0.5 transition-all shrink-0 mt-2" />
-										</Link>
-									);
-								})}
-							</div>
-						</div>
-					))}
-				</div>
+				<React.Suspense fallback={<div className="flex-1 p-6" />}>
+					<NavigationMenuContent onOpenChange={onOpenChange} />
+				</React.Suspense>
 			</SheetContent>
 		</Sheet>
 	);
 }
+

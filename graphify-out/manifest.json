@@ -1355,7 +1355,7 @@
     "semantic_hash": ""
   },
   "apps/api/src/generated/server.ts": {
-    "mtime": 1788468600.0134718,
+    "mtime": 1788472022.0314898,
     "ast_hash": "34eb432aa6e3888297e741b99007b3ab",
     "semantic_hash": ""
   },
@@ -2055,8 +2055,8 @@
     "semantic_hash": ""
   },
   "apps/app/app/(app)/[slug]/(agent-builder)/agents/page.tsx": {
-    "mtime": 1788467101.102362,
-    "ast_hash": "8075fee32dbef53c86d46a7b93c5dd1e",
+    "mtime": 1788475455.3592067,
+    "ast_hash": "97993c188b1b9734fa4bb3170df6ae80",
     "semantic_hash": ""
   },
   "apps/app/app/(app)/[slug]/(agent-builder)/chat/[chatId]/page.tsx": {
@@ -2510,7 +2510,7 @@
     "semantic_hash": ""
   },
   "apps/app/app/eve/v1/[...path]/route.ts": {
-    "mtime": 1788398453.616302,
+    "mtime": 1788472539.9655685,
     "ast_hash": "f594ad195f6194f6964c2fbb9984eb5a",
     "semantic_hash": ""
   },
@@ -2520,12 +2520,12 @@
     "semantic_hash": ""
   },
   "apps/app/app/t/[site]/route.ts": {
-    "mtime": 1788398453.6175666,
+    "mtime": 1788471722.4607058,
     "ast_hash": "5e83880e89240dcbb10302c3cb17fba8",
     "semantic_hash": ""
   },
   "apps/app/app/t/crm.js/route.ts": {
-    "mtime": 1788398453.617826,
+    "mtime": 1788471722.461177,
     "ast_hash": "ac47c9b688355a46355d07b43502ee22",
     "semantic_hash": ""
   },
@@ -3565,8 +3565,8 @@
     "semantic_hash": ""
   },
   "packages/db/prisma.config.ts": {
-    "mtime": 1788398453.6949124,
-    "ast_hash": "952a3eec3c483f47d025bf71a554cfbe",
+    "mtime": 1788469834.4347615,
+    "ast_hash": "cc8fc6c022a9f29d3e2de5ec618b09a9",
     "semantic_hash": ""
   },
   "packages/db/prisma/migrations/20260731150000_init/migration.sql": {
@@ -3890,8 +3890,8 @@
     "semantic_hash": ""
   },
   "packages/db/src/client.ts": {
-    "mtime": 1788398453.7129023,
-    "ast_hash": "11bf14e22317f7f56037d66c67ec934f",
+    "mtime": 1788471995.3779325,
+    "ast_hash": "41936afb56e792bf4c684dc18126e8cb",
     "semantic_hash": ""
   },
   "packages/db/src/crm-events.ts": {
@@ -4790,8 +4790,8 @@
     "semantic_hash": ""
   },
   ".agents/AGENTS.md": {
-    "mtime": 1788398453.4312854,
-    "ast_hash": "9acd75fac7f6becedd78a486624c7ae4",
+    "mtime": 1788469876.9251566,
+    "ast_hash": "5ba790ee21d2537852409e1777f9a11b",
     "semantic_hash": ""
   },
   ".agents/memories/api_frontend_auto_checkpoint.md": {
@@ -4895,8 +4895,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1788398453.434504,
-    "ast_hash": "9acd75fac7f6becedd78a486624c7ae4",
+    "mtime": 1788469871.8188744,
+    "ast_hash": "5ba790ee21d2537852409e1777f9a11b",
     "semantic_hash": ""
   },
   "ARCHITECTURE.md": {
@@ -4910,8 +4910,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788398453.4351122,
-    "ast_hash": "3ee134f17d31f020240c4b7eb737b48d",
+    "mtime": 1788474306.945547,
+    "ast_hash": "fb56d4a42a2a9902afcf871ebfc10ed7",
     "semantic_hash": ""
   },
   "CONTRIBUTING.md": {
@@ -5230,8 +5230,8 @@
     "semantic_hash": ""
   },
   "apps/app/components/navigation-menu-sheet.tsx": {
-    "mtime": 1788467101.14595,
-    "ast_hash": "c23c1d027f4f04abe4a17c399f43f906",
+    "mtime": 1788475483.7186503,
+    "ast_hash": "1d1c13cf39de3bcc85895ae85af9a62b",
     "semantic_hash": ""
   },
   ".agents/memories/auto_dossier_sheet_and_mobile_checkpoint.md": {
@@ -5280,13 +5280,18 @@
     "semantic_hash": ""
   },
   "packages/validation/src/auto-insurance.test.ts": {
-    "mtime": 1788468151.245009,
-    "ast_hash": "2a132d7319705d5675c081f3790563e4",
+    "mtime": 1788469861.8524203,
+    "ast_hash": "02eb5a2b3f52917d35d6366ddb4c97b9",
     "semantic_hash": ""
   },
   ".agents/memories/all_menu_pages_created_checkpoint.md": {
     "mtime": 1788466393.2739487,
     "ast_hash": "f9a1639fec566823459957c0f3493288",
+    "semantic_hash": ""
+  },
+  ".agents/memories/claude_md_and_skills_sync_20260904_002625.md": {
+    "mtime": 1788474385.0898695,
+    "ast_hash": "62c14309b59bd486de6ec8c0be36dca9",
     "semantic_hash": ""
   }
 }
