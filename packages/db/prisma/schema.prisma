@@ -392,8 +392,14 @@ model Contact {
   fieldValues     FieldValue[]
   visitors        TrackedVisitor[]   @relation("VisitorContact")
   submissions     FormSubmission[]   @relation("SubmissionContact")
-  createdAt       DateTime           @default(now())
-  updatedAt       DateTime           @updatedAt
+
+  // Extensions Assurance Automobile
+  vehicles          Vehicle[]
+  driverProfiles    DriverProfile[]
+  insuranceDossiers InsuranceDossier[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@unique([email], map: "contact_email_active_key", where: { archivedAt: null })
   @@index([companyId])
@@ -1582,4 +1588,260 @@ model Apikey {
   @@index([configId])
   @@index([key])
   @@map("apikey")
+}
+
+// ==========================================
+// MODULE ASSURANCE AUTOMOBILE & APPORTEUR
+// ==========================================
+
+enum FuelType {
+  ESSENCE
+  DIESEL
+  ELECTRIQUE
+  HYBRIDE_ESSENCE
+  HYBRIDE_DIESEL
+  GPL
+  AUTRE
+}
+
+enum VehicleUsage {
+  PRIVE_TRAJET
+  PROFESSIONNEL_COMMERCIAL
+  TOURNÉE_LIVRAISON
+  TOUS_DEPLACEMENTS
+}
+
+enum ParkingType {
+  GARAGE_FERME
+  JARDIN_CLOS
+  VOIE_PUBLIQUE
+  PARKING_COLLECTIF_FERME
+}
+
+enum DossierStatus {
+  PROSPECT_INITIE
+  PIECES_EN_ATTENTE
+  DOSSIER_COMPLET
+  DEVIS_EMIS
+  VALIDE_SOUSCRIT
+  ACTIF
+  RESILIE
+  SANS_SUITE
+}
+
+enum FormulaType {
+  TIERS_SIMPLE
+  TIERS_ETENDU_VOL_INCENDIE
+  TOUS_RISQUES
+  TOUS_RISQUES_CONFORT
+}
+
+enum DocumentType {
+  PERMIS_CONDUIRE
+  CARTE_GRISE
+  RELEVE_INFORMATION
+  RIB
+  DEVIS_SIGNE
+  MANDAT_PRELEVEMENT
+  PIECE_IDENTITE
+  AUTRE
+}
+
+enum OcrStatus {
+  PENDING
+  PROCESSING
+  PARSED_SUCCESS
+  PARSE_ERROR
+}
+
+enum CommissionType {
+  ACQUISITION_ONE_SHOT
+  RECURRENT_ENCAISSEMENT
+  HONORAIRES_CONSEIL
+}
+
+enum CommissionStatus {
+  EN_ATTENTE
+  RAPPROCHE_VALIDE
+  ANOMALIE_ECART
+  IMPAYE
+  ANNULE
+}
+
+model Vehicle {
+  id                    String       @id @default(cuid())
+  contactId             String
+  contact               Contact      @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  licensePlate          String // Format SIV AA-123-AA ou FNI
+  vin                   String?
+  brand                 String // Ex: Renault, Peugeot
+  model                 String // Ex: Clio V, 208
+  version               String? // Ex: 1.2 PureTech 100ch Allure
+  firstRegistrationDate DateTime?
+  fiscalPower           Int? // Puissance fiscale (CV)
+  fuelType              FuelType     @default(ESSENCE)
+  usage                 VehicleUsage @default(PRIVE_TRAJET)
+  parking               ParkingType  @default(VOIE_PUBLIQUE)
+  annualMileage         Int? // Estimation km/an
+  purchaseDate          DateTime?
+  sivRawData            Json? // Données brutes issues de l'API SIV
+
+  insuranceDossiers InsuranceDossier[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  @@index([licensePlate])
+  @@index([contactId])
+  @@map("vehicle")
+}
+
+model DriverProfile {
+  id                     String    @id @default(cuid())
+  contactId              String
+  contact                Contact   @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  licenseNumber          String?
+  licenseDate            DateTime?
+  licenseType            String    @default("B")
+  crmCoefficient         Float     @default(1.0) // 0.50 = bonus 50%, 1.25 = malus
+  claimsCount36Months    Int       @default(0) // Nombre total sinistres sur 36 mois
+  atFaultClaims          Int       @default(0) // Sinistres responsables
+  glassBreakageClaims    Int       @default(0) // Bris de glace
+  parkingTheftClaims     Int       @default(0) // Vol / Incendie
+  insuranceHistoryMonths Int       @default(36) // Nombre de mois assuré en continu
+  cancellationHistory    String? // Ex: "AUCUN", "NON_PAIEMENT", "ALCOOLEMIE"
+  suspensionHistory      Boolean   @default(false)
+
+  insuranceDossiers InsuranceDossier[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  @@index([contactId])
+  @@map("driverProfile")
+}
+
+model BrokerPartner {
+  id                           String  @id @default(cuid())
+  name                         String // Ex: "April Auto", "Maxance", "Solly Azar", "Netvox"
+  contactName                  String?
+  email                        String?
+  phone                        String?
+  portalUrl                    String? // Extranet courtier
+  defaultAcquisitionCommission Float? // Montant fixe négocié (ex: 80€)
+  defaultRenewCommissionRate   Float? // Taux de rétrocession (ex: 0.08 pour 8%)
+  notes                        String?
+
+  dossiers             InsuranceDossier[]
+  commissionStatements CommissionStatement[]
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+
+  @@map("brokerPartner")
+}
+
+model InsuranceDossier {
+  id              String         @id @default(cuid())
+  reference       String         @unique // Numéro interne DOS-2026-XXXX
+  contactId       String
+  contact         Contact        @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  vehicleId       String
+  vehicle         Vehicle        @relation(fields: [vehicleId], references: [id], onDelete: Restrict)
+  driverProfileId String
+  driverProfile   DriverProfile  @relation(fields: [driverProfileId], references: [id], onDelete: Restrict)
+  brokerPartnerId String?
+  brokerPartner   BrokerPartner? @relation(fields: [brokerPartnerId], references: [id], onDelete: SetNull)
+
+  status  DossierStatus @default(PROSPECT_INITIE)
+  formula FormulaType   @default(TOUS_RISQUES)
+  options Json? // { assistance0km: true, vehiculePret: true, valeurMajoree: false }
+
+  annualPremiumTTC Float? // Prime d'assurance annuelle TTC
+  annualPremiumHT  Float? // Prime d'assurance HT (base de calcul commissions)
+  monthlyPayment   Float? // Prélèvement mensuel si paiement fractionné
+  effectiveDate    DateTime? // Date d'effet / prise de garantie
+  anniversaryDate  DateTime? // Date d'échéance annuelle (Loi Hamon J-45)
+  policeNumber     String? // Numéro de police définitif chez le grossiste/assureur
+
+  documents   DossierDocument[]
+  commissions CommissionRecord[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([reference])
+  @@index([contactId])
+  @@index([vehicleId])
+  @@index([status])
+  @@index([anniversaryDate])
+  @@map("insuranceDossier")
+}
+
+model DossierDocument {
+  id        String           @id @default(cuid())
+  dossierId String
+  dossier   InsuranceDossier @relation(fields: [dossierId], references: [id], onDelete: Cascade)
+  type      DocumentType     @default(AUTRE)
+  filename  String
+  fileUrl   String
+  fileSize  Int?
+  mimeType  String?
+
+  ocrStatus        OcrStatus @default(PENDING)
+  ocrExtractedData Json? // Extraction IA (bonus, date permis, plaque)
+  verifiedAt       DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([dossierId])
+  @@index([type])
+  @@map("dossierDocument")
+}
+
+model CommissionStatement {
+  id               String        @id @default(cuid())
+  brokerPartnerId  String
+  brokerPartner    BrokerPartner @relation(fields: [brokerPartnerId], references: [id], onDelete: Cascade)
+  statementPeriod  String // Ex: "2026-08", "2026-09"
+  originalFilename String
+  fileUrl          String?
+  totalAmount      Float         @default(0.0)
+  recordsCount     Int           @default(0)
+  reconciledCount  Int           @default(0)
+  discrepancyCount Int           @default(0)
+
+  records   CommissionRecord[]
+  createdAt DateTime           @default(now())
+  updatedAt DateTime           @updatedAt
+
+  @@index([brokerPartnerId])
+  @@index([statementPeriod])
+  @@map("commissionStatement")
+}
+
+model CommissionRecord {
+  id          String               @id @default(cuid())
+  dossierId   String?
+  dossier     InsuranceDossier?    @relation(fields: [dossierId], references: [id], onDelete: SetNull)
+  statementId String?
+  statement   CommissionStatement? @relation(fields: [statementId], references: [id], onDelete: SetNull)
+
+  type   CommissionType   @default(ACQUISITION_ONE_SHOT)
+  status CommissionStatus @default(EN_ATTENTE)
+
+  expectedAmount    Float // Montant attendu d'après notre barème
+  actualAmount      Float? // Montant relevé sur le bordereau grossiste
+  discrepancyAmount Float? // Différence (actualAmount - expectedAmount)
+
+  partnerContractRef String? // Référence contrat sur le bordereau
+  notes              String?
+  reconciledAt       DateTime?
+  paidAt             DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([dossierId])
+  @@index([statementId])
+  @@index([status])
+  @@map("commissionRecord")
 }
