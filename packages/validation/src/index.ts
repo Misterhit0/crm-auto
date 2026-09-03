@@ -3,6 +3,7 @@ import * as activityMeta from "./activity-meta";
 import * as agentEvents from "./agent-events";
 import * as agentManifest from "./agent-manifest";
 import * as agents from "./agents";
+import * as autoInsurance from "./auto-insurance";
 import * as builderQuestion from "./builder-question";
 import * as eveStream from "./eve-stream";
 import * as eveTool from "./eve-tool";
@@ -13,12 +14,14 @@ export const schemas = {
 	agentEvents,
 	agentManifest,
 	agents,
+	autoInsurance,
 	builderQuestion,
 	eveStream,
 	eveTool,
 	slack,
 } as const;
 
+export * from "./auto-insurance";
 export type { ActivityMeta, ActivityMetaFields } from "./activity-meta";
 export type { CrmEventTask } from "./agent-events";
 export type {

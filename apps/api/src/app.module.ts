@@ -7,6 +7,7 @@ import { AgentModule } from "./agent/agent.module";
 import { ApiKeysModule } from "./api-keys/api-keys.module";
 import { ArchiveModule } from "./archive/archive.module";
 import { AuthModule } from "./auth/auth.module";
+import { AutoModule } from "./auto/auto.module";
 import { BackfillModule } from "./backfill/backfill.module";
 import { AppCacheModule } from "./cache/cache.module";
 import { CompaniesModule } from "./companies/companies.module";
@@ -79,6 +80,7 @@ import { WorkspaceModule } from "./workspace/workspace.module";
 		TrackingModule,
 		ArchiveModule,
 		SavedViewsModule,
+		AutoModule,
 	],
 })
 export class AppModule {}
