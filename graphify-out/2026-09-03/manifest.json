@@ -2080,8 +2080,8 @@
     "semantic_hash": ""
   },
   "apps/app/app/(app)/[slug]/auto/page.tsx": {
-    "mtime": 1788401664.0316741,
-    "ast_hash": "a8aff8c9567bb78caa1fd713a679a6df",
+    "mtime": 1788402092.7641973,
+    "ast_hash": "a83d69c6c476220ad54991234e9c112f",
     "semantic_hash": ""
   },
   "apps/app/app/(app)/[slug]/commissions/page.tsx": {
@@ -2445,8 +2445,8 @@
     "semantic_hash": ""
   },
   "apps/app/app/(landing)/auto/page.tsx": {
-    "mtime": 1788401658.9989417,
-    "ast_hash": "a8aff8c9567bb78caa1fd713a679a6df",
+    "mtime": 1788402088.3927834,
+    "ast_hash": "a83d69c6c476220ad54991234e9c112f",
     "semantic_hash": ""
   },
   "apps/app/app/(landing)/commissions/page.tsx": {
@@ -2650,8 +2650,8 @@
     "semantic_hash": ""
   },
   "apps/app/components/app-header.tsx": {
-    "mtime": 1788401650.035844,
-    "ast_hash": "e276d936a0b393c4b1ff6d995893c995",
+    "mtime": 1788402063.6390953,
+    "ast_hash": "07f3591fe2723f55dbfb7f6fea1794e7",
     "semantic_hash": ""
   },
   "apps/app/components/app-icon-rail.tsx": {
@@ -5220,8 +5220,8 @@
     "semantic_hash": ""
   },
   "apps/app/components/crm/dossier-crud-dialog.tsx": {
-    "mtime": 1788401537.8524263,
-    "ast_hash": "8553442dc2028514029fe408e29a107d",
+    "mtime": 1788402216.4584746,
+    "ast_hash": "773cb05ec6c290edf5004846b795058d",
     "semantic_hash": ""
   },
   "apps/app/components/crm/object-filter-bar.tsx": {
@@ -5237,6 +5237,16 @@
   ".agents/memories/auto_dossier_sheet_and_mobile_checkpoint.md": {
     "mtime": 1788401200.1049588,
     "ast_hash": "f4fb46fbe18f08f5f646c87eaa71ca75",
+    "semantic_hash": ""
+  },
+  "apps/app/components/crm/compai-chat-sheet.tsx": {
+    "mtime": 1788402049.793983,
+    "ast_hash": "70ad6b819da03c2cfd4cd70dff3549ab",
+    "semantic_hash": ""
+  },
+  ".agents/memories/global_menu_and_cascade_crud_checkpoint.md": {
+    "mtime": 1788401698.5940797,
+    "ast_hash": "02e2b29f316b797fbacd0d0a40c4b441",
     "semantic_hash": ""
   }
 }

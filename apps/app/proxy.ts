@@ -14,7 +14,18 @@ const LANDING_PATH = "/";
 
 const SIGN_IN_PATH = "/sign-in";
 
-const UNGATED = ["/grant-access", "/eve", "/auto", "/commissions"];
+const UNGATED = [
+	"/grant-access",
+	"/eve",
+	"/auto",
+	"/commissions",
+	"/chat",
+	"/agents",
+	"/companies",
+	"/contacts",
+	"/deals",
+	"/settings",
+];
 
 const ANONYMOUS = ["/t"];
 
