@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { db } from "@crm/db";
 import { connection } from "next/server";
 import {

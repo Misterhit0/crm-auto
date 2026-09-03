@@ -3,8 +3,11 @@ import "@crm/env/load";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { type Prisma, PrismaClient } from "./generated/prisma/client";
 
-const connectionString =
-	process.env.NODE_ENV === "test" ? testDatabase() : liveDatabase();
+// ─── Connection string helpers ────────────────────────────────────────────────
+// NOTE: These are called INSIDE createPrismaClient(), not at module load time.
+// This makes the module safely importable without DATABASE_URL (e.g. during
+// Next.js build static analysis) while still throwing clearly at runtime when
+// the DB is actually first accessed.
 
 function liveDatabase(): string {
 	const url = process.env.DATABASE_URL;
@@ -57,6 +60,8 @@ function databaseName(url: string): string {
 	}
 }
 
+// ─── Logging ──────────────────────────────────────────────────────────────────
+
 export interface PrismaLogRecord {
 	level: Prisma.LogLevel;
 	message: string;
@@ -85,6 +90,8 @@ export function setPrismaLogSink(next: PrismaLogSink | null): void {
 	sink = next ?? consoleSink;
 }
 
+// ─── Client factory ───────────────────────────────────────────────────────────
+
 const logQueries = process.env.PRISMA_LOG_QUERIES === "true";
 
 const logDefinitions: Prisma.LogDefinition[] = [
@@ -99,6 +106,11 @@ const logDefinitions: Prisma.LogDefinition[] = [
 ];
 
 const createPrismaClient = () => {
+	// Computed here (lazily) so that importing this module does not throw when
+	// DATABASE_URL is absent — which happens during Next.js build analysis.
+	const connectionString =
+		process.env.NODE_ENV === "test" ? testDatabase() : liveDatabase();
+
 	const client = new PrismaClient({
 		adapter: new PrismaPg({ connectionString }),
 		log: logDefinitions,
@@ -120,14 +132,35 @@ const createPrismaClient = () => {
 	return client;
 };
 
+// ─── Lazy singleton ───────────────────────────────────────────────────────────
+// We use a Proxy so that `db` can be imported at module level anywhere in the
+// codebase without triggering client creation (and therefore without requiring
+// DATABASE_URL to be present at import time).  The underlying PrismaClient is
+// only instantiated on the first property access.
+
 declare global {
+	// biome-ignore lint/style/noVar: global augmentation requires var
 	var prisma: ReturnType<typeof createPrismaClient> | undefined;
 }
 
-export const db = globalThis.prisma ?? createPrismaClient();
+type DbClient = ReturnType<typeof createPrismaClient>;
 
-if (process.env.NODE_ENV !== "production") {
-	globalThis.prisma = db;
+function getOrCreate(): DbClient {
+	if (globalThis.prisma) return globalThis.prisma;
+	const instance = createPrismaClient();
+	if (process.env.NODE_ENV !== "production") {
+		globalThis.prisma = instance;
+	}
+	return instance;
 }
+
+export const db = new Proxy({} as DbClient, {
+	get(_, prop: string | symbol) {
+		return Reflect.get(getOrCreate(), prop);
+	},
+	set(_, prop: string | symbol, value: unknown) {
+		return Reflect.set(getOrCreate(), prop, value);
+	},
+}) as DbClient;
 
 export type Db = typeof db;
