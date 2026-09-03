@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Asleep from "@carbon/icons-react/es/Asleep";
 import Light from "@carbon/icons-react/es/Light";
 import Logout from "@carbon/icons-react/es/Logout";
@@ -24,6 +25,9 @@ import { useTheme } from "next-themes";
 import { toast } from "sonner";
 import { EnrichmentQueue } from "@/components/enrichment-queue";
 import { useMobileNav } from "@/components/mobile-nav";
+import { Layers, Bot } from "lucide-react";
+import { NavigationMenuSheet } from "@/components/navigation-menu-sheet";
+import { CompAiChatSheet } from "@/components/crm/compai-chat-sheet";
 import { signOutAndRedirect } from "@/lib/sign-out";
 import { useTRPC } from "@/lib/trpc/client";
 import { useWorkspaceUrl } from "@/lib/use-workspace-url";
@@ -38,41 +42,67 @@ export function AppHeader({ user }: { user: User }) {
 	const workspace = useQuery(trpc.workspace.get.queryOptions());
 	const label = workspaceLabel(workspace.data?.name);
 
-	return (
-		<header className="flex h-12 shrink-0 items-center gap-2 border-b px-3 [view-transition-name:app-header]">
-			<div className="flex shrink-0 items-center gap-1">
-				<Button
-					variant="ghost"
-					size="icon"
-					className="md:hidden"
-					aria-label="Open navigation"
-					onClick={() => setMobileNavOpen(true)}
-				>
-					<Menu />
-				</Button>
-				<Link
-					href={workspaceUrl()}
-					aria-label="Homepage"
-					className="hidden size-8 items-center justify-center text-foreground md:flex"
-				>
-					<Logo className="size-5" />
-				</Link>
-				<Separator orientation="vertical" className="mx-1 h-5 bg-transparent" />
-				<span className="min-w-0 truncate font-medium text-sm">{label}</span>
-			</div>
+	const [menuOpen, setMenuOpen] = useState(false);
+	const [chatOpen, setChatOpen] = useState(false);
 
-			<div className="ml-auto flex shrink-0 items-center gap-1.5">
-				<EnrichmentQueue />
-				<UserMenu
-					user={user}
-					onSignOut={() => {
-						signOutAndRedirect().catch(() =>
-							toast.error("Could not sign out."),
-						);
-					}}
-				/>
-			</div>
-		</header>
+	return (
+		<>
+			<header className="flex h-12 shrink-0 items-center gap-2 border-b px-3 [view-transition-name:app-header]">
+				<div className="flex shrink-0 items-center gap-1">
+					<Button
+						variant="ghost"
+						size="icon"
+						className="md:hidden"
+						aria-label="Open navigation"
+						onClick={() => setMobileNavOpen(true)}
+					>
+						<Menu />
+					</Button>
+					<Link
+						href={workspaceUrl()}
+						aria-label="Homepage"
+						className="hidden size-8 items-center justify-center text-foreground md:flex"
+					>
+						<Logo className="size-5" />
+					</Link>
+					<Separator orientation="vertical" className="mx-1 h-5 bg-transparent" />
+					<span className="min-w-0 truncate font-medium text-sm">{label}</span>
+
+					<Button
+						variant="outline"
+						size="sm"
+						onClick={() => setMenuOpen(true)}
+						className="ml-2 flex items-center gap-1.5 text-xs font-semibold rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border-white/[0.1] text-slate-200"
+					>
+						<Layers className="size-3.5 text-blue-400" />
+						<span className="hidden sm:inline">Toutes les Pages</span>
+					</Button>
+				</div>
+
+				<div className="ml-auto flex shrink-0 items-center gap-2">
+					<Button
+						variant="outline"
+						size="sm"
+						onClick={() => setChatOpen(true)}
+						className="flex items-center gap-1.5 text-xs font-semibold rounded-xl bg-gradient-to-r from-blue-600/20 to-indigo-600/20 hover:from-blue-600/30 hover:to-indigo-600/30 border border-blue-500/30 text-blue-300 shadow-sm"
+					>
+						<Bot className="size-3.5 text-blue-400" />
+						<span>Chat Comp AI</span>
+					</Button>
+					<EnrichmentQueue />
+					<UserMenu
+						user={user}
+						onSignOut={() => {
+							signOutAndRedirect().catch(() =>
+								toast.error("Could not sign out."),
+							);
+						}}
+					/>
+				</div>
+			</header>
+			<NavigationMenuSheet open={menuOpen} onOpenChange={setMenuOpen} />
+			<CompAiChatSheet open={chatOpen} onOpenChange={setChatOpen} />
+		</>
 	);
 }
 

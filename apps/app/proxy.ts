@@ -14,7 +14,7 @@ const LANDING_PATH = "/";
 
 const SIGN_IN_PATH = "/sign-in";
 
-const UNGATED = ["/grant-access", "/eve"];
+const UNGATED = ["/grant-access", "/eve", "/auto", "/commissions"];
 
 const ANONYMOUS = ["/t"];
 
@@ -27,6 +27,8 @@ export async function proxy(request: NextRequest) {
 
 	if (isAnonymous(pathname)) return NextResponse.next();
 
+	if (isUngated(pathname)) return NextResponse.next();
+
 	if (
 		getSessionCookie(request, { cookiePrefix: AUTH_COOKIE_PREFIX }) === null
 	) {
@@ -34,8 +36,6 @@ export async function proxy(request: NextRequest) {
 			? NextResponse.next()
 			: NextResponse.redirect(new URL(SIGN_IN_PATH, request.nextUrl));
 	}
-
-	if (isUngated(pathname)) return NextResponse.next();
 
 	// Both answers, every time, and concurrently — so the gate costs one round
 	// trip rather than two, and neither answer can be stale.
