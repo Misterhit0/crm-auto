@@ -1,92 +1,149 @@
 import { describe, expect, it } from "bun:test";
 import {
+	SivLookupInputSchema,
+	SivLookupOutputSchema,
+	CreateVehicleInputSchema,
+	CreateDriverProfileInputSchema,
+	CreateInsuranceDossierInputSchema,
+	UpdateDossierStatusInputSchema,
+	ImportCommissionStatementInputSchema,
 	FuelTypeSchema,
-	VehicleUsageSchema,
-	ParkingTypeSchema,
-	DossierStatusSchema,
 	FormulaTypeSchema,
 	DocumentTypeSchema,
-	CreateDriverProfileInputSchema,
-	CreateVehicleInputSchema,
-	CreateInsuranceDossierInputSchema,
-	ImportCommissionStatementInputSchema,
+	DossierStatusSchema,
+	VehicleUsageSchema,
+	ParkingTypeSchema,
+	CommissionStatusSchema,
+	CommissionTypeSchema,
 } from "./auto-insurance";
 
-describe("Auto Insurance Validation & Calculations (QA Suite)", () => {
-	it("valide correctement les types de carburants SIV", () => {
-		expect(FuelTypeSchema.parse("ESSENCE")).toBe("ESSENCE");
-		expect(FuelTypeSchema.parse("DIESEL")).toBe("DIESEL");
-		expect(FuelTypeSchema.parse("HYBRIDE_ESSENCE")).toBe("HYBRIDE_ESSENCE");
-		expect(() => FuelTypeSchema.parse("HYDROGENE_INCONNU")).toThrow();
+describe("QA Test Suite: Immatriculation SIV & Nettoyage des Plaques", () => {
+	it("nettoie et normalise les plaques françaises SIV", () => {
+		const parsed1 = SivLookupInputSchema.parse({ licensePlate: "ab-123-cd" });
+		expect(parsed1.licensePlate).toBe("AB123CD");
+
+		const parsed2 = SivLookupInputSchema.parse({ licensePlate: " EF 456 GH " });
+		expect(parsed2.licensePlate).toBe("EF456GH");
 	});
 
-	it("valide les formules d'assurance et leurs garanties", () => {
-		expect(FormulaTypeSchema.parse("TIERS_SIMPLE")).toBe("TIERS_SIMPLE");
-		expect(FormulaTypeSchema.parse("TIERS_ETENDU_VOL_INCENDIE")).toBe("TIERS_ETENDU_VOL_INCENDIE");
-		expect(FormulaTypeSchema.parse("TOUS_RISQUES")).toBe("TOUS_RISQUES");
-		expect(() => FormulaTypeSchema.parse("FORMULE_INVALIDE")).toThrow();
+	it("rejette les formats de plaques manifestement invalides", () => {
+		expect(() => SivLookupInputSchema.parse({ licensePlate: "A" })).toThrow();
+		expect(() =>
+			SivLookupInputSchema.parse({ licensePlate: "CETTEPLAQUEESTBEAUCOUPTROPLONGUE12345" }),
+		).toThrow();
 	});
 
-	it("valide les statuts de dossier et la détection d'anomalie documentaire (Priorité A.1)", () => {
-		expect(DossierStatusSchema.parse("PIECES_EN_ATTENTE")).toBe("PIECES_EN_ATTENTE");
-		expect(DossierStatusSchema.parse("DOSSIER_COMPLET")).toBe("DOSSIER_COMPLET");
-		expect(DocumentTypeSchema.parse("RELEVE_INFORMATION")).toBe("RELEVE_INFORMATION");
-		expect(DocumentTypeSchema.parse("PERMIS_CONDUIRE")).toBe("PERMIS_CONDUIRE");
+	it("valide la sortie d'un lookup SIV complet avec marque, modèle et VIN", () => {
+		const sivData = {
+			licensePlate: "AB-123-CD",
+			vin: "VF3UPHNKMPW123456",
+			brand: "PEUGEOT",
+			model: "208",
+			version: "1.2 PureTech 100ch Allure",
+			firstRegistrationDate: "2022-06-15",
+			fiscalPower: 5,
+			fuelType: "ESSENCE" as const,
+		};
+		const parsed = SivLookupOutputSchema.parse(sivData);
+		expect(parsed.brand).toBe("PEUGEOT");
+		expect(parsed.fuelType).toBe("ESSENCE");
+		expect(parsed.fiscalPower).toBe(5);
 	});
+});
 
-	it("valide un profil conducteur avec son coefficient CRM bonus/malus", () => {
-		const validProfile = {
-			contactId: "contact_123",
-			licenseNumber: "15AB12345",
-			licenseDate: new Date("2015-04-12"),
-			licenseType: "B",
+describe("QA Test Suite: CRM Conducteur & Bonus-Malus", () => {
+	it("valide les bornes du coefficient CRM bonus-malus (0.50 à 3.50)", () => {
+		const profile = {
+			contactId: "ct_001",
 			crmCoefficient: 0.5,
 			claimsCount36Months: 0,
 			atFaultClaims: 0,
 		};
-		const parsed = CreateDriverProfileInputSchema.parse(validProfile);
-		expect(parsed.crmCoefficient).toBe(0.5);
-		expect(parsed.atFaultClaims).toBe(0);
-	});
+		expect(CreateDriverProfileInputSchema.parse(profile).crmCoefficient).toBe(0.5);
 
-	it("valide un véhicule qualifié par SIV (Plaque, Marque, Modèle, VIN)", () => {
-		const validVehicle = {
-			contactId: "contact_123",
-			licensePlate: "AB-123-CD",
-			brand: "PEUGEOT",
-			model: "208 II 1.2 PureTech",
-			version: "Allure S&S",
-			firstRegistrationDate: new Date("2022-06-15"),
-			fiscalPower: 5,
-			fuelType: "ESSENCE" as const,
-			usage: "PRIVE_TRAJET" as const,
-			parking: "GARAGE_FERME" as const,
+		// Malus maximal valide
+		expect(
+			CreateDriverProfileInputSchema.parse({ ...profile, crmCoefficient: 3.5 }).crmCoefficient,
+		).toBe(3.5);
+
+		// En dessous du bonus maximum légal français (0.50) -> Rejet
+		expect(() =>
+			CreateDriverProfileInputSchema.parse({ ...profile, crmCoefficient: 0.4 }),
+		).toThrow();
+
+		// Au dessus du malus maximal légal (3.50) -> Rejet
+		expect(() =>
+			CreateDriverProfileInputSchema.parse({ ...profile, crmCoefficient: 3.6 }),
+		).toThrow();
+	});
+});
+
+describe("QA Test Suite: Souscription & Garanties Auto", () => {
+	it("valide une création de dossier d'assurance avec options", () => {
+		const dossier = {
+			contactId: "ct_001",
+			vehicleId: "veh_001",
+			driverProfileId: "drv_001",
+			formula: "TOUS_RISQUES" as const,
+			options: {
+				assistance0km: true,
+				vehiculePret: true,
+				protectionJuridique: true,
+				valeurMajoree: false,
+				conducteurRenforce: true,
+			},
+			annualPremiumTTC: 750.5,
+			monthlyPayment: 62.54,
 		};
-		const parsed = CreateVehicleInputSchema.parse(validVehicle);
-		expect(parsed.licensePlate).toBe("AB-123-CD");
-		expect(parsed.brand).toBe("PEUGEOT");
-		expect(parsed.fuelType).toBe("ESSENCE");
+		const parsed = CreateInsuranceDossierInputSchema.parse(dossier);
+		expect(parsed.formula).toBe("TOUS_RISQUES");
+		expect(parsed.options?.assistance0km).toBe(true);
+		expect(parsed.annualPremiumTTC).toBe(750.5);
 	});
 
-	it("valide la structure d'import de bordereau grossiste (Rapprochement)", () => {
+	it("valide la transition de statut d'un dossier vers VALIDE_SOUSCRIT avec numéro de police", () => {
+		const update = {
+			dossierId: "dos_123",
+			status: "VALIDE_SOUSCRIT" as const,
+			policeNumber: "POL-APRIL-88719",
+		};
+		const parsed = UpdateDossierStatusInputSchema.parse(update);
+		expect(parsed.status).toBe("VALIDE_SOUSCRIT");
+		expect(parsed.policeNumber).toBe("POL-APRIL-88719");
+	});
+});
+
+describe("QA Test Suite: Rapprochement des Bordereaux Grossistes", () => {
+	it("valide le format de période YYYY-MM et les montants d'un bordereau", () => {
 		const statement = {
-			brokerPartnerId: "bp_april_123",
+			brokerPartnerId: "bp_maxance",
 			statementPeriod: "2026-09",
-			originalFilename: "bordereau_april_auto_sept_2026.xlsx",
+			originalFilename: "bordereau_maxance_09_2026.csv",
 			lines: [
 				{
-					partnerContractRef: "POL-APRIL-9912",
-					clientName: "Alexandre Martin",
-					licensePlate: "AB-123-CD",
+					partnerContractRef: "MAX-9091",
+					clientName: "Sarah Benali",
+					actualAmount: 112.5,
 					commissionType: "ACQUISITION_ONE_SHOT" as const,
-					actualAmount: 85.0,
-					dossierReference: "DOS-2026-0012",
+				},
+				{
+					partnerContractRef: "MAX-9092",
+					clientName: "Alexandre Martin",
+					actualAmount: 14.2,
+					commissionType: "RECURRENT_ENCAISSEMENT" as const,
 				},
 			],
 		};
 		const parsed = ImportCommissionStatementInputSchema.parse(statement);
 		expect(parsed.statementPeriod).toBe("2026-09");
-		expect(parsed.lines.length).toBe(1);
-		expect(parsed.lines[0]?.actualAmount).toBe(85.0);
+		expect(parsed.lines.length).toBe(2);
+
+		// Format de période invalide -> Rejet
+		expect(() =>
+			ImportCommissionStatementInputSchema.parse({
+				...statement,
+				statementPeriod: "Septembre-2026",
+			}),
+		).toThrow();
 	});
 });

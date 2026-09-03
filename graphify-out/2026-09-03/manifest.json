@@ -2055,8 +2055,8 @@
 		"semantic_hash": ""
 	},
 	"apps/app/app/(app)/[slug]/(agent-builder)/agents/page.tsx": {
-		"mtime": 1788398453.590379,
-		"ast_hash": "97993c188b1b9734fa4bb3170df6ae80",
+		"mtime": 1788466167.1276865,
+		"ast_hash": "fa8399efea39d719c5a8c9a740bdcabb",
 		"semantic_hash": ""
 	},
 	"apps/app/app/(app)/[slug]/(agent-builder)/chat/[chatId]/page.tsx": {
@@ -3330,8 +3330,8 @@
 		"semantic_hash": ""
 	},
 	"apps/app/proxy.ts": {
-		"mtime": 1788401081.1228454,
-		"ast_hash": "18ea8f46ee1809479cdcfd0663f8b005",
+		"mtime": 1788465732.7303815,
+		"ast_hash": "bf0f9c12259dd7581246d4c7469e96b6",
 		"semantic_hash": ""
 	},
 	"apps/app/test/agent-bridge.spec.ts": {
@@ -5247,6 +5247,36 @@
 	".agents/memories/global_menu_and_cascade_crud_checkpoint.md": {
 		"mtime": 1788401698.5940797,
 		"ast_hash": "02e2b29f316b797fbacd0d0a40c4b441",
+		"semantic_hash": ""
+	},
+	"apps/app/app/(landing)/agents/page.tsx": {
+		"mtime": 1788465752.4534035,
+		"ast_hash": "fa8399efea39d719c5a8c9a740bdcabb",
+		"semantic_hash": ""
+	},
+	"apps/app/app/(landing)/chat/page.tsx": {
+		"mtime": 1788465743.6484356,
+		"ast_hash": "12235e7cdd6795f3aa89af5a909d73e8",
+		"semantic_hash": ""
+	},
+	"apps/app/app/(landing)/companies/page.tsx": {
+		"mtime": 1788465764.2351253,
+		"ast_hash": "cfc301896e5609c97a74f30a0a2c1ee8",
+		"semantic_hash": ""
+	},
+	"apps/app/app/(landing)/contacts/page.tsx": {
+		"mtime": 1788465775.775423,
+		"ast_hash": "1afca712bae114f6f552558d40c3b59a",
+		"semantic_hash": ""
+	},
+	"apps/app/app/(landing)/deals/page.tsx": {
+		"mtime": 1788465785.7050471,
+		"ast_hash": "0ec8852df70471e81369107f5a207bee",
+		"semantic_hash": ""
+	},
+	"apps/app/app/(landing)/settings/page.tsx": {
+		"mtime": 1788465796.4542398,
+		"ast_hash": "e64ac6006a18af33e2a2118478b9bfc6",
 		"semantic_hash": ""
 	}
 }

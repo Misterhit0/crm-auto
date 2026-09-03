@@ -75,5 +75,7 @@ Pour toute phase du projet, utiliser l'orchestration **gstack** :
 ### 3. Cartographie & Knowledge Graph (`graphify`)
 - Dès l'ajout des premiers modules de code, initialiser et maintenir le graphe de connaissances avec `graphify . --obsidian` pour préserver une documentation vivante dans `graphify-out/`.
 
-### 4. Validation Systématique
-- Ne jamais clore une modification ou une fonctionnalité sans validation (lint, tests, vérification d'erreurs).
+### 4. Validation Systématique & Règle Absolue de Déploiement (/qa)
+- **Règle Absolue** : Tant que l'intégralité des tests unitaires et de typage (`check-types`, `test:qa`) n'est pas passée avec 100% de succès, **aucun push n'est autorisé**.
+- Le hook Git `.githooks/pre-push` applique cette contrainte de manière infranchissable avant tout envoi vers le dépôt distant.
+
