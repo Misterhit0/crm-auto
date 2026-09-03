@@ -281,7 +281,7 @@ export class AutoInsuranceService {
 					expectedAmount,
 					discrepancyAmount: line.actualAmount - expectedAmount,
 					reconciledAt: isMatched ? new Date() : null,
-					notes: isMatched
+					notes: matchedDossier
 						? `Rapproché avec le dossier ${matchedDossier.reference}`
 						: "Aucun contrat identifié sur ce bordereau",
 				},

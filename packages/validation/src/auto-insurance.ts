@@ -101,7 +101,7 @@ export const SivLookupOutputSchema = z.object({
 	firstRegistrationDate: z.string().optional(),
 	fiscalPower: z.number().int().optional(),
 	fuelType: FuelTypeSchema.default("ESSENCE"),
-	rawPayload: z.record(z.unknown()).optional(),
+	rawPayload: z.record(z.string(), z.unknown()).optional(),
 });
 export type SivLookupOutput = z.infer<typeof SivLookupOutputSchema>;
 
@@ -119,7 +119,7 @@ export const CreateVehicleInputSchema = z.object({
 	parking: ParkingTypeSchema.default("VOIE_PUBLIQUE"),
 	annualMileage: z.number().int().positive().optional(),
 	purchaseDate: z.date().optional(),
-	sivRawData: z.record(z.unknown()).optional(),
+	sivRawData: z.record(z.string(), z.unknown()).optional(),
 });
 export type CreateVehicleInput = z.infer<typeof CreateVehicleInputSchema>;
 

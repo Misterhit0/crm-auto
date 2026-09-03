@@ -16,6 +16,7 @@ const publicProcedure = t.procedure;
 import { timelineInput, timelineOutput, timelineCountsInput, timelineCountsOutput, myTasksInput, myTasksOutput, activityCreateInput, activityCreateOutput, completeInput, completeOutput } from "../activities/activities.contracts";
 import { agentListOutput, agentReviseInput, agentReviseOutput, agentIdInput, agentFilesOutput, agentSaveFileInput, agentSaveFileOutput, agentByIdOutput, agentHistoryInput, agentHistoryOutput, agentActivityOutput, agentUpdateInput, agentUpdateOutput, agentDeployInput, agentDeployOutput, agentPauseOutput, agentResumeOutput, agentArchiveOutput, agentRestoreOutput, agentRemoveOutput, agentRunNowInput, agentRunNowOutput, agentRetryRunInput, agentRetryRunOutput, agentCancelRunInput, agentCancelRunOutput } from "../agent/agents.contracts";
 import { apiKeyListInput, apiKeyListOutput, createApiKeyInput, createApiKeyOutput, revokeApiKeyInput, revokeApiKeyOutput } from "../api-keys/api-keys.contracts";
+import { SivLookupInputSchema, CreateVehicleInputSchema, CreateDriverProfileInputSchema, CreateInsuranceDossierInputSchema, DossierStatusSchema, UpdateDossierStatusInputSchema, ImportCommissionStatementInputSchema } from "@crm/validation";
 import { companyListInput, companyListOutput, companyIdInput, companyDetailOutput, companyOptionsInput, companyOptionOutput, companyCreateInput, companySummaryOutput, companyUpdateArgs, companyArchiveResultOutput, companyBulkOwnerInput, companyBulkResultOutput, companyBulkInput, companyEnrichOutput, companyResearchOutput, setPrimaryContactInput, companySetPrimaryContactOutput } from "../companies/companies.contracts";
 import { contactListInput, contactListOutput, contactIdInput, contactByIdOutput, contactCreateInput, contactBasicOutput, contactUpdateArgs, contactNameOutput, contactEnrichOutput, contactBulkOwnerInput, bulkResultOutput, contactBulkCompanyInput, contactBulkInput, factDecisionInput, decideFactOutput } from "../contacts/contacts.contracts";
 import { conversationListInput, conversationListOutput, builderListOutput, builderResourceSearchInput, builderResourcesOutput, conversationIdInput, builderConversationDetailOutput, conversationEventsInput, conversationEventsOutput, conversationSaveInput, conversationIdOutput, builderConversationCreateInput, builderConversationSubmitInput, builderQuestionResponseInput, builderResponseRatingInput, builderResponseRatingOutput, conversationShareStatusOutput, conversationShareTokenOutput, sharedConversationInput, sharedConversationOutput } from "../conversations/conversations.contracts";
@@ -32,6 +33,7 @@ import { slackStatusOutput, slackMatchesOutput, slackChannelsInput, slackChannel
 import { ssoSignInOptionsOutput, ssoSettingsOutput, ssoProviderListInput, ssoProviderListOutput, registerSsoProviderInput, ssoProviderOutput, deleteSsoProviderInput, deleteSsoProviderOutput } from "../sso/sso.contracts";
 import { trackingSettingsOutput, trackingFlagInput, cookieLifetimeInput, addDomainInput, trackedDomainOutput, removeDomainInput, rotateSiteIdOutput, verifyInput, verifyOutput, sourcesOutput, companyActivityInput, websiteActivityOutput, contactActivityInput } from "../tracking/tracking.contracts";
 import { workspaceOutput, memberListInput, memberListOutput, updateWorkspaceInput, setMemberRoleInput, workspaceMemberOutput } from "../workspace/workspace.contracts";
+import type { AutoInsuranceRouter } from "../auto/auto.router";
 import type { UsersRouter } from "../users/users.router";
 
 const appRouter = t.router({
@@ -139,6 +141,55 @@ const appRouter = t.router({
       .input(revokeApiKeyInput)
       .output(revokeApiKeyOutput)
       .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as any)
+    }),
+  auto: t.router({
+    lookupSiv: publicProcedure
+      .input(SivLookupInputSchema)
+      .query(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["lookupSiv"]>>),
+    createVehicle: publicProcedure
+      .input(CreateVehicleInputSchema)
+      .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["createVehicle"]>>),
+    listVehiclesByContact: publicProcedure
+      .input(z.object({ contactId: z.string() }))
+      .query(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["listVehiclesByContact"]>>),
+    createDriverProfile: publicProcedure
+      .input(CreateDriverProfileInputSchema)
+      .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["createDriverProfile"]>>),
+    getDriverProfile: publicProcedure
+      .input(z.object({ contactId: z.string() }))
+      .query(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["getDriverProfile"]>>),
+    createDossier: publicProcedure
+      .input(CreateInsuranceDossierInputSchema)
+      .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["createDossier"]>>),
+    listDossiers: publicProcedure
+      .input(z
+			.object({
+				status: DossierStatusSchema.optional(),
+				contactId: z.string().optional(),
+			})
+			.optional())
+      .query(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["listDossiers"]>>),
+    updateDossierStatus: publicProcedure
+      .input(UpdateDossierStatusInputSchema)
+      .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["updateDossierStatus"]>>),
+    listBrokerPartners: publicProcedure
+      .query(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["listBrokerPartners"]>>),
+    createBrokerPartner: publicProcedure
+      .input(z.object({
+			name: z.string(),
+			contactName: z.string().optional(),
+			email: z.string().optional(),
+			phone: z.string().optional(),
+			portalUrl: z.string().optional(),
+			defaultAcquisitionCommission: z.number().optional(),
+			defaultRenewCommissionRate: z.number().optional(),
+		}))
+      .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["createBrokerPartner"]>>),
+    importCommissionStatement: publicProcedure
+      .input(ImportCommissionStatementInputSchema)
+      .mutation(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["importCommissionStatement"]>>),
+    listCommissionStatements: publicProcedure
+      .query(async () => "PLACEHOLDER_DO_NOT_REMOVE" as unknown as Awaited<ReturnType<AutoInsuranceRouter["listCommissionStatements"]>>)
     }),
   companies: t.router({
     list: publicProcedure

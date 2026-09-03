@@ -1,0 +1,24 @@
+# Checkpoint : Démarrage Base PostgreSQL & Seed Réussi
+
+- **Date** : 03/09/2026
+- **État Docker & Base de Données** :
+  - Conteneur `crm-postgres` (PostgreSQL 17 Alpine) démarré sur le port 5432.
+  - Dépendances du monorepo installées avec succès via `bun install`.
+  - Schéma Prisma complet synchronisé avec succès (`bun run db:push`).
+  - 67 tables créées dans le schéma public, incluant :
+    - `vehicle`
+    - `driverProfile`
+    - `insuranceDossier`
+    - `dossierDocument`
+    - `brokerPartner`
+    - `commissionStatement`
+    - `commissionRecord`
+- **Génération des types & Données de Démonstration (Seed)** :
+  - Client Prisma 7.9.1 regénéré (`bun run db:generate`).
+  - Script `seed-auto.ts` exécuté avec succès :
+    - 4 courtiers grossistes de référence créés avec leurs barèmes négociés (April Auto, Maxance, Solly Azar, Netvox).
+    - 1 client prospect qualifié créé (Alexandre Martin).
+    - 1 véhicule créé avec données SIV (Peugeot 208 II, AB-123-CD).
+    - 1 profil conducteur avec CRM Bonus 0.50.
+    - 1 dossier souscrit créé (`DOS-2026-00001`, police `AP-AUTO-984512`, prime 480€ TTC).
+    - 1 commission d'acquisition provisionnée (80.00 € en attente de pointage).

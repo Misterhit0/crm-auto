@@ -27,7 +27,7 @@ export class SivService {
 				});
 
 				if (response.ok) {
-					const data = await response.json();
+					const data = (await response.json()) as Record<string, any>;
 					return {
 						licensePlate: cleanPlate,
 						vin: data.vin || data.chassisNumber,
