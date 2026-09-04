@@ -1,5 +1,35 @@
 # Changelog
 
+## [1.16.0](https://github.com/Misterhit0/crm-auto/compare/v1.15.3...v1.16.0) (2026-09-04)
+
+
+### Features
+
+* **crm:** menu global and tierces pages ([1cfac3c](https://github.com/Misterhit0/crm-auto/commit/1cfac3c739721f5821be86eef3681a2186239416))
+* **crm:** menu global, filtres par objet, cascade crud et chat agent ([7f5f7c2](https://github.com/Misterhit0/crm-auto/commit/7f5f7c296a5daae3eb8a4f6471e781ce976bf8e0))
+* **db:** extension du schema prisma avec les modeles metier assurance auto et commissionnement ([974bfdd](https://github.com/Misterhit0/crm-auto/commit/974bfdd68c3218afc9fdaef311de4a5dd4a24e4c))
+* **db:** seed et synchronisation reussie de la base de donnees PostgreSQL avec les partenaires grossistes et dossiers auto ([6fa822e](https://github.com/Misterhit0/crm-auto/commit/6fa822e95bbc594d9baa409566c476590ffe9f86))
+* implementation metier complete API tRPC, validation Zod et interfaces Apple HIG pour assurance auto et commissions ([409e59f](https://github.com/Misterhit0/crm-auto/commit/409e59f97a932e608e39f63b799f7746b05f4051))
+* initialisation du cadre agents, skills et regles g-stack ([6a33d3d](https://github.com/Misterhit0/crm-auto/commit/6a33d3d652b188cd64236c95a59cbe34cb49e1e0))
+* integration du socle base trycompai/crm ([3809cd4](https://github.com/Misterhit0/crm-auto/commit/3809cd4a59902e7644ba974c6a14cdd8a6a732eb))
+
+
+### Fixes
+
+* **app:** remove dynamic config incompatible with cacheComponents in Next 16 ([d15837a](https://github.com/Misterhit0/crm-auto/commit/d15837aa8c67a5fc230235d26a52d43a15345623))
+* **app:** resolution directe du tsconfig nextjs via chemin relatif pour compatibilite IDE ([8ef1cb3](https://github.com/Misterhit0/crm-auto/commit/8ef1cb3124e39cab03c919d3feda8fcbc3997d85))
+* **app:** restore Server Component on /[slug]/agents and wrap NavigationMenuSheet in Suspense ([be6b422](https://github.com/Misterhit0/crm-auto/commit/be6b42241253e34d776d1f44a6152576d43f4606))
+* **ci:** formatage biome et suppression directives invalides ([05ac03e](https://github.com/Misterhit0/crm-auto/commit/05ac03e9e24c0fd1b75f4d6f58ec0d4a2380c7af))
+* **db:** lazy Prisma client init — fix Vercel build failure on /eve/v1/[...path] ([8e1b4ef](https://github.com/Misterhit0/crm-auto/commit/8e1b4ef529687d84aae8ff48b9660ae11e65e855))
+* **qa:** correction biome hook, suite de tests unitaires auto-insurance et validation pre-push ([36ee480](https://github.com/Misterhit0/crm-auto/commit/36ee4800aff3b07fcf2bc918dcd9c9133c40bd81))
+* **vercel:** fallback DATABASE_URL pour postinstall prisma et regle absolue QA ([aa540f3](https://github.com/Misterhit0/crm-auto/commit/aa540f3243056c754ccbbad45c2d1f53af47ef06))
+
+
+### Documentation
+
+* ajout de ARCHITECTURE.md specifiant l'architecture technique et metier ([ffe5f21](https://github.com/Misterhit0/crm-auto/commit/ffe5f21f31f3c4db143f0b58cc224cf32742a4e6))
+* checkpoint push github reussi ([0bed0f2](https://github.com/Misterhit0/crm-auto/commit/0bed0f2f357809f7edb6baf9e17b96aaf2346fdf))
+
 ## [1.15.3](https://github.com/trycompai/crm/compare/v1.15.2...v1.15.3) (2026-08-21)
 
 
