@@ -79,3 +79,9 @@ Pour toute phase du projet, utiliser l'orchestration **gstack** :
 - **Règle Absolue** : Tant que l'intégralité des tests unitaires et de typage (`check-types`, `test:qa`) n'est pas passée avec 100% de succès, **aucun push n'est autorisé**.
 - Le hook Git `.githooks/pre-push` applique cette contrainte de manière infranchissable avant tout envoi vers le dépôt distant.
 
+### 5. Règle Absolue de Démarrage de Projet & Double Branche (main / dev)
+- À chaque démarrage ou intégration d'un projet, créer un répertoire dédié avec un lien ou alias d'accès clair.
+- Créer obligatoirement les deux branches Git : `main` (production/stable) et `dev` (développement actif).
+- Pousser systématiquement sur le dépôt distant à chaque nouvelle version, itération ou fonctionnalité validée.
+
+
