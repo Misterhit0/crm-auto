@@ -5353,5 +5353,15 @@
     "mtime": 1788996398.74388,
     "ast_hash": "8fbd9bfd105693a7e2836ab498f2002b",
     "semantic_hash": ""
+  },
+  ".agents/memories/cron_sync_hermes_work_checkpoint.md": {
+    "mtime": 1788997682.9933994,
+    "ast_hash": "1deec61d9c7c580aeb2aa06d0c5433fa",
+    "semantic_hash": ""
+  },
+  ".agents/memories/laveineuze_domain_and_token_vault_checkpoint.md": {
+    "mtime": 1788997400.826175,
+    "ast_hash": "75ebfdd6c6d4ecb76b00c733ca903d3f",
+    "semantic_hash": ""
   }
 }
