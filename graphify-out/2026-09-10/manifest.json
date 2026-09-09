@@ -5340,8 +5340,18 @@
     "semantic_hash": ""
   },
   ".agents/skills/trinity-pipeline/SKILL.md": {
-    "mtime": 1788994525.1133823,
+    "mtime": 1788995071.4678082,
     "ast_hash": "f4bde84134b2cb7ec181ad5b9e6d3766",
+    "semantic_hash": ""
+  },
+  ".agents/memories/cockpit_and_killer_saas_takeover_checkpoint.md": {
+    "mtime": 1788995071.4675367,
+    "ast_hash": "405f7cf6aa519b24787a48f95b480c3d",
+    "semantic_hash": ""
+  },
+  ".agents/memories/portal_root_secure_checkpoint.md": {
+    "mtime": 1788996398.74388,
+    "ast_hash": "8fbd9bfd105693a7e2836ab498f2002b",
     "semantic_hash": ""
   }
 }
