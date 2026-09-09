@@ -5333,5 +5333,15 @@
     "mtime": 1788398453.6844683,
     "ast_hash": "fd053c224044507cb233ec4e62729cb8",
     "semantic_hash": ""
+  },
+  ".agents/memories/autonomie_hermes_work_branches_credentials.md": {
+    "mtime": 1788991507.463679,
+    "ast_hash": "ec7f7ad1e25e64e9d8c5093eebacc1d9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/trinity-pipeline/SKILL.md": {
+    "mtime": 1788994525.1133823,
+    "ast_hash": "f4bde84134b2cb7ec181ad5b9e6d3766",
+    "semantic_hash": ""
   }
 }
