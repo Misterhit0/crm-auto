@@ -1,59 +1,4 @@
 {
-  ".agents/AGENTS.md": {
-    "mtime": 1788681816.7025337,
-    "ast_hash": "395253f86bd07067c32cbad05bf334c1",
-    "semantic_hash": ""
-  },
-  ".agents/rules/apple-design.md": {
-    "mtime": 1788398453.4319596,
-    "ast_hash": "f6d0048d63538fce7954b3b9521fc44e",
-    "semantic_hash": ""
-  },
-  ".agents/rules/graphify.md": {
-    "mtime": 1788398453.4321756,
-    "ast_hash": "f32389319bbdf164843c0de80de57909",
-    "semantic_hash": ""
-  },
-  ".agents/rules/mem-cp.md": {
-    "mtime": 1788398453.433008,
-    "ast_hash": "db1233c668511d3f9ffbb5dc3c933d84",
-    "semantic_hash": ""
-  },
-  ".agents/rules/recherche-colis-edi.md": {
-    "mtime": 1788398453.4332132,
-    "ast_hash": "34b86e94c3d420a4058e2fc24e76b9ee",
-    "semantic_hash": ""
-  },
-  ".agents/skills/apple/SKILL.md": {
-    "mtime": 1788398453.4334881,
-    "ast_hash": "def5f6a41677a9cd70cbe327f003f264",
-    "semantic_hash": ""
-  },
-  ".agents/workflows/graphify.md": {
-    "mtime": 1788398453.433892,
-    "ast_hash": "0bc020d491fca99550c1ea3de0a5f862",
-    "semantic_hash": ""
-  },
-  ".agents/workflows/no-apple.md": {
-    "mtime": 1788398453.4340513,
-    "ast_hash": "3354771d9563bc52056efff0e16da9db",
-    "semantic_hash": ""
-  },
-  ".antigravity/rules.md": {
-    "mtime": 1788398453.4343069,
-    "ast_hash": "e65cc9c9b1654423b6892e1f6bc74c78",
-    "semantic_hash": ""
-  },
-  "CLAUDE.md": {
-    "mtime": 1788474306.945547,
-    "ast_hash": "fb56d4a42a2a9902afcf871ebfc10ed7",
-    "semantic_hash": ""
-  },
-  "skills_library.md": {
-    "mtime": 1788398453.4361565,
-    "ast_hash": "ad28936c13f10d42f0a5aafe6a8d67b8",
-    "semantic_hash": ""
-  },
   ".claude/settings.json": {
     "mtime": 1788398453.4501774,
     "ast_hash": "340fea33aaeb6413e59aca74a36a0872",
@@ -1410,7 +1355,7 @@
     "semantic_hash": ""
   },
   "apps/api/src/generated/server.ts": {
-    "mtime": 1788478219.2486243,
+    "mtime": 1788472022.0314898,
     "ast_hash": "34eb432aa6e3888297e741b99007b3ab",
     "semantic_hash": ""
   },
@@ -2499,39 +2444,14 @@
     "ast_hash": "c7f2a0366676b30415d60d655f075518",
     "semantic_hash": ""
   },
-  "apps/app/app/(landing)/agents/page.tsx": {
-    "mtime": 1788467101.1154742,
-    "ast_hash": "8075fee32dbef53c86d46a7b93c5dd1e",
-    "semantic_hash": ""
-  },
   "apps/app/app/(landing)/auto/page.tsx": {
     "mtime": 1788467101.1219008,
     "ast_hash": "44472c368392bf0c6af504bce347ebb3",
     "semantic_hash": ""
   },
-  "apps/app/app/(landing)/chat/page.tsx": {
-    "mtime": 1788467101.1168697,
-    "ast_hash": "f3f6b4d93e014aba5604f6de7675f98d",
-    "semantic_hash": ""
-  },
   "apps/app/app/(landing)/commissions/page.tsx": {
     "mtime": 1788467101.1167924,
     "ast_hash": "a19ddfc7dd0ae77a321dfe6366d603d7",
-    "semantic_hash": ""
-  },
-  "apps/app/app/(landing)/companies/page.tsx": {
-    "mtime": 1788467101.1177962,
-    "ast_hash": "cfcd8cc655d7ca39f93b7f3aa2d9edcc",
-    "semantic_hash": ""
-  },
-  "apps/app/app/(landing)/contacts/page.tsx": {
-    "mtime": 1788467101.1167822,
-    "ast_hash": "93ca8a16d4be04f8e1302a3a3fdbd390",
-    "semantic_hash": ""
-  },
-  "apps/app/app/(landing)/deals/page.tsx": {
-    "mtime": 1788467101.1178827,
-    "ast_hash": "c0c62debb8c754ec9cce1c058bbe07e5",
     "semantic_hash": ""
   },
   "apps/app/app/(landing)/grant-access/grant-access.tsx": {
@@ -2567,11 +2487,6 @@
   "apps/app/app/(landing)/page.tsx": {
     "mtime": 1788398453.6142762,
     "ast_hash": "c5864c6d6b06bba9270bcb6e4c2766b3",
-    "semantic_hash": ""
-  },
-  "apps/app/app/(landing)/settings/page.tsx": {
-    "mtime": 1788467101.118678,
-    "ast_hash": "5bff5ee8aa56ccb21e53e9b1215aa48e",
     "semantic_hash": ""
   },
   "apps/app/app/(landing)/sign-in/page.tsx": {
@@ -2774,19 +2689,9 @@
     "ast_hash": "073b161e1b7cea7bfef43f4e86e68a40",
     "semantic_hash": ""
   },
-  "apps/app/components/crm/cascade-delete-dialog.tsx": {
-    "mtime": 1788467101.1277652,
-    "ast_hash": "eb091bdbef16353252a7547c04ace1d7",
-    "semantic_hash": ""
-  },
   "apps/app/components/crm/closing-window.ts": {
     "mtime": 1788398453.6329925,
     "ast_hash": "2e5c4e22f54903190f7dd0a1564271a6",
-    "semantic_hash": ""
-  },
-  "apps/app/components/crm/compai-chat-sheet.tsx": {
-    "mtime": 1788467101.129291,
-    "ast_hash": "1c492154ac72c41cc1650fb1f006a277",
     "semantic_hash": ""
   },
   "apps/app/components/crm/company-cell.tsx": {
@@ -2807,11 +2712,6 @@
   "apps/app/components/crm/deal-stage.tsx": {
     "mtime": 1788398453.6341655,
     "ast_hash": "572caa71cdd36c87536fdc735a0c5e14",
-    "semantic_hash": ""
-  },
-  "apps/app/components/crm/dossier-crud-dialog.tsx": {
-    "mtime": 1788467101.131146,
-    "ast_hash": "4fc107e1e8b14007fa4d8e3002f03743",
     "semantic_hash": ""
   },
   "apps/app/components/crm/dossier-sheet.tsx": {
@@ -2882,11 +2782,6 @@
   "apps/app/components/crm/inline-field.tsx": {
     "mtime": 1788398453.637681,
     "ast_hash": "a796595d47e578abadb705bcf0c754ee",
-    "semantic_hash": ""
-  },
-  "apps/app/components/crm/object-filter-bar.tsx": {
-    "mtime": 1788467101.1337295,
-    "ast_hash": "f2a3727a356df6804d8fae3299577e20",
     "semantic_hash": ""
   },
   "apps/app/components/crm/owner-cell.tsx": {
@@ -3167,11 +3062,6 @@
   "apps/app/components/mobile-nav.tsx": {
     "mtime": 1788398453.6518695,
     "ast_hash": "0fe22e5036c1e26dd26a6a132d8b24af",
-    "semantic_hash": ""
-  },
-  "apps/app/components/navigation-menu-sheet.tsx": {
-    "mtime": 1788475483.7186503,
-    "ast_hash": "1d1c13cf39de3bcc85895ae85af9a62b",
     "semantic_hash": ""
   },
   "apps/app/components/page-shell.tsx": {
@@ -3675,8 +3565,8 @@
     "semantic_hash": ""
   },
   "packages/db/prisma.config.ts": {
-    "mtime": 1788477599.7731972,
-    "ast_hash": "192fa34e4748912d5667a73445d62194",
+    "mtime": 1788469834.4347615,
+    "ast_hash": "cc8fc6c022a9f29d3e2de5ec618b09a9",
     "semantic_hash": ""
   },
   "packages/db/prisma/migrations/20260731150000_init/migration.sql": {
@@ -4000,8 +3890,8 @@
     "semantic_hash": ""
   },
   "packages/db/src/client.ts": {
-    "mtime": 1788477615.047656,
-    "ast_hash": "afdd1e766c2756085dadb116b8dd6a1e",
+    "mtime": 1788471995.3779325,
+    "ast_hash": "41936afb56e792bf4c684dc18126e8cb",
     "semantic_hash": ""
   },
   "packages/db/src/crm-events.ts": {
@@ -4764,11 +4654,6 @@
     "ast_hash": "cfa76022c1bcd4d64e97b2d92db34063",
     "semantic_hash": ""
   },
-  "packages/validation/src/auto-insurance.test.ts": {
-    "mtime": 1788477599.7958558,
-    "ast_hash": "20cc52638c137cabb3f8a6590f514765",
-    "semantic_hash": ""
-  },
   "packages/validation/src/auto-insurance.ts": {
     "mtime": 1788467101.051221,
     "ast_hash": "0d2cdfeda1d570942ace427706dfc823",
@@ -4827,11 +4712,6 @@
   "packages/validation/tsconfig.json": {
     "mtime": 1788468596.0275757,
     "ast_hash": "23b5acb438d8dbab3de07f99fc475958",
-    "semantic_hash": ""
-  },
-  "parse_affected_dispor.php": {
-    "mtime": 1788962631.190012,
-    "ast_hash": "037f5d4b331a81dd193cfb0822ff7e96",
     "semantic_hash": ""
   },
   "skills-lock.json": {
@@ -4909,34 +4789,9 @@
     "ast_hash": "4d863283b47b1731c4ac107678bec600",
     "semantic_hash": ""
   },
-  ".agents/manifests/CLUSTER_README.md": {
-    "mtime": 1788705101.7463944,
-    "ast_hash": "030f9219a0b0a5d5ff2510fee2b1c20e",
-    "semantic_hash": ""
-  },
-  ".agents/manifests/HERMES_CLUSTER_MANIFEST.md": {
-    "mtime": 1788705123.8648217,
-    "ast_hash": "1c4ec919ed04c3087c5da648bff06242",
-    "semantic_hash": ""
-  },
-  ".agents/manifests/HERMES_JARVIS_MANIFEST.md": {
-    "mtime": 1788704336.189804,
-    "ast_hash": "7d5de4dca7822a9f8d1c687375ec168e",
-    "semantic_hash": ""
-  },
-  ".agents/manifests/HERMES_LAB_MANIFEST.md": {
-    "mtime": 1788704336.1899521,
-    "ast_hash": "acd1efce60d3ad7d977902017dc0aa14",
-    "semantic_hash": ""
-  },
-  ".agents/manifests/HERMES_WORK_MANIFEST.md": {
-    "mtime": 1788704336.1900666,
-    "ast_hash": "cc1a82c5f9a5919e52526cde3859d511",
-    "semantic_hash": ""
-  },
-  ".agents/memories/all_menu_pages_created_checkpoint.md": {
-    "mtime": 1788466393.2739487,
-    "ast_hash": "f9a1639fec566823459957c0f3493288",
+  ".agents/AGENTS.md": {
+    "mtime": 1788469876.9251566,
+    "ast_hash": "5ba790ee21d2537852409e1777f9a11b",
     "semantic_hash": ""
   },
   ".agents/memories/api_frontend_auto_checkpoint.md": {
@@ -4949,34 +4804,14 @@
     "ast_hash": "113dfe927ead53beac2bc2c19dd51e28",
     "semantic_hash": ""
   },
-  ".agents/memories/auto_dossier_sheet_and_mobile_checkpoint.md": {
-    "mtime": 1788401200.1049588,
-    "ast_hash": "f4fb46fbe18f08f5f646c87eaa71ca75",
-    "semantic_hash": ""
-  },
-  ".agents/memories/claude_md_and_skills_sync_20260904_002625.md": {
-    "mtime": 1788474385.0898695,
-    "ast_hash": "62c14309b59bd486de6ec8c0be36dca9",
-    "semantic_hash": ""
-  },
   ".agents/memories/clone_compai_crm_checkpoint.md": {
     "mtime": 1788398457.4623475,
     "ast_hash": "a474475b7b525eb57c7fcc2273ee0795",
     "semantic_hash": ""
   },
-  ".agents/memories/fix_prerender_dynamic_hook.md": {
-    "mtime": 1788475538.823016,
-    "ast_hash": "37d8a9f846093c9d76ac01977c0e9501",
-    "semantic_hash": ""
-  },
   ".agents/memories/github_push_checkpoint.md": {
     "mtime": 1788398490.0931914,
     "ast_hash": "d30a0f6b3699ebfea95976f56ef88dc8",
-    "semantic_hash": ""
-  },
-  ".agents/memories/global_menu_and_cascade_crud_checkpoint.md": {
-    "mtime": 1788401698.5940797,
-    "ast_hash": "02e2b29f316b797fbacd0d0a40c4b441",
     "semantic_hash": ""
   },
   ".agents/memories/init_crm_nil_checkpoint.md": {
@@ -4994,9 +4829,44 @@
     "ast_hash": "ae6aedbad270db99a636441186786354",
     "semantic_hash": ""
   },
-  ".agents/memories/rule_hermes_lab_git_branches.md": {
-    "mtime": 1788704336.1901855,
-    "ast_hash": "37fcc0580041c5f78f60072dd16f4873",
+  ".agents/rules/apple-design.md": {
+    "mtime": 1788398453.4319596,
+    "ast_hash": "f6d0048d63538fce7954b3b9521fc44e",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1788398453.4321756,
+    "ast_hash": "f32389319bbdf164843c0de80de57909",
+    "semantic_hash": ""
+  },
+  ".agents/rules/mem-cp.md": {
+    "mtime": 1788398453.433008,
+    "ast_hash": "db1233c668511d3f9ffbb5dc3c933d84",
+    "semantic_hash": ""
+  },
+  ".agents/rules/recherche-colis-edi.md": {
+    "mtime": 1788398453.4332132,
+    "ast_hash": "34b86e94c3d420a4058e2fc24e76b9ee",
+    "semantic_hash": ""
+  },
+  ".agents/skills/apple/SKILL.md": {
+    "mtime": 1788398453.4334881,
+    "ast_hash": "def5f6a41677a9cd70cbe327f003f264",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1788398453.433892,
+    "ast_hash": "0bc020d491fca99550c1ea3de0a5f862",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/no-apple.md": {
+    "mtime": 1788398453.4340513,
+    "ast_hash": "3354771d9563bc52056efff0e16da9db",
+    "semantic_hash": ""
+  },
+  ".antigravity/rules.md": {
+    "mtime": 1788398453.4343069,
+    "ast_hash": "e65cc9c9b1654423b6892e1f6bc74c78",
     "semantic_hash": ""
   },
   ".github/workflows/auto-pr.yml": {
@@ -5025,8 +4895,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1788681816.70315,
-    "ast_hash": "7d4946cd8e636080496165088654292b",
+    "mtime": 1788469871.8188744,
+    "ast_hash": "5ba790ee21d2537852409e1777f9a11b",
     "semantic_hash": ""
   },
   "ARCHITECTURE.md": {
@@ -5037,6 +4907,11 @@
   "CHANGELOG.md": {
     "mtime": 1788398453.45641,
     "ast_hash": "afd3d93a74d8b23f9a25709c12e22173",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1788474306.945547,
+    "ast_hash": "fb56d4a42a2a9902afcf871ebfc10ed7",
     "semantic_hash": ""
   },
   "CONTRIBUTING.md": {
@@ -5234,6 +5109,11 @@
     "ast_hash": "23e178a159471c2cf49d7b592ece960c",
     "semantic_hash": ""
   },
+  "skills_library.md": {
+    "mtime": 1788398453.4361565,
+    "ast_hash": "ad28936c13f10d42f0a5aafe6a8d67b8",
+    "semantic_hash": ""
+  },
   "apps/app/public/apple-touch-icon.png": {
     "mtime": 1788398453.6654031,
     "ast_hash": "06a05ddca0e58eefe5826736c8e0c1ed",
@@ -5332,6 +5212,86 @@
   "docs/images/product-shot.png": {
     "mtime": 1788398453.6844683,
     "ast_hash": "fd053c224044507cb233ec4e62729cb8",
+    "semantic_hash": ""
+  },
+  "apps/app/components/crm/cascade-delete-dialog.tsx": {
+    "mtime": 1788467101.1277652,
+    "ast_hash": "eb091bdbef16353252a7547c04ace1d7",
+    "semantic_hash": ""
+  },
+  "apps/app/components/crm/dossier-crud-dialog.tsx": {
+    "mtime": 1788467101.131146,
+    "ast_hash": "4fc107e1e8b14007fa4d8e3002f03743",
+    "semantic_hash": ""
+  },
+  "apps/app/components/crm/object-filter-bar.tsx": {
+    "mtime": 1788467101.1337295,
+    "ast_hash": "f2a3727a356df6804d8fae3299577e20",
+    "semantic_hash": ""
+  },
+  "apps/app/components/navigation-menu-sheet.tsx": {
+    "mtime": 1788475483.7186503,
+    "ast_hash": "1d1c13cf39de3bcc85895ae85af9a62b",
+    "semantic_hash": ""
+  },
+  ".agents/memories/auto_dossier_sheet_and_mobile_checkpoint.md": {
+    "mtime": 1788401200.1049588,
+    "ast_hash": "f4fb46fbe18f08f5f646c87eaa71ca75",
+    "semantic_hash": ""
+  },
+  "apps/app/components/crm/compai-chat-sheet.tsx": {
+    "mtime": 1788467101.129291,
+    "ast_hash": "1c492154ac72c41cc1650fb1f006a277",
+    "semantic_hash": ""
+  },
+  ".agents/memories/global_menu_and_cascade_crud_checkpoint.md": {
+    "mtime": 1788401698.5940797,
+    "ast_hash": "02e2b29f316b797fbacd0d0a40c4b441",
+    "semantic_hash": ""
+  },
+  "apps/app/app/(landing)/agents/page.tsx": {
+    "mtime": 1788467101.1154742,
+    "ast_hash": "8075fee32dbef53c86d46a7b93c5dd1e",
+    "semantic_hash": ""
+  },
+  "apps/app/app/(landing)/chat/page.tsx": {
+    "mtime": 1788467101.1168697,
+    "ast_hash": "f3f6b4d93e014aba5604f6de7675f98d",
+    "semantic_hash": ""
+  },
+  "apps/app/app/(landing)/companies/page.tsx": {
+    "mtime": 1788467101.1177962,
+    "ast_hash": "cfcd8cc655d7ca39f93b7f3aa2d9edcc",
+    "semantic_hash": ""
+  },
+  "apps/app/app/(landing)/contacts/page.tsx": {
+    "mtime": 1788467101.1167822,
+    "ast_hash": "93ca8a16d4be04f8e1302a3a3fdbd390",
+    "semantic_hash": ""
+  },
+  "apps/app/app/(landing)/deals/page.tsx": {
+    "mtime": 1788467101.1178827,
+    "ast_hash": "c0c62debb8c754ec9cce1c058bbe07e5",
+    "semantic_hash": ""
+  },
+  "apps/app/app/(landing)/settings/page.tsx": {
+    "mtime": 1788467101.118678,
+    "ast_hash": "5bff5ee8aa56ccb21e53e9b1215aa48e",
+    "semantic_hash": ""
+  },
+  "packages/validation/src/auto-insurance.test.ts": {
+    "mtime": 1788469861.8524203,
+    "ast_hash": "02eb5a2b3f52917d35d6366ddb4c97b9",
+    "semantic_hash": ""
+  },
+  ".agents/memories/all_menu_pages_created_checkpoint.md": {
+    "mtime": 1788466393.2739487,
+    "ast_hash": "f9a1639fec566823459957c0f3493288",
+    "semantic_hash": ""
+  },
+  ".agents/memories/claude_md_and_skills_sync_20260904_002625.md": {
+    "mtime": 1788474385.0898695,
+    "ast_hash": "62c14309b59bd486de6ec8c0be36dca9",
     "semantic_hash": ""
   }
 }
