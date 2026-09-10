@@ -5410,13 +5410,13 @@
     "semantic_hash": ""
   },
   "trinity-hub/backend/app/main.py": {
-    "mtime": 1788999212.187879,
-    "ast_hash": "a9d34d3eaacf4359ed0389abdf3f1ab6",
+    "mtime": 1788999969.1661956,
+    "ast_hash": "f19a3546619e077d073783e6b8a94383",
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/app.js": {
-    "mtime": 1788998978.794534,
-    "ast_hash": "30c32c6cf1b959c95d428948ea4b311a",
+    "mtime": 1788999969.1670778,
+    "ast_hash": "9f4397dd2ec732a17cec15216203f680",
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/gauges.js": {
@@ -5430,8 +5430,8 @@
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/palette.js": {
-    "mtime": 1788998962.7703657,
-    "ast_hash": "c398dd4eac347c3d4dd56bed197a8f26",
+    "mtime": 1788999969.1675308,
+    "ast_hash": "53f033de1678cfdd9e74e6de37be1234",
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/state.js": {
@@ -5470,7 +5470,7 @@
     "semantic_hash": ""
   },
   ".agents/memories/trinity_hub_standalone_project_checkpoint.md": {
-    "mtime": 1788999418.2735863,
+    "mtime": 1788999460.0130968,
     "ast_hash": "f6629a68eeea4598b71657ee667e8194",
     "semantic_hash": ""
   },
@@ -5490,8 +5490,83 @@
     "semantic_hash": ""
   },
   "trinity-hub/frontend/index.html": {
-    "mtime": 1788998991.032445,
-    "ast_hash": "2e04826b0da7f2562abbb06ed33ff915",
+    "mtime": 1788999969.1665888,
+    "ast_hash": "2d2f7809cad31a0220f3d7851ac797c2",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/agents.py": {
+    "mtime": 1788999969.1655896,
+    "ast_hash": "977cbd483fff503b1bf73ce3e37e2755",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/cascade.py": {
+    "mtime": 1788999969.1657302,
+    "ast_hash": "6637dd5c86a266c85e71889470943a4a",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/prompts.py": {
+    "mtime": 1788999969.165846,
+    "ast_hash": "fe14a52c229b15fb68a865e86d98b008",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/queries.py": {
+    "mtime": 1788999969.165965,
+    "ast_hash": "c264a50c2a3ad722555ddd1c199475af",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/cascade-control.js": {
+    "mtime": 1788999969.1672184,
+    "ast_hash": "255c717c5c528de234746539decbe55b",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/fleet-view.js": {
+    "mtime": 1788999969.167354,
+    "ast_hash": "cd9ea3f6cce6fa5c8186f8b54ab55501",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/prompt-studio.js": {
+    "mtime": 1788999969.1676533,
+    "ast_hash": "384275f3320a9c196cb4d9b80752046c",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/query-inspector.js": {
+    "mtime": 1788999969.1677666,
+    "ast_hash": "2d5e9719cb7f4670e69338d1d1aa801b",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/topology-graph.js": {
+    "mtime": 1788999969.1678987,
+    "ast_hash": "869e257fa61a4682a76fba19b455a3e8",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_agents_fleet.py": {
+    "mtime": 1788999969.168009,
+    "ast_hash": "a46bd5c96ed0d5d6093d3915d139ac29",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_cascade_control.py": {
+    "mtime": 1788999969.1682215,
+    "ast_hash": "42a0515e64065c0eba9817e41db0aae2",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_prompts_studio.py": {
+    "mtime": 1788999969.1683269,
+    "ast_hash": "c81e9f15cdbdee293bdf701be4dbd0d2",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_query_inspector.py": {
+    "mtime": 1788999969.1684437,
+    "ast_hash": "8ff53d818147973e42b9d9b1a0e78577",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_topology_graph.py": {
+    "mtime": 1788999969.168563,
+    "ast_hash": "77b10333c23e6e36ab7d68a59cc5bf56",
+    "semantic_hash": ""
+  },
+  ".agents/memories/trinity_cockpit_full_tdd_checkpoint.md": {
+    "mtime": 1788999976.280215,
+    "ast_hash": "4fdd3916f2429d815de69c3b0e74d510",
     "semantic_hash": ""
   }
 }

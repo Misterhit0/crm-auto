@@ -4830,7 +4830,7 @@
     "semantic_hash": ""
   },
   "parse_affected_dispor.php": {
-    "mtime": 1788962631.190012,
+    "mtime": 1788998078.925906,
     "ast_hash": "037f5d4b331a81dd193cfb0822ff7e96",
     "semantic_hash": ""
   },
@@ -4910,7 +4910,7 @@
     "semantic_hash": ""
   },
   ".agents/manifests/CLUSTER_README.md": {
-    "mtime": 1788705101.7463944,
+    "mtime": 1788998078.9246511,
     "ast_hash": "030f9219a0b0a5d5ff2510fee2b1c20e",
     "semantic_hash": ""
   },
@@ -5365,8 +5365,133 @@
     "semantic_hash": ""
   },
   ".agents/memories/autonomy_sentinel_and_fleet_sync_checkpoint.md": {
-    "mtime": 1788997998.1356134,
+    "mtime": 1788998021.41354,
     "ast_hash": "acf8be32e3e39428069d7991cf1fd3f1",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/actions.py": {
+    "mtime": 1788998826.225781,
+    "ast_hash": "9d8094b836e387ffd49a9d425d61dfc9",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/auth.py": {
+    "mtime": 1788998804.750332,
+    "ast_hash": "137fa26be0833f620e4a9e7ffdeddb58",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/git.py": {
+    "mtime": 1788998821.7764814,
+    "ast_hash": "250c9de4be1cd03d981fc30e75774f22",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/system.py": {
+    "mtime": 1788998816.036908,
+    "ast_hash": "2d9923db33d9760f7ed6ca5e74d200ea",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/tokens.py": {
+    "mtime": 1788998911.0945818,
+    "ast_hash": "1f252bc47d4b41f4e9a290ae0d211754",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/core/config.py": {
+    "mtime": 1788999261.4749606,
+    "ast_hash": "68304eb9d2af244801a8dc4e20a4fabf",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/core/security.py": {
+    "mtime": 1788998795.9983907,
+    "ast_hash": "b7d161713a058844020ffea923b34aa7",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/db/database.py": {
+    "mtime": 1788998799.8101,
+    "ast_hash": "d231fe5dd7a6a9d1ea8fe0a87b13919c",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/main.py": {
+    "mtime": 1788999212.187879,
+    "ast_hash": "a9d34d3eaacf4359ed0389abdf3f1ab6",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/app.js": {
+    "mtime": 1788998978.794534,
+    "ast_hash": "30c32c6cf1b959c95d428948ea4b311a",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/gauges.js": {
+    "mtime": 1788998955.9839303,
+    "ast_hash": "5a54a43badb80ebf285c679a2601a6cc",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/git-switcher.js": {
+    "mtime": 1788998968.4644432,
+    "ast_hash": "0d927d4e9b63fb04f53fef88997a7bef",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/palette.js": {
+    "mtime": 1788998962.7703657,
+    "ast_hash": "c398dd4eac347c3d4dd56bed197a8f26",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/state.js": {
+    "mtime": 1788998951.3233287,
+    "ast_hash": "403b751e5b813ddcd6be86e23f3d8fd0",
+    "semantic_hash": ""
+  },
+  "trinity-hub/scripts/deploy.sh": {
+    "mtime": 1788999176.70746,
+    "ast_hash": "c51f36b8536925c8cee73d6a372b9ab7",
+    "semantic_hash": ""
+  },
+  "trinity-hub/scripts/run_tests.sh": {
+    "mtime": 1788998999.8581042,
+    "ast_hash": "e77acfd2772bcac84ef48502ce4e17b0",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_auth.py": {
+    "mtime": 1788998871.3217893,
+    "ast_hash": "3c432dfd4ae23f2aed6a401bbf55a822",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_git_and_actions.py": {
+    "mtime": 1788998924.1320508,
+    "ast_hash": "c444aec6720079def6af26dd8654e897",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_telemetry.py": {
+    "mtime": 1788998880.5366423,
+    "ast_hash": "9bd0dac5d9ab855aa55c0b9e9983fefb",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_tokens.py": {
+    "mtime": 1788998915.7676933,
+    "ast_hash": "e1fca094ee74ad9d3c3e1153eebdad19",
+    "semantic_hash": ""
+  },
+  ".agents/memories/trinity_hub_standalone_project_checkpoint.md": {
+    "mtime": 1788999418.2735863,
+    "ast_hash": "f6629a68eeea4598b71657ee667e8194",
+    "semantic_hash": ""
+  },
+  "trinity-hub/README.md": {
+    "mtime": 1788998782.0509617,
+    "ast_hash": "2ed1ae0f894521dd4c44c9022c9f6d32",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/requirements.txt": {
+    "mtime": 1788998786.0967884,
+    "ast_hash": "78ee7c637242f3be5ee1ff0c6ab0a32a",
+    "semantic_hash": ""
+  },
+  "trinity-hub/docker/docker-compose.yml": {
+    "mtime": 1788999265.1667333,
+    "ast_hash": "2ae3faebc3a42ea99c7b0d5478df7a37",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/index.html": {
+    "mtime": 1788998991.032445,
+    "ast_hash": "2e04826b0da7f2562abbb06ed33ff915",
     "semantic_hash": ""
   }
 }
