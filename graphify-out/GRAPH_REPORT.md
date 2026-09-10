@@ -1,16 +1,16 @@
 # Graph Report - crm-nil  (2026-09-10)
 
 ## Corpus Check
-- 1048 files · ~492,862 words
+- 1070 files · ~498,926 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 7819 nodes · 19503 edges · 402 communities (310 shown, 92 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 201 edges (avg confidence: 0.72)
+- 7906 nodes · 19655 edges · 417 communities (322 shown, 95 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 220 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e03cee8d`
+- Built from commit: `81bd0f7e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,7 +24,6 @@
 - useTRPC
 - generated/server.ts
 - client.tsx
-- record-delete.spec.ts
 - slack/page.tsx
 - channels/crm.ts
 - outlook-sync.service.ts
@@ -371,14 +370,21 @@
 - app/layout.tsx
 - analytics.tsx
 - settings-sidebar.tsx
+- .getMe
 - built-with.tsx
 - use-seconds.ts
 - claude_md_and_skills_sync_20260904_002625.md
 - src/env.ts
+- src/env.ts
+- research-key.service.ts
+- bubble.tsx
 - Checkpoint Mémoire : Autonomie Totale Hermes-Work (Multi-branches, Credentials & Knowledge Graph)
+- 🏛️ Trinity Sovereign Hub v2.0 (NextGen Apple HIG)
 - 11. Frontend
+- PrismaLogBridge
 - Security Policy
 - query-client.ts
+- Checkpoint Mémoire : Trinity Sovereign Hub v2.0 Projet Autonome
 - 🏛️ Trinity Sovereign Pipeline (Fail-Closed & Bite Proof)
 - Checkpoint Mémoire : Master Gateway laveineuze.fr & Espace Token Vault Sécurisé (SQLite)
 - page-transition.tsx
@@ -387,6 +393,12 @@
 - @crm/db
 - TrackingModule
 - lucide-react
+- app.js
+- git-switcher.js
+- palette.js
+- state.js
+- deploy.sh
+- run_tests.sh
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 356 edges
@@ -401,197 +413,193 @@
 10. `Icon()` - 56 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `DataTable()` --indirect_call--> `page()`  [INFERRED]
-  packages/ui/src/components/data-table.tsx → apps/app/test/agent-results.spec.ts
-- `preview()` --indirect_call--> `value()`  [INFERRED]
-  apps/agent/agent/hooks/activity.ts → packages/db/test/fields.spec.ts
-- `writeValues()` --indirect_call--> `key()`  [INFERRED]
-  packages/db/src/fields.ts → apps/agent/agent/lib/blank-facts.ts
-- `ChartLegendContent()` --indirect_call--> `key()`  [INFERRED]
-  packages/ui/src/components/chart.tsx → apps/agent/agent/lib/blank-facts.ts
-- `AreaTrend()` --indirect_call--> `key()`  [INFERRED]
-  packages/ui/src/components/dashboard-chart.tsx → apps/agent/agent/lib/blank-facts.ts
+- `mint()` --indirect_call--> `value()`  [INFERRED]
+  apps/agent/test/channel-auth.spec.ts → packages/db/test/fields.spec.ts
+- `AutoDossiersPage()` --indirect_call--> `value()`  [INFERRED]
+  apps/app/app/(app)/[slug]/auto/page.tsx → packages/db/test/fields.spec.ts
+- `AutoDossiersPage()` --indirect_call--> `value()`  [INFERRED]
+  apps/app/app/(landing)/auto/page.tsx → packages/db/test/fields.spec.ts
+- `CompaniesPage()` --indirect_call--> `value()`  [INFERRED]
+  apps/app/app/(landing)/companies/page.tsx → packages/db/test/fields.spec.ts
+- `ContactsPage()` --indirect_call--> `value()`  [INFERRED]
+  apps/app/app/(landing)/contacts/page.tsx → packages/db/test/fields.spec.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (402 total, 92 thin omitted)
+## Communities (417 total, 95 thin omitted)
 
 ### Community 0 - "cn"
 Cohesion: 0.03
-Nodes (108): ScopeGroup, ScopeLine, SlackScopeGroups(), ChatAttachmentChip(), ChatChipAttachment, ChatChipResource, ChatChipVariant, ChatCommandChip() (+100 more)
+Nodes (103): ScopeGroup, ScopeLine, ResponseActions(), ChatAttachmentChip(), ChatChipVariant, ChatReferenceIdentity(), formatBytes(), isPreviewableImage() (+95 more)
 
 ### Community 1 - "deals.service.ts"
-Cohesion: 0.12
-Nodes (16): AUTHOR_SELECT, Entry, ENTRY_SELECT, NOTE_TYPES, DashboardSummaryInput, Ctx, Query, DashboardService (+8 more)
+Cohesion: 0.06
+Nodes (20): AGENT_DISPATCH, AgentRunsService, CANCELLABLE_STATUSES, Injectable, AgentTaskQueue, AgentTriggerService, runWithConcurrency(), Injectable (+12 more)
 
 ### Community 2 - "contact-sheet.tsx"
-Cohesion: 0.04
-Nodes (124): data(), AgentPanel(), CompanyRef, InlineCompanyField(), contactName(), FactProvenance(), subtitleFor(), entityOf() (+116 more)
+Cohesion: 0.03
+Nodes (139): data(), COLUMNS, DealListResultTable(), humaniseStage(), pipelineTotal(), Stage(), tableMeta(), tableTitle() (+131 more)
 
 ### Community 3 - "SyncStateService"
-Cohesion: 0.03
-Nodes (65): GmailSyncService, Injectable, GoogleConnectionService, rebuildThreads(), Injectable, PurgeSyncedDataOutput, GoogleModule, Module (+57 more)
+Cohesion: 0.11
+Nodes (20): MICROSOFT_SYNC_SOURCES, MicrosoftSyncSource, rebuildThreads(), MicrosoftConnectionStatus, microsoftConnectionStatusOutput, MicrosoftSourceStatus, microsoftSourceStatusOutput, microsoftSyncStatusOutput (+12 more)
 
 ### Community 4 - "Db"
-Cohesion: 0.04
-Nodes (32): AgentAccessService, Injectable, Inject, Inject, InjectDatabase(), MailboxTokenService, Injectable, SearchHit (+24 more)
+Cohesion: 0.03
+Nodes (51): expiresAt, AUTHOR_SELECT, Entry, ENTRY_SELECT, NOTE_TYPES, Inject, UserProfile, Inject (+43 more)
 
 ### Community 5 - "button.tsx"
-Cohesion: 0.06
-Nodes (81): CreatedApiKey, EXPIRATION_OPTIONS, ExpirationValue, CONNECT_ERRORS, explain(), RESOLVE_HOSTS, resolveLink(), SOURCES (+73 more)
+Cohesion: 0.10
+Nodes (50): CreatedApiKey, EXPIRATION_OPTIONS, ExpirationValue, CopyValue(), RATE_COLUMNS, USAGE_COLUMNS, EMPTY, COLUMNS (+42 more)
 
 ### Community 6 - "useTRPC"
-Cohesion: 0.07
-Nodes (44): ACTIVITY_COLUMNS, OPEN_COLUMNS, TASK_COLUMNS, COLUMNS, SCOPES, COLUMNS, COLUMNS, DealListResultTable() (+36 more)
+Cohesion: 0.04
+Nodes (84): contact(), CreateCompanyForm(), CreateContactForm(), DashboardSummary(), CreateDealForm(), ApiKeysTable(), CreateApiKeyForm(), ArchiveRetention() (+76 more)
 
 ### Community 7 - "generated/server.ts"
-Cohesion: 0.11
-Nodes (23): Idle(), Thread(), ThreadWithHistory(), useSavedConversation(), AgentRecord, AgentRecordFilter, AgentRecordHeader, AgentRecordKind (+15 more)
+Cohesion: 0.07
+Nodes (38): Conversation, ConversationPicker(), Idle(), LoadedAgentPanel(), Thread(), ThreadWithHistory(), useSavedConversation(), AgentRecord (+30 more)
 
 ### Community 8 - "client.tsx"
 Cohesion: 0.05
-Nodes (83): ApiKeyRow, columns(), isExpired(), SlackChannels(), CopyValue(), ProviderRow, ACTION_LABELS, AgentCapabilities() (+75 more)
-
-### Community 9 - "record-delete.spec.ts"
-Cohesion: 0.06
-Nodes (35): DISPATCH, hasOpenRequest(), OwnedColumns, settleable(), SettleGuard, StatusGuard, taskEndedAt(), completedSubjects() (+27 more)
+Nodes (87): ApiKeyRow, columns(), isExpired(), CONNECT_ERRORS, explain(), failureSignature(), GoogleConnection(), RESOLVE_HOSTS (+79 more)
 
 ### Community 10 - "slack/page.tsx"
-Cohesion: 0.09
-Nodes (28): CompanyCreateInput, domainFromEmail(), FREE_EMAIL_DOMAINS, isMachineDomain(), MACHINE_DOMAINS, MACHINE_SUFFIXES, normalizeDomain(), MailboxMatchService (+20 more)
+Cohesion: 0.05
+Nodes (55): CompanyDirectoryService, Injectable, domainFromEmail(), FREE_EMAIL_DOMAINS, isMachineDomain(), MACHINE_DOMAINS, MACHINE_SUFFIXES, normalizeDomain() (+47 more)
 
 ### Community 11 - "channels/crm.ts"
 Cohesion: 0.06
-Nodes (66): assertInternalDispatchAuth(), cancelRunRequest, closeTask(), identifier, "input.requested"(), InternalDispatchPrincipal, "message.completed"(), receive() (+58 more)
+Nodes (65): assertInternalDispatchAuth(), cancelRunRequest, closeTask(), identifier, "input.requested"(), InternalDispatchPrincipal, "message.completed"(), receive() (+57 more)
 
 ### Community 12 - "outlook-sync.service.ts"
-Cohesion: 0.17
-Nodes (18): addDomainInput, companyActivityInput, contactActivityInput, cookieLifetimeInput, domainScopeOutput, foundInContainerOutput, removeDomainInput, rotateSiteIdOutput (+10 more)
+Cohesion: 0.10
+Nodes (26): addDomainInput, companyActivityInput, contactActivityInput, cookieLifetimeInput, domainScopeOutput, foundInContainerOutput, removeDomainInput, rotateSiteIdOutput (+18 more)
 
 ### Community 13 - "data-table.tsx"
 Cohesion: 0.04
-Nodes (91): contact(), CreateCompanyForm(), CreateContactForm(), DashboardSummary(), CreateDealForm(), ApiKeysTable(), CreateApiKeyForm(), ArchiveRetention() (+83 more)
+Nodes (67): isActive(), ITEMS, NavLink(), SettingsNavItem, SettingsSidebar(), SettingsSidebarFallback(), DeployedAgentCard(), AgentBuilderHome() (+59 more)
 
 ### Community 14 - "deals.contracts.ts"
-Cohesion: 0.08
-Nodes (24): AllExceptionsFilter, body(), describe(), ErrorBody, exceptionBody(), routePattern(), consoleLoggerOptions(), ContextLogger (+16 more)
+Cohesion: 0.12
+Nodes (18): ExpressInstance, getInstance(), handler(), AppModule, Module, createApp(), consoleLoggerOptions(), ContextLogger (+10 more)
 
 ### Community 15 - "AgentTriggerService"
-Cohesion: 0.08
-Nodes (36): CONTEXT, apiErrorBody, brandByDomain(), brandByEmail(), classify(), classifyKey(), contextDev(), describe() (+28 more)
+Cohesion: 0.11
+Nodes (28): contextDevKey(), apiErrorBody, brandByDomain(), brandByEmail(), classify(), classifyKey(), contextDev(), contextDevEnabled() (+20 more)
 
 ### Community 16 - "auth.middleware.ts"
-Cohesion: 0.07
+Cohesion: 0.08
 Nodes (34): completedMessage, finiteNumber, isRootSession(), persistBuilderLifecycle(), persistRunEvent(), stepUsage, "actions.requested"(), attributeNumber (+26 more)
 
 ### Community 17 - ".sync"
-Cohesion: 0.06
-Nodes (33): ConversationService, recipientsOf(), storedRecipient, storedRecipients, Injectable, calendarAttendeeOutput, calendarEventCompanyOutput, calendarEventContactOutput (+25 more)
+Cohesion: 0.11
+Nodes (20): calendarAttendeeOutput, calendarEventCompanyOutput, calendarEventContactOutput, calendarEventInput, CalendarEventOutput, emailDirectionOutput, emailThreadCompanyOutput, emailThreadContactOutput (+12 more)
 
 ### Community 18 - "validation/src/index.ts"
 Cohesion: 0.10
 Nodes (25): actionDependency(), AgentActionDependency, AgentActionDependencyId, missingRunDependencies(), runDependencyFailure(), cleanupBuilderEval(), test(), waitForBuilderSession() (+17 more)
 
 ### Community 19 - "ConversationsService"
-Cohesion: 0.08
-Nodes (31): APP_AUTH, AppAuth, isAutomated(), sensitiveWrite(), brandOutcome(), settledWithin(), beginResearch(), DirectOutcome (+23 more)
+Cohesion: 0.05
+Nodes (56): APP_AUTH, AppAuth, isAutomated(), sensitiveWrite(), settledWithin(), beginResearch(), DISPATCH, DirectOutcome (+48 more)
 
 ### Community 20 - "session-purpose.ts"
-Cohesion: 0.09
-Nodes (30): changeDelta(), SalesDashboard(), Summary, TREND_CONFIG, AreaTrend, DonutStat, load(), dealStageColor() (+22 more)
+Cohesion: 0.07
+Nodes (28): ACTIVITY_COLUMNS, OPEN_COLUMNS, TASK_COLUMNS, changeDelta(), SalesDashboard(), Summary, TREND_CONFIG, COLUMNS (+20 more)
 
 ### Community 21 - "app.module.ts"
-Cohesion: 0.09
-Nodes (40): ActivitiesModule, Module, AgentModule, Module, ApiKeysModule, Module, ArchiveModule, Module (+32 more)
+Cohesion: 0.07
+Nodes (50): ActivitiesModule, Module, AgentModule, Module, ApiKeysModule, Module, ArchiveModule, Module (+42 more)
 
 ### Community 22 - "getServerQueryClient"
-Cohesion: 0.14
-Nodes (24): metadata, CreateCompanySheet(), metadata, CreateContactSheet(), metadata, CreateDealSheet(), metadata, CreateApiKeySheet() (+16 more)
+Cohesion: 0.08
+Nodes (46): metadata, PrefetchedTeamAgents(), ChatHome(), metadata, PrefetchedAgentBuilderSidebar(), CreateCompanySheet(), Companies(), metadata (+38 more)
 
 ### Community 23 - "run-runtime.ts"
 Cohesion: 0.05
-Nodes (65): isAgentActionType(), actionRequestHash(), allowedHistorySources(), approvedSlackDestination(), assertActionRequestMatches(), assertActivityAllowed(), assertResourceAllowed(), assertRunActive() (+57 more)
+Nodes (67): isAgentActionType(), cancelRun(), actionRequestHash(), allowedHistorySources(), approvedSlackDestination(), assertActionRequestMatches(), assertActivityAllowed(), assertResourceAllowed() (+59 more)
 
 ### Community 24 - "activities.contracts.ts"
-Cohesion: 0.07
-Nodes (38): activityAuthorOutput, activityCalendarEventOutput, activityCompanyRefOutput, activityContactRefOutput, ActivityCreateInput, activityCreateOutput, activityDealRefOutput, activityEmailThreadOutput (+30 more)
+Cohesion: 0.12
+Nodes (18): ActivityCreateInput, ActivityEntry, completeInput, MyTasksInput, timelineCountsInput, TimelineInput, ActivitiesRouter, Ctx (+10 more)
 
 ### Community 25 - "AuthedTrpcContext"
-Cohesion: 0.08
-Nodes (46): AppRouter, ARCHIVED_COLUMN, COLUMNS, CompaniesTable(), CompanyRow, ARCHIVED_COLUMN, COLUMNS, ContactRow (+38 more)
+Cohesion: 0.07
+Nodes (43): ARCHIVE, CompanyListInput, CompanyRow, OWNER_SELECT, SORTABLE, ContactBulkOwnerInput, ContactListInput, ContactRow (+35 more)
 
 ### Community 26 - "sso.service.ts"
-Cohesion: 0.09
-Nodes (33): DeleteSsoProviderInput, deleteSsoProviderOutput, RegisterSsoProviderInput, SignInOptions, SsoProvider, ssoProviderListInput, ssoProviderListOutput, ssoProviderOutput (+25 more)
+Cohesion: 0.11
+Nodes (23): SignInOptions, SsoProvider, SsoSettings, lastFour(), oidcConfig, ProviderRow, readOidcConfig(), SORTABLE (+15 more)
 
 ### Community 27 - "agent-tasks.ts"
 Cohesion: 0.15
 Nodes (13): ArchiveRetentionController, AllowAnonymous, ApiExcludeEndpoint, ApiForbiddenResponse, ApiHeader, ApiOkResponse, ApiOperation, ApiServiceUnavailableResponse (+5 more)
 
 ### Community 28 - "lib/dispatch.ts"
-Cohesion: 0.13
-Nodes (27): AgentModel(), byProvider(), CatalogModel, contextHint(), perMillion(), priceHint(), CompanyMenuSearch(), GROUP_LABEL (+19 more)
+Cohesion: 0.09
+Nodes (39): AgentModel(), byProvider(), CatalogModel, contextHint(), perMillion(), priceHint(), GROUP_LABEL, KINDS (+31 more)
 
 ### Community 29 - "slack-people.ts"
 Cohesion: 0.07
-Nodes (44): SLACK, slackAccessToken(), slackCanInviteItself(), slackConnected(), slackUserToken(), runSlackChannelJoin(), botUserId(), call() (+36 more)
+Nodes (49): SLACK, slackAccessToken(), slackCanInviteItself(), slackConnected(), slackUserToken(), runSlackChannelJoin(), botUserId(), call() (+41 more)
 
 ### Community 30 - "slack-connection.service.ts"
-Cohesion: 0.07
-Nodes (35): SLACK, SLACK_SYNC_STATES, SlackSyncState, SlackConnectionService, Injectable, slackAgentSummaryOutput, SlackChannelsInput, slackChannelsOutput (+27 more)
+Cohesion: 0.11
+Nodes (22): SLACK, SLACK_SYNC_STATES, slackAgentSummaryOutput, SlackChannelsInput, slackChannelsOutput, SlackCreateChannelInput, slackCreateChannelOutput, slackDisconnectOutput (+14 more)
 
 ### Community 31 - "Input"
-Cohesion: 0.06
-Nodes (42): AgentRunsService, CANCELLABLE_STATUSES, Injectable, agentActionStatus, agentActivityOutput, agentArchiveOutput, agentAuditEventOutput, AgentAuditEventSummary (+34 more)
+Cohesion: 0.05
+Nodes (74): agentActionStatus, agentActivityOutput, agentArchiveOutput, agentAuditEventOutput, AgentAuditEventSummary, agentByIdOutput, AgentCancelRunInput, agentCancelRunOutput (+66 more)
 
 ### Community 32 - "context-logger.ts"
-Cohesion: 0.06
-Nodes (43): GrantAccess(), ProviderGrant, ProviderChoice, draftFrom(), FieldEditor(), optionId(), filterPlacement(), optionLabel() (+35 more)
+Cohesion: 0.11
+Nodes (28): CreatedApiKey, CreatedApiKeyDialog(), GrantAccess(), ProviderGrant, ProviderChoice, SocialSignIn(), NewAgentDialog(), ShareChoice() (+20 more)
 
 ### Community 33 - "agent-model.tsx"
 Cohesion: 0.06
-Nodes (49): AgentBuilderChat(), appendEvent(), BUILDER_STEP_ARTIFACTS, BUILDER_STEPS, builderConversationNeedsPolling(), builderMessage, BuilderSubmission, builderSubmissions (+41 more)
+Nodes (35): AssistantMessage(), BUILDER_STEP_ARTIFACTS, BUILDER_STEPS, builderMessage, BuilderSubmission, builderSubmissions, BuildingAgentCard(), ChatHeader() (+27 more)
 
 ### Community 34 - "facts.ts"
 Cohesion: 0.07
 Nodes (43): appliedValues(), BlankFactFill, BlankFactSweep, CONTACT_SELECT, fill(), groupByField(), key(), Proposal (+35 more)
 
 ### Community 35 - "field-editor.tsx"
-Cohesion: 0.16
-Nodes (22): isJsonObject(), isJsonText(), jsonObject, jsonText(), JsonValue, WorkspaceProfileSections, clamp(), isOnboarded() (+14 more)
+Cohesion: 0.14
+Nodes (24): conversations, list, record, service, suffix, isJsonObject(), isJsonText(), jsonObject (+16 more)
 
 ### Community 36 - "db/src/workspace.ts"
-Cohesion: 0.18
-Nodes (21): currentFocus, closing(), companyPreamble(), composeClosing(), contactPreamble(), dealPreamble(), fieldBackfillLine(), noRecordPreamble() (+13 more)
+Cohesion: 0.19
+Nodes (22): closing(), companyPreamble(), composeClosing(), contactPreamble(), dealPreamble(), fieldBackfillLine(), noRecordPreamble(), Opened (+14 more)
 
 ### Community 37 - "use-table-query.ts"
-Cohesion: 0.07
-Nodes (34): companiesSearchParams, contactsSearchParams, dealsSearchParams, apiKeysSearchParams, membersSearchParams, ssoSearchParams, Section, ArrayParser (+26 more)
+Cohesion: 0.08
+Nodes (33): companiesSearchParams, contactsSearchParams, dealsSearchParams, membersSearchParams, ssoSearchParams, Section, ArrayParser, createListSearchParams() (+25 more)
 
 ### Community 38 - "people.ts"
-Cohesion: 0.08
-Nodes (32): candidateShape, dateOf(), educationShape, EMPTY_EDUCATION, EMPTY_ORGANISATION, EMPTY_ROLE, EnrichedMatch, flag (+24 more)
+Cohesion: 0.06
+Nodes (44): CONTEXT, namesMatch(), candidateShape, classify(), dateOf(), educationShape, EMPTY_EDUCATION, EMPTY_ORGANISATION (+36 more)
 
 ### Community 39 - "auth/package.json"
 Cohesion: 0.04
 Nodes (48): @better-auth/api-key, @better-auth/cli, @better-auth/sso, dependencies, better-auth, @better-auth/api-key, @better-auth/sso, @crm/db (+40 more)
 
 ### Community 40 - "users.router.ts"
-Cohesion: 0.11
-Nodes (19): AfterUpdate, ApiUnauthorizedResponse, AuthController, CrmSession, ApiCookieAuth, ApiOkResponse, ApiOperation, ApiTags (+11 more)
+Cohesion: 0.07
+Nodes (25): AfterUpdate, AuthController, CrmSession, ApiCookieAuth, ApiTags, Controller, AuthHooksService, Injectable (+17 more)
 
 ### Community 41 - "proxy.ts"
-Cohesion: 0.08
-Nodes (36): expiresAt, RecordRedirect(), RecordRedirect(), RecordRedirect(), isMarketing(), Gate, procedureResult, read() (+28 more)
+Cohesion: 0.07
+Nodes (40): handler(), RecordRedirect(), RecordRedirect(), RecordRedirect(), input(), bufferedProxyResponse(), decode(), responseCanHaveBody() (+32 more)
 
 ### Community 42 - "scripts"
 Cohesion: 0.10
 Nodes (20): scripts, auth:generate, build, check-types, db:deploy, db:generate, db:migrate, db:push (+12 more)
 
 ### Community 43 - "prisma/seed.ts"
-Cohesion: 0.06
-Nodes (57): rate(), ACCOUNT_TYPES, CALL_SUBJECTS, chance(), CLOSED_STAGES, COMPANIES, daysFromNow(), DEAL_CURRENCIES (+49 more)
+Cohesion: 0.07
+Nodes (45): ACCOUNT_TYPES, CALL_SUBJECTS, chance(), CLOSED_STAGES, COMPANIES, daysFromNow(), DEAL_CURRENCIES, DEAL_DESCRIPTIONS (+37 more)
 
 ### Community 44 - "scripts"
 Cohesion: 0.04
@@ -602,12 +610,12 @@ Cohesion: 0.06
 Nodes (44): dependsOn, env, inputs, outputs, passThroughEnv, dependsOn, cache, dependsOn (+36 more)
 
 ### Community 46 - "agent-composer.tsx"
-Cohesion: 0.09
-Nodes (18): attachmentKeys, AttachmentPicker(), BuilderAttachment, BuilderComposerPrompt, BuilderPrompt, BuilderResource, BuilderStoredAttachment, BuilderUploadAttachment (+10 more)
+Cohesion: 0.07
+Nodes (25): attachmentKeys, AttachmentPicker(), BuilderAttachment, BuilderComposerPrompt, BuilderPrompt, BuilderResource, BuilderStoredAttachment, BuilderUploadAttachment (+17 more)
 
 ### Community 47 - "enrichment.service.ts"
 Cohesion: 0.07
-Nodes (36): enrichmentDueLabel(), enrichmentQueueLine(), enrichmentQueueState, enrichmentStep(), STEP_BY_KIND, enrichmentCompanySubjectOutput, enrichmentContactSubjectOutput, enrichmentQueueOutput (+28 more)
+Nodes (37): enrichmentDueLabel(), enrichmentQueueLine(), enrichmentQueueState, enrichmentStep(), STEP_BY_KIND, enrichmentCompanySubjectOutput, enrichmentContactSubjectOutput, enrichmentQueueOutput (+29 more)
 
 ### Community 48 - "passThroughEnv"
 Cohesion: 0.07
@@ -615,31 +623,31 @@ Nodes (40): dependsOn, outputs, dependsOn, cache, dependsOn, passThroughEnv, per
 
 ### Community 49 - "builder-runtime.ts"
 Cohesion: 0.06
-Nodes (52): actionIntegrationIssues(), artifactFiles(), assertSafeArtifact(), BUILDER_ARTIFACT_PATHS, BuilderArtifactPath, builderContext(), BuilderResource, connectionStatus() (+44 more)
+Nodes (53): actionIntegrationIssues(), artifactFiles(), assertSafeArtifact(), BUILDER_ARTIFACT_PATHS, BuilderArtifactPath, builderContext(), BuilderResource, connectionStatus() (+45 more)
 
 ### Community 50 - "tracking.contracts.ts"
-Cohesion: 0.15
-Nodes (19): openExchangeResponse, parseAsOf(), RateRefresh, RatesService, Injectable, UNREADABLE_FEED, wait(), BY_CODE (+11 more)
+Cohesion: 0.05
+Nodes (53): ConversionService, DealFxFields, RerateResult, Injectable, Unconverted, CurrencySettings, CurrencyService, Injectable (+45 more)
 
 ### Community 51 - "agent-transcript.ts"
 Cohesion: 0.09
-Nodes (38): LoadedAgentPanel(), AgentTurnFailure, conversationTimeline(), ConversationTimelineItem, DealListItem, describe(), errorTextOf(), finiteNumber (+30 more)
+Nodes (34): replies(), AgentTurnFailure, ConversationTimelineItem, DealListItem, describe(), errorTextOf(), finiteNumber, hostOf() (+26 more)
 
 ### Community 52 - "image-mirror.service.ts"
 Cohesion: 0.12
-Nodes (26): mirrorableUrl, mirrorBrandImages(), PortraitResult, runPortrait(), storePortrait(), execute(), CompanyImagePatch, storedText (+18 more)
+Nodes (27): mirrorableUrl, mirrorBrandImages(), PortraitResult, runPortrait(), storePortrait(), execute(), CompanyImagePatch, storedText (+19 more)
 
 ### Community 53 - "fields.contracts.ts"
-Cohesion: 0.06
-Nodes (66): companies(), CompaniesBulkActions(), contacts(), ContactsBulkActions(), deals(), DealsBulkActions(), CreatedApiKey, CreatedApiKeyDialog() (+58 more)
+Cohesion: 0.04
+Nodes (109): AppRouter, companies(), CompaniesBulkActions(), ARCHIVED_COLUMN, COLUMNS, CompaniesTable(), CompanyRow, contacts() (+101 more)
 
 ### Community 54 - "agent-builder-chat.tsx"
-Cohesion: 0.06
-Nodes (22): CompaniesRouter, Ctx, Inject, Mutation, Query, Router, UseMiddlewares, ContactBulkCompanyInput (+14 more)
+Cohesion: 0.09
+Nodes (15): CompaniesRouter, Ctx, Inject, Mutation, Query, Router, UseMiddlewares, ContactsRouter (+7 more)
 
 ### Community 55 - "icon.tsx"
-Cohesion: 0.12
-Nodes (23): MemberListInput, memberListOutput, SetMemberRoleInput, UpdateWorkspaceInput, Workspace, WorkspaceMember, workspaceMemberOutput, workspaceOutput (+15 more)
+Cohesion: 0.13
+Nodes (17): MemberListInput, Workspace, WorkspaceMember, Inject, toRole(), Injectable, WorkspaceService, canChangeRole() (+9 more)
 
 ### Community 56 - "Plan — Agentic CRM (HubSpot replacement)"
 Cohesion: 0.06
@@ -654,28 +662,28 @@ Cohesion: 0.07
 Nodes (37): entry, project, entry, project, entry, project, ignore, agent/**/*.ts (+29 more)
 
 ### Community 59 - "brand.ts"
-Cohesion: 0.11
-Nodes (31): CompiledConfig, FoundInContainer, TouchSummary, TrackingSettings, VerifyResult, VisitedPage, arriving(), absolute() (+23 more)
+Cohesion: 0.12
+Nodes (29): FoundInContainer, TrackingSettings, VerifyResult, arriving(), absolute(), mentions(), scriptUrl(), snippet() (+21 more)
 
 ### Community 60 - "passThroughEnv"
 Cohesion: 0.07
 Nodes (36): dependsOn, outputs, dependsOn, cache, dependsOn, cache, dependsOn, passThroughEnv (+28 more)
 
 ### Community 61 - "api-keys.service.ts"
-Cohesion: 0.11
-Nodes (21): apiKeyListInput, apiKeyListOutput, apiKeySummaryOutput, CreateApiKeyInput, createApiKeyOutput, CreatedApiKey, RevokeApiKeyInput, revokeApiKeyOutput (+13 more)
+Cohesion: 0.10
+Nodes (25): apiKeyListInput, apiKeyListOutput, ApiKeySummary, apiKeySummaryOutput, CreateApiKeyInput, createApiKeyOutput, CreatedApiKey, RevokeApiKeyInput (+17 more)
 
 ### Community 62 - "saved-views.router.ts"
 Cohesion: 0.12
 Nodes (21): SavedView, SavedViewCreateInput, savedViewDeleteOutput, savedViewEntity, savedViewIdInput, SavedViewListInput, savedViewListOutput, savedViewOutput (+13 more)
 
 ### Community 63 - "allowlist.ts"
-Cohesion: 0.10
-Nodes (38): TrpcErrorHandler, Injectable, COMPANY_STATUS_KINDS, CONTACT_STATUS_KINDS, DirectKind, TASK_KINDS, AGENT_TOOLS, ALLOWED (+30 more)
+Cohesion: 0.12
+Nodes (22): TASK_KINDS, AGENT_TOOLS, ALLOWED, ALLOWED_PROPERTIES, AllowedProperty, COUNT_BUCKETS, DAY_BUCKETS, dayBucket() (+14 more)
 
 ### Community 64 - "auth/src/index.ts"
-Cohesion: 0.20
-Nodes (23): CommissionStatus, CommissionStatusSchema, CommissionType, CommissionTypeSchema, CreateDriverProfileInputSchema, CreateInsuranceDossierInputSchema, CreateVehicleInputSchema, DocumentType (+15 more)
+Cohesion: 0.07
+Nodes (30): Connection, handle_quick_action(), handle_login(), handle_logout(), handle_verify(), handle_get_git_overview(), handle_switch_branch(), get_system_telemetry() (+22 more)
 
 ### Community 65 - "Environment"
 Cohesion: 0.06
@@ -687,87 +695,87 @@ Nodes (35): 10. Privacy, security, logging, 11. Failure modes to design for, 12.
 
 ### Community 67 - "socials.ts"
 Cohesion: 0.09
-Nodes (42): contactProfileSlug(), contactsNeedingWork(), CrmHistory, linkedinSlug(), personForVerification(), stampSocialsChecked(), WorkItem, IdentityClaim (+34 more)
+Nodes (40): contactProfileSlug(), contactsNeedingWork(), CrmHistory, linkedinSlug(), personForVerification(), stampSocialsChecked(), WorkItem, IdentityClaim (+32 more)
 
 ### Community 68 - "rollup.service.ts"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (14): byKind(), Counted, CountsByKey, countsOf(), isSet(), merge(), RollupOutcome, RollupService (+6 more)
 
 ### Community 69 - "workspace.router.ts"
-Cohesion: 0.14
-Nodes (26): workspaceLabel(), hasSyncScopes(), IDENTITY_SCOPES, isMailboxProvider(), MAILBOX_PROVIDER_IDS, mailboxGrantsNeeded(), MICROSOFT_SYNC_SCOPES, needsMailboxGrant() (+18 more)
+Cohesion: 0.16
+Nodes (26): hasSyncScopes(), IDENTITY_SCOPES, isMailboxProvider(), MAILBOX_PROVIDER_IDS, mailboxGrantsNeeded(), MICROSOFT_SYNC_SCOPES, needsMailboxGrant(), parseScopes() (+18 more)
 
 ### Community 70 - "capabilities.ts"
-Cohesion: 0.13
-Nodes (27): capabilities(), capabilitiesFrom(), capabilitiesMarkdown(), Capability, contextDevKey(), enabled(), logCapabilities(), markdownFor() (+19 more)
+Cohesion: 0.16
+Nodes (21): capabilities(), capabilitiesFrom(), capabilitiesMarkdown(), Capability, enabled(), logCapabilities(), markdownFor(), unavailable() (+13 more)
 
 ### Community 71 - "tracking-filing.service.ts"
-Cohesion: 0.03
-Nodes (77): ApiKeySummary, KeyRow, SORTABLE, STATUS_BY_CODE, toSummary(), ARCHIVE, timingSafeEquals(), CompanyBulkOwnerInput (+69 more)
+Cohesion: 0.05
+Nodes (35): timingSafeEquals(), CompanyUpdateInput, CompaniesService, Injectable, ContactsService, nameOf(), Injectable, present() (+27 more)
 
 ### Community 72 - "contacts.contracts.ts"
-Cohesion: 0.05
-Nodes (76): companyArchiveResultOutput, companyBulkInput, companyBulkResultOutput, companyDealStage, companyDetailContactOutput, companyDetailDealOutput, companyDetailOutput, companyDetailPrimaryContactOutput (+68 more)
+Cohesion: 0.08
+Nodes (28): bulkResultOutput, contactBasicOutput, contactBriefOutput, contactBriefSectionsOutput, ContactBulkCompanyInput, contactBulkInput, contactByIdOutput, contactCompanyOutput (+20 more)
 
 ### Community 73 - "dashboard-chart.tsx"
-Cohesion: 0.09
-Nodes (29): label(), ResourcePicker(), ChartConfig, ChartContainer(), ChartContext, ChartContextProps, ChartLegendContent(), ChartTooltipContent() (+21 more)
+Cohesion: 0.10
+Nodes (27): ChartConfig, ChartContainer(), ChartContext, ChartContextProps, ChartLegendContent(), ChartTooltipContent(), getPayloadConfigFromPayload(), INITIAL_DIMENSION (+19 more)
 
 ### Community 74 - "tracking-ingest.service.ts"
-Cohesion: 0.23
-Nodes (7): ConversionService, Injectable, CurrencySettings, CurrencyService, Injectable, canManageCurrency(), workspaceRoleOf()
+Cohesion: 0.09
+Nodes (24): fieldBackfillOutput, fieldByKeyInput, fieldCoverageOutput, FieldCreateInput, fieldDeleteOutput, fieldEntityInput, fieldFiltersOutput, fieldIdInput (+16 more)
 
 ### Community 75 - "exports"
 Cohesion: 0.06
 Nodes (32): dependencies, @crm/db, zod, devDependencies, @crm/typescript-config, @types/node, typescript, exports (+24 more)
 
 ### Community 76 - "context-dev.ts"
-Cohesion: 0.04
-Nodes (65): CalendarClient, conferenceUrl(), EventsPage, EventsQuery, eventTime(), GoogleEvent, GoogleEventTime, Injectable (+57 more)
+Cohesion: 0.15
+Nodes (25): GmailMessage, HistoryList, MessageList, Profile, findPart(), GmailHeader, GmailPart, header() (+17 more)
 
 ### Community 77 - "product-shot/company-sheet.tsx"
-Cohesion: 0.10
-Nodes (20): COMPANY_COLUMNS, MOCK_COMPANIES, MockCompany, OWNER, CompaniesList(), CompaniesPage(), FACETS, CompanyMark() (+12 more)
+Cohesion: 0.09
+Nodes (22): AgentScopeBadges(), BRANDS, COMPANY_COLUMNS, MOCK_COMPANIES, MockCompany, OWNER, CompaniesList(), CompaniesPage() (+14 more)
 
 ### Community 78 - "globalPassThroughEnv"
 Cohesion: 0.06
 Nodes (32): ALLOWED_SIGN_IN, CRM_TELEMETRY_DISABLED, CRON_SECRET, DATABASE_URL_UNPOOLED, DO_NOT_TRACK, PRISMA_LOG_QUERIES, SLACK_CLIENT_ID, SLACK_CLIENT_SECRET (+24 more)
 
 ### Community 79 - "TrackingRetentionController"
-Cohesion: 0.04
-Nodes (53): TrackingConfigService, Injectable, parsedBody, startOfDay(), timingSafeEquals(), TrackingController, trackingRequest, TrackingRetentionController (+45 more)
+Cohesion: 0.08
+Nodes (30): AcceptedEvent, address(), clean(), emailFrom(), fieldText, FormFields, IncomingBatch, IncomingEvent (+22 more)
 
 ### Community 80 - "local-date-time.tsx"
-Cohesion: 0.04
-Nodes (55): fontMono, fontSans, metadata, RootLayout(), RecordLink(), ComposableType, dueFormat, TYPES (+47 more)
+Cohesion: 0.08
+Nodes (28): fontMono, fontSans, metadata, RootLayout(), DAY_OPTIONS, MeetingEntry(), RANGE_OPTIONS, InlineScript() (+20 more)
 
 ### Community 81 - "ignorePatterns"
 Cohesion: 0.06
 Nodes (30): categories, correctness, ignorePatterns, **/dist/**, **/.eve/**, **/.next/**, **/node_modules/**, **/.scratch/** (+22 more)
 
 ### Community 82 - "telemetry/src/index.ts"
-Cohesion: 0.12
-Nodes (17): installDaily(), bumpCounter(), claimRollup(), COUNTERS, drainCounters(), forgetMilestone(), Install, reachMilestone() (+9 more)
+Cohesion: 0.16
+Nodes (24): installDaily(), milestone(), bumpCounter(), claimRollup(), COUNTERS, drainCounters(), forgetInstall(), forgetMilestone() (+16 more)
 
 ### Community 83 - "tracking.ts"
-Cohesion: 0.33
-Nodes (8): AgentCodeArtifact, AgentCodeWorkspace(), AgentCodeWorkspaceSurface(), latestBuilderArtifacts(), clientSnapshot(), serverSnapshot(), subscribe(), useHydrated()
+Cohesion: 0.12
+Nodes (11): GmailClient, Injectable, MailboxApiClient, MailboxResult, Injectable, GraphClient, Injectable, call() (+3 more)
 
 ### Community 84 - "enrichment-queue.tsx"
-Cohesion: 0.07
-Nodes (18): AutoInsuranceService, Inject, Injectable, AutoInsuranceRouter, Inject, Mutation, Query, Router (+10 more)
+Cohesion: 0.04
+Nodes (66): AutoInsuranceService, Injectable, AutoModule, Module, AutoInsuranceRouter, Inject, Mutation, Query (+58 more)
 
 ### Community 85 - "README.md"
 Cohesion: 0.12
 Nodes (16): adrs, Colour, Design — Rules for AI Agents, Configuration, Contributing, Deploying, Layout, Licence (+8 more)
 
 ### Community 86 - "auth.ts"
-Cohesion: 0.35
-Nodes (9): cuid(), handler(), sessionFromPath(), base64url(), BridgeClaims, bridgeConfigured(), encode(), mintBridgeToken() (+1 more)
+Cohesion: 0.17
+Nodes (15): cuid(), handler(), sessionFromPath(), currentSession(), metadata, SignIn(), SignInOptions, SsoProvider (+7 more)
 
 ### Community 87 - "settings.ts"
-Cohesion: 0.21
-Nodes (7): TrackingRouter, Ctx, Inject, Mutation, Query, Router, UseMiddlewares
+Cohesion: 0.10
+Nodes (21): GraphAddress, GraphFolder, GraphMessage, GraphUser, MESSAGE_FIELDS, MessagePage, addressList(), addressOf() (+13 more)
 
 ### Community 88 - "Agent — `apps/agent`"
 Cohesion: 0.07
@@ -782,36 +790,36 @@ Cohesion: 0.07
 Nodes (27): dependencies, @crm/db, @crm/env, posthog-node, devDependencies, @crm/typescript-config, @types/node, typescript (+19 more)
 
 ### Community 91 - "settings.contracts.ts"
-Cohesion: 0.29
-Nodes (8): ExpressInstance, getInstance(), handler(), AppModule, Module, createApp(), bootstrap(), createBaseTrpcContext()
+Cohesion: 0.13
+Nodes (13): GoogleSyncService, Injectable, isGoogleSyncSource(), isMicrosoftSyncSource(), SYNC_SOURCES, dueWhere(), SyncStateService, Injectable (+5 more)
 
 ### Community 92 - "AgentBuilderChat"
 Cohesion: 0.14
 Nodes (15): ARTIFACT_NAMES, ArtifactNames, INPUT_LABELS, LabelInput, ToolInputLabel, ToolInputLabels, toolLabel(), base (+7 more)
 
 ### Community 93 - "agent-history.tsx"
-Cohesion: 0.13
-Nodes (12): AuthModule, Module, Module, UsersModule, Ctx, Inject, Query, Router (+4 more)
+Cohesion: 0.10
+Nodes (19): currencyCode, CurrencyInUse, currencyInUseOutput, currencyMetaOutput, CurrencyRate, currencyRateOutput, currencySettingsOutput, rateSourceOutput (+11 more)
 
 ### Community 94 - "agent-record.ts"
-Cohesion: 0.06
-Nodes (39): amountCents, CLOSING_WINDOWS, ClosingWindow, DealAttachContactInput, dealBulkInput, DealBulkResult, dealBulkResultOutput, dealCompanyDetailOutput (+31 more)
+Cohesion: 0.04
+Nodes (47): bulkIdsInput, amountCents, CLOSING_WINDOWS, ClosingWindow, DealAttachContactInput, dealBulkInput, DealBulkResult, dealBulkResultOutput (+39 more)
 
 ### Community 95 - "dependencies"
 Cohesion: 0.07
 Nodes (27): class-variance-authority, clsx, @dnd-kit/core, @dnd-kit/modifiers, dependencies, @carbon/icons-react, class-variance-authority, clsx (+19 more)
 
 ### Community 96 - "dispatch.e2e.ts"
-Cohesion: 0.19
-Nodes (21): runVisibleLane(), cleanUp(), main(), record(), results, seedAgent(), seedDeal(), sweepLeftovers() (+13 more)
+Cohesion: 0.14
+Nodes (28): cleanUp(), main(), record(), results, seedAgent(), seedDeal(), sweepLeftovers(), reasonOf() (+20 more)
 
 ### Community 97 - "session.ts"
-Cohesion: 0.09
-Nodes (27): WorkspaceHeader(), GrantAccessPage(), metadata, OnboardingForm(), workspaceSlugDraft(), metadata, OnboardingPage(), metadata (+19 more)
+Cohesion: 0.10
+Nodes (20): AddConnectionDialog(), ConnectionsSettingsPageContent(), first(), metadata, SlackPeoplePageContent(), SlackPeoplePageProps, GrantAccessPage(), metadata (+12 more)
 
 ### Community 98 - "anti-slop/index.ts"
-Cohesion: 0.10
-Nodes (17): antiSlopPlugin, isConstAssertion(), isForbiddenAssertionChain(), isOutermostAssertionInChain(), isTypeAssertionExpression(), noChainedTypeAssertionsRule, TypeAssertionExpression, unwrapParenthesizedExpression() (+9 more)
+Cohesion: 0.11
+Nodes (18): antiSlopPlugin, isConstAssertion(), isForbiddenAssertionChain(), isOutermostAssertionInChain(), isTypeAssertionExpression(), noChainedTypeAssertionsRule, TypeAssertionExpression, unwrapParenthesizedExpression() (+10 more)
 
 ### Community 99 - "dictionary-types.ts"
 Cohesion: 0.21
@@ -823,51 +831,51 @@ Nodes (25): api, dependencies, api, better-auth, @crm/auth, @crm/telemetry, @crm
 
 ### Community 101 - "dependencies"
 Cohesion: 0.08
-Nodes (25): dependencies, better-auth, cache-manager, class-transformer, class-validator, @crm/auth, @crm/env, @nestjs/cache-manager (+17 more)
+Nodes (25): dependencies, better-auth, cache-manager, class-transformer, @crm/auth, @crm/db, @crm/env, @nestjs/cache-manager (+17 more)
 
 ### Community 102 - "companies.contracts.ts"
-Cohesion: 0.16
-Nodes (13): ApiNoContentResponse, AllowAnonymous, ApiExcludeEndpoint, ApiOkResponse, ApiOperation, ApiParam, Get, Headers (+5 more)
+Cohesion: 0.09
+Nodes (23): ApiNoContentResponse, read(), startOfDay(), timingSafeEquals(), TrackingController, TrackingRetentionController, AllowAnonymous, ApiExcludeEndpoint (+15 more)
 
 ### Community 103 - "telemetry/src/client.ts"
-Cohesion: 0.12
-Nodes (24): input(), CaptureMessage, captureNow(), Debug, payload(), posthog(), resetTelemetryClient(), send() (+16 more)
+Cohesion: 0.13
+Nodes (18): TelemetryService, Injectable, permitted(), CaptureMessage, captureNow(), Debug, flushTelemetry(), onTelemetryProblem() (+10 more)
 
 ### Community 104 - "trpc/server.ts"
-Cohesion: 0.13
-Nodes (13): metadata, PrefetchedTeamAgent(), metadata, PrefetchedAgentChat(), nullIfMissing(), AgentBuilderChatFallback(), AgentBuilderHomeFallback(), AgentBuilderShell() (+5 more)
+Cohesion: 0.17
+Nodes (12): metadata, PrefetchedTeamAgent(), metadata, PrefetchedAgentChat(), nullIfMissing(), isSharedChatToken(), TRPCReactProvider(), getQueryClient() (+4 more)
 
 ### Community 105 - "sales-dashboard.tsx"
-Cohesion: 0.18
-Nodes (11): GLOBAL_NAV_SECTIONS, NavSection, ResponsiveContext, RootProps, Sheet(), SheetContent(), SheetDescription(), SheetHeader() (+3 more)
+Cohesion: 0.07
+Nodes (39): AutoDossiersPage(), AgentCompetence, AutoDossiersPage(), CompaniesPage(), CompanyItem, ContactItem, ContactsPage(), DealItem (+31 more)
 
 ### Community 106 - "capabilities-section.tsx"
 Cohesion: 0.14
 Nodes (15): AskCard(), QUESTIONS, BentoCard(), CardBody(), CardHeading(), CardTitle(), MonoLabel(), ENRICHMENT_ROWS (+7 more)
 
 ### Community 107 - "accounts.ts"
-Cohesion: 0.13
-Nodes (22): AccountMeeting, AccountNote, AccountThread, CompanyDeal, CompanyHistory, CompanyPerson, daysSince(), DealHistory (+14 more)
+Cohesion: 0.12
+Nodes (24): AccountMeeting, AccountNote, AccountThread, CompanyDeal, CompanyHistory, CompanyPerson, daysSince(), DealHistory (+16 more)
 
 ### Community 108 - "normalizeCurrency"
-Cohesion: 0.22
-Nodes (11): isWellFormedCurrency(), minorUnitsOf(), applyRate(), Conversion, convertToBase(), ONE, RateOrigin, ResolvedRate (+3 more)
+Cohesion: 0.11
+Nodes (24): Activity, AgentActivity(), AgentRuns(), auditChange, AuditRow, changeDetail(), DATE_FORMATTER, duration() (+16 more)
 
 ### Community 109 - "tracking-ingest.integration.spec.ts"
-Cohesion: 0.18
-Nodes (12): RequestContext, runInRequestContext(), incomingRequestId(), logAuthRoute(), QUIET_PATHS, RequestLoggerMiddleware, sessionUserId(), sharedInstance (+4 more)
+Cohesion: 0.08
+Nodes (27): AllExceptionsFilter, body(), describe(), ErrorBody, exceptionBody(), routePattern(), LoggingModule, Global (+19 more)
 
 ### Community 110 - "devDependencies"
 Cohesion: 0.09
 Nodes (23): devDependencies, @crm/typescript-config, lightningcss-darwin-x64, @next/swc-darwin-x64, tailwindcss, @tailwindcss/postcss, @tanstack/react-query-devtools, @types/bun (+15 more)
 
 ### Community 111 - "src/fields.ts"
-Cohesion: 0.05
-Nodes (48): archiveField(), createField(), definitionsFor(), listFields(), readFields(), updateFieldBrief(), WITH_OPTIONS, writeField() (+40 more)
+Cohesion: 0.14
+Nodes (23): readFields(), assertUsersExist(), attachValues(), coerceValue(), FieldWriter, PendingWrite, readValue(), SerializedFieldOption (+15 more)
 
 ### Community 112 - "AutoInsuranceService"
-Cohesion: 0.08
-Nodes (28): AgentDefinitionsService, capabilityName, carryArtifactsForward(), nextVersionNumber(), readCapabilities(), reviseSummary(), reviseValidation(), Injectable (+20 more)
+Cohesion: 0.10
+Nodes (20): AgentDefinitionsService, carryArtifactsForward(), nextVersionNumber(), reviseSummary(), reviseValidation(), Injectable, AgentsRouter, Ctx (+12 more)
 
 ### Community 114 - "Apple Design"
 Cohesion: 0.10
@@ -882,16 +890,16 @@ Cohesion: 0.12
 Nodes (17): @biomejs/biome, @biomejs/cli-darwin-arm64, @biomejs/cli-darwin-x64, oxlint, @oxlint/plugins, devDependencies, @biomejs/biome, @biomejs/cli-darwin-arm64 (+9 more)
 
 ### Community 117 - "lookup.ts"
-Cohesion: 0.15
-Nodes (17): bareDomain(), CompanyHit, ContactHit, DealHit, DealListOptions, DealListStatus, listDeals(), RecordKind (+9 more)
+Cohesion: 0.14
+Nodes (18): bareDomain(), CompanyHit, ContactHit, DealHit, DealListOptions, DealListStatus, listDeals(), RecordKind (+10 more)
 
 ### Community 118 - "FieldsService"
 Cohesion: 0.18
 Nodes (10): 🧭 1. Architecture Globale du Cluster, ⚖️ 2. Les 5 Règles Absolues Communes à TOUS les Hermes, 📂 3. Répertoire des Manifestes & Documentations Spécifiques, Composants Communs d'Infrastructure :, 🏛️ MANIFESTE CENTRAL DES BONNES PRATIQUES — CLUSTER HERMES (TRINITY), Règle 1 : Persistance et Checkpoint Systématique (`mem-cp`), Règle 2 : Cartographie Vivante & Graphify Knowledge Graph, Règle 3 : Standard de Qualité & QA Strict (Zéro Régression) (+2 more)
 
 ### Community 119 - "agent-result.tsx"
-Cohesion: 0.27
-Nodes (14): composerDomOffset(), composerEditableText(), ComposerEditor(), composerEditorOffset(), composerOffsetWithin(), ensureComposerEditorSelection(), focusEditorAtOffset(), insertEditorText() (+6 more)
+Cohesion: 0.33
+Nodes (12): composerEditableText(), ComposerEditor(), composerEditorOffset(), composerOffsetWithin(), ensureComposerEditorSelection(), focusEditorAtOffset(), insertEditorText(), moveComposerCaretAcrossContext() (+4 more)
 
 ### Community 120 - "Plan — People enrichment agent (eve + LinkedIn)"
 Cohesion: 0.10
@@ -906,19 +914,19 @@ Cohesion: 0.23
 Nodes (20): assertedExpression(), assertionFromExpression(), assertionIsNarrower(), BroadTypeKind, functionBoundary(), functionBoundaryTypes, isBroadRecordKeyType(), isBroadRecordType() (+12 more)
 
 ### Community 123 - "slack.module.ts"
-Cohesion: 0.18
-Nodes (8): Drawer(), DrawerContent(), DrawerDescription(), DrawerFooter(), DrawerHeader(), DrawerOverlay(), DrawerTitle(), drawerTitleVariants
+Cohesion: 0.12
+Nodes (12): ConversationService, recipientsOf(), Injectable, rebuildThreads(), PurgeSyncedDataOutput, GoogleRouter, Ctx, Inject (+4 more)
 
 ### Community 124 - "AgentComposer"
-Cohesion: 0.27
-Nodes (3): AgentQueueService, Injectable, queue
+Cohesion: 0.20
+Nodes (3): GmailSyncService, Injectable, matchContext()
 
 ### Community 125 - "SyncController"
 Cohesion: 0.18
 Nodes (14): SyncController, timingSafeEquals(), AllowAnonymous, ApiExcludeEndpoint, ApiForbiddenResponse, ApiHeader, ApiOkResponse, ApiOperation (+6 more)
 
 ### Community 126 - "TelemetryController"
-Cohesion: 0.13
+Cohesion: 0.14
 Nodes (14): TelemetryController, timingSafeEquals(), AllowAnonymous, ApiExcludeEndpoint, ApiForbiddenResponse, ApiHeader, ApiOkResponse, ApiOperation (+6 more)
 
 ### Community 127 - "app/components.json"
@@ -938,12 +946,12 @@ Cohesion: 0.10
 Nodes (19): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+11 more)
 
 ### Community 131 - ".read"
-Cohesion: 0.16
-Nodes (8): replies(), bridge, KeyCheck, ResearchKeyService, Injectable, verifyAnswer, SlackCreateChannelReply, service
+Cohesion: 0.05
+Nodes (39): AgentAccessService, Injectable, capabilityName, readCapabilities(), VersionMetadata, versionValidation, canReadAgent(), isPrivateAgentDraft() (+31 more)
 
 ### Community 132 - "lib/crm.ts"
-Cohesion: 0.03
-Nodes (94): AGENT_DISPATCH, AgentTaskQueue, AgentTriggerService, CrmEventInput, Injectable, DispatchHeartbeatService, Injectable, BackfillResult (+86 more)
+Cohesion: 0.04
+Nodes (46): AgentQueueService, Injectable, CrmEventInput, FIELDS_CONFIG, FieldsService, Injectable, conversion, deals (+38 more)
 
 ### Community 133 - "devDependencies"
 Cohesion: 0.11
@@ -954,8 +962,8 @@ Cohesion: 0.31
 Nodes (8): failedParse, formatTrpcError(), Issue, issueShape, issuesIn(), pathSegment, readableInputError(), sentence()
 
 ### Community 135 - "organization.ts"
-Cohesion: 0.11
-Nodes (17): NewAgentDialog(), handoffBrief(), handoffResources(), Capabilities, CAPABILITY_RESOURCE_IDS, CapabilityAction, capabilityDestination, CapabilityResource (+9 more)
+Cohesion: 0.10
+Nodes (20): activityAuthorOutput, activityCalendarEventOutput, activityCompanyRefOutput, activityContactRefOutput, activityCreateOutput, activityDealRefOutput, activityEmailThreadOutput, activityEntryOutput (+12 more)
 
 ### Community 136 - "github-star-button.tsx"
 Cohesion: 0.20
@@ -966,16 +974,16 @@ Cohesion: 0.11
 Nodes (18): devDependencies, @crm/typescript-config, @types/node, typescript, exports, ./load, @crm/typescript-config, @types/node (+10 more)
 
 ### Community 138 - "lib/fields.ts"
-Cohesion: 0.27
-Nodes (6): TelemetryService, Injectable, flushTelemetry(), onTelemetryProblem(), shutdownTelemetry(), syncVersion()
+Cohesion: 0.16
+Nodes (6): GoogleConnectionService, Injectable, RevokeAccessOutput, MicrosoftConnectionService, Injectable, MailboxProviderId
 
 ### Community 139 - "RatesController"
-Cohesion: 0.08
-Nodes (24): EnvironmentVariables, RatesController, timingSafeEquals(), AllowAnonymous, ApiExcludeEndpoint, ApiForbiddenResponse, ApiHeader, ApiOkResponse (+16 more)
+Cohesion: 0.15
+Nodes (13): RatesController, AllowAnonymous, ApiExcludeEndpoint, ApiForbiddenResponse, ApiHeader, ApiOkResponse, ApiOperation, ApiServiceUnavailableResponse (+5 more)
 
 ### Community 140 - "attribution.ts"
-Cohesion: 0.33
-Nodes (9): UserSubmission(), AgentComposer(), focusEditorAfterContext(), initialComposerState(), builderCommandType, consumeBuilderCommand(), consumeBuilderIntent(), hasCreateAgentCommand() (+1 more)
+Cohesion: 0.42
+Nodes (7): UserSubmission(), initialComposerState(), builderCommandType, consumeBuilderCommand(), consumeBuilderIntent(), hasCreateAgentCommand(), matchCreateAgentRequest()
 
 ### Community 141 - "eve-tool.ts"
 Cohesion: 0.20
@@ -1006,8 +1014,8 @@ Cohesion: 0.12
 Nodes (17): devDependencies, @crm/typescript-config, shadcn, tailwindcss, @tailwindcss/postcss, @types/node, @types/react, @types/react-dom (+9 more)
 
 ### Community 148 - "auto-insurance.ts"
-Cohesion: 0.05
-Nodes (47): currencyCode, CurrencyInUse, currencyInUseOutput, currencyMetaOutput, CurrencyRate, currencyRateOutput, currencySettingsOutput, rateSourceOutput (+39 more)
+Cohesion: 0.06
+Nodes (37): biggestOpenDealOutput, companyBriefOutput, DASHBOARD_SCOPES, DashboardSummaryInput, dashboardSummaryOutput, linkedRecordOutput, monthlyTotalOutput, overdueTaskOutput (+29 more)
 
 ### Community 149 - "no-known-value-widening.ts"
 Cohesion: 0.17
@@ -1038,8 +1046,8 @@ Cohesion: 0.12
 Nodes (15): Brand marks, Cards versus flat, Connecting Slack is refused at the OAuth endpoints, not in the UI, Connections — rules for AI agents, Destinations: derived or chosen, Direction is the organising idea, Failure is on the surface, Identity matching is connection-level (+7 more)
 
 ### Community 156 - "slack-connect.integration.spec.ts"
-Cohesion: 0.08
-Nodes (24): ensureWorkspaceMembership(), isWorkspaceRole(), toWorkspaceRole(), WORKSPACE_ROLES, WorkspaceMemberReader, callbackParams, CONNECT_MANAGER_ROLES, connectStartBody (+16 more)
+Cohesion: 0.10
+Nodes (18): WORKSPACE_ROLES, callbackParams, CONNECT_MANAGER_ROLES, connectStartBody, SLACK_CONNECT_START_PATHS, slackConnectGuard, startsSlackConnect(), arrival (+10 more)
 
 ### Community 157 - "scripts"
 Cohesion: 0.12
@@ -1050,16 +1058,16 @@ Cohesion: 0.12
 Nodes (15): 1. Pôle Direction Technique & Architecture (CTO & Management), 1. Sauvegarde Continue de Contexte (`mem-cp`), 2. Pôle Produit & Cadrage (Product & Specs), 2. Standard Apple Design System (HIG), 3. Cartographie & Knowledge Graph (`graphify`), 3. Pôle Frontend & Design Système (UI / UX / Frontend Dev), 4. Pôle Backend & Données (Backend & Database Engineering), 4. Validation Systématique & Règle Absolue de Déploiement (/qa) (+7 more)
 
 ### Community 159 - "ArchiveRetentionController"
-Cohesion: 0.24
-Nodes (13): CompanyItem, ContactItem, DealItem, MobileQuickIntake(), CascadeDeleteDialog(), CascadeImpact, CompAiChatSheet(), DossierCrudDialog() (+5 more)
+Cohesion: 0.18
+Nodes (13): ConnectedSlack(), groupScopes(), MissingGrant(), never, PRIVATE_CHANNEL_SCOPES, SlackConnectionPageProps, suggestions, toLine() (+5 more)
 
 ### Community 160 - "GoogleRouter"
-Cohesion: 0.05
-Nodes (37): attachmentUrl(), builderMessageFields, builderMessageWithAttachments(), isPreviewableImage(), StoredBuilderAttachment, conversationShareTokenHash(), ConversationSharingService, Injectable (+29 more)
+Cohesion: 0.04
+Nodes (66): ConversationSharingService, Injectable, agentBuilderArtifactOutput, agentBuilderArtifactStatusOutput, agentConversationCommandTypeOutput, agentConversationSubmissionStatusOutput, agentCurrentVersionSummaryOutput, agentDefinitionStatusOutput (+58 more)
 
 ### Community 161 - "[slug]/page.tsx"
-Cohesion: 0.40
-Nodes (4): DashboardRouter, Inject, Router, UseMiddlewares
+Cohesion: 0.26
+Nodes (6): createField(), updateFieldBrief(), execute(), SerializedField, serializeField(), usesOptions()
 
 ### Community 162 - "API Rules"
 Cohesion: 0.13
@@ -1079,19 +1087,19 @@ Nodes (14): scripts, build, check-types, clean, dev, dev:session, dev:trpc, lint
 
 ### Community 166 - "BackfillService"
 Cohesion: 0.12
-Nodes (15): ApiQuery, ConversationAttachmentsController, CrmSession, encodeHeaderValue(), ApiCookieAuth, ApiOkResponse, ApiOperation, ApiParam (+7 more)
+Nodes (14): ApiQuery, ConversationAttachmentsController, CrmSession, encodeHeaderValue(), ApiCookieAuth, ApiOkResponse, ApiOperation, ApiParam (+6 more)
 
 ### Community 167 - ".reportingCurrency"
-Cohesion: 0.25
-Nodes (7): AuthTest, CreatePayload, createReply, JoinPayload, present, Reply, userInfo
+Cohesion: 0.19
+Nodes (8): conferenceUrl(), EventsPage, EventsQuery, eventTime(), GoogleEvent, GoogleEventTime, CalendarSyncService, Injectable
 
 ### Community 168 - "model-catalog.service.ts"
-Cohesion: 0.07
-Nodes (31): created, retiredSubjectOf(), subjectOf(), tasks, agentModelOutput, AgentModelSettings, archiveRetentionOutput, ArchiveRetentionSettings (+23 more)
+Cohesion: 0.22
+Nodes (8): AgentModelSettings, ArchiveRetentionSettings, ResearchKeySettings, SettingsService, Injectable, maskKey(), readArchiveRetentionDays(), writeArchiveRetentionDays()
 
 ### Community 169 - "chat-chips.tsx"
-Cohesion: 0.13
-Nodes (10): SourceRow, TrackedDomainRow, WebsiteActivity, summarise(), TrackingService, Injectable, configHash(), mintSiteId() (+2 more)
+Cohesion: 0.17
+Nodes (7): SourceRow, TrackedDomainRow, WebsiteActivity, Inject, summarise(), TrackingService, Injectable
 
 ### Community 170 - "Changelog"
 Cohesion: 0.14
@@ -1106,8 +1114,8 @@ Cohesion: 0.21
 Nodes (11): appliedMigrations(), create(), drifted(), drop(), fail(), migrate(), MIGRATIONS, name (+3 more)
 
 ### Community 173 - "oauth-connection-page.tsx"
-Cohesion: 0.10
-Nodes (23): ConnectionPage(), ConnectionPageLoading(), metadata, IntakeConnectionPageContent(), metadata, connectErrorOf(), ConnectionQuery, first() (+15 more)
+Cohesion: 0.15
+Nodes (12): ConnectionPage(), ConnectionPageLoading(), metadata, IntakeConnectionPageContent(), metadata, connectErrorOf(), ConnectionQuery, first() (+4 more)
 
 ### Community 174 - "tracking-bundle.spec.ts"
 Cohesion: 0.20
@@ -1122,8 +1130,8 @@ Cohesion: 0.22
 Nodes (6): check(), generate(), model_title(), retype(), pr-title.sh script, sufficient()
 
 ### Community 177 - "db/src/client.ts"
-Cohesion: 0.16
-Nodes (11): duration(), createPrismaClient(), databaseName(), DbClient, getOrCreate(), liveDatabase(), logDefinitions, PrismaLogRecord (+3 more)
+Cohesion: 0.17
+Nodes (10): createPrismaClient(), databaseName(), DbClient, getOrCreate(), liveDatabase(), logDefinitions, PrismaLogRecord, PrismaLogSink (+2 more)
 
 ### Community 178 - "db/tsconfig.json"
 Cohesion: 0.15
@@ -1134,16 +1142,16 @@ Cohesion: 0.21
 Nodes (13): dependsOn, cache, ^build, ^topo, dependsOn, tasks, check-types, dev:prepare (+5 more)
 
 ### Community 180 - "telemetry.ts"
-Cohesion: 0.30
-Nodes (11): "action.result"(), attributeText, configuredModel(), looksLikeModel(), MODEL_CODES, "session.failed"(), SessionPrincipal, "step.failed"() (+3 more)
+Cohesion: 0.15
+Nodes (22): "action.result"(), attributeText, configuredModel(), looksLikeModel(), MODEL_CODES, "session.failed"(), SessionPrincipal, "step.failed"() (+14 more)
 
 ### Community 181 - ".check"
 Cohesion: 0.22
 Nodes (8): license, name, packageManager, private, version, workspaces, apps/*, packages/*
 
 ### Community 182 - "favicon.ts"
-Cohesion: 0.40
-Nodes (9): attachmentContextKey(), attachmentKey(), clampAnchor(), ComposerContextToken(), composerEditorParts(), composerReducer(), resourceContextKey(), withAnchor() (+1 more)
+Cohesion: 0.30
+Nodes (11): label(), attachmentContextKey(), attachmentKey(), clampAnchor(), ComposerContextToken(), composerEditorParts(), composerReducer(), resourceContextKey() (+3 more)
 
 ### Community 183 - "build"
 Cohesion: 0.20
@@ -1158,12 +1166,12 @@ Cohesion: 0.19
 Nodes (9): metadata, CapabilitiesSection(), LandingFooter(), LandingNav(), REPO_LINKS, ProductShot(), Wordmark(), Link() (+1 more)
 
 ### Community 186 - "error-formatter.ts"
-Cohesion: 0.20
-Nodes (9): eveCallReference, eveRequestedAction, EveRequestedActions, EveSettledAction, EveStreamEvent, EveTurnFailure, EveTurnReference, identifier (+1 more)
+Cohesion: 0.08
+Nodes (36): AgentBuilderChat(), appendEvent(), builderConversationNeedsPolling(), hasQueuedQuestionResponse(), questionResponseIds(), retryPromptOf(), SharedAgentChat(), sharedConversationNeedsPolling() (+28 more)
 
 ### Community 188 - "v1/[...path]/route.ts"
-Cohesion: 0.12
-Nodes (27): PrefetchedTeamAgents(), ChatHome(), metadata, PrefetchedAgentBuilderSidebar(), Companies(), Contacts(), Deals(), loadWorkspace() (+19 more)
+Cohesion: 0.28
+Nodes (6): loadWorkspace(), WorkspaceHeader(), AppHeaderFallback(), MobileNavContext, MobileNavContextValue, MobileNavProvider()
 
 ### Community 189 - "landing-footer.tsx"
 Cohesion: 0.40
@@ -1178,8 +1186,8 @@ Cohesion: 0.20
 Nodes (10): cache, passThroughEnv, passThroughEnv, extends, //, DATABASE_URL, $schema, tasks (+2 more)
 
 ### Community 192 - "devDependencies"
-Cohesion: 0.18
-Nodes (11): devDependencies, @crm/typescript-config, pg, prisma, @types/node, typescript, @crm/typescript-config, pg (+3 more)
+Cohesion: 0.22
+Nodes (9): devDependencies, @crm/typescript-config, pg, @types/node, typescript, @crm/typescript-config, pg, @types/node (+1 more)
 
 ### Community 193 - "env/tsconfig.json"
 Cohesion: 0.18
@@ -1210,24 +1218,24 @@ Cohesion: 0.20
 Nodes (9): 1. Structure & Matériaux (Glassmorphism & Depth), 2. Typographie & Lisibilité (San Francisco / SF Pro / Inter), 3. Géométrie & Espacement, 4. Palette de Couleurs & Accents Apple, 5. Micro-Interactions & Animations Liquides, 🚫 Exception `/no-apple`, 🎨 Principes Fondamentaux du Design Apple HIG, 📌 Règle Absolue & Portée (+1 more)
 
 ### Community 200 - "EnvironmentVariables"
-Cohesion: 0.36
-Nodes (5): CELLS, delayFor(), DotMatrix(), Shimmer(), ThinkingIndicator()
+Cohesion: 0.14
+Nodes (11): at(), google, microsoft, roots, seed(), stamp, state, thread() (+3 more)
 
 ### Community 201 - "conversation.service.ts"
 Cohesion: 0.40
 Nodes (4): 1. Assimilation de killer-saas, 2. Supervision HITL Telegram (hermes-jarvis), 3. Cockpit Web Unifié Apple HIG Déployé, Checkpoint Mémoire : Prise de Contrôle killer-saas, Pipeline Trinity & Cockpit Web Apple HIG
 
 ### Community 202 - "[slug]/layout.tsx"
-Cohesion: 0.06
-Nodes (42): agentBuilderArtifactOutput, agentBuilderArtifactStatusOutput, agentConversationCommandTypeOutput, agentConversationSubmissionStatusOutput, agentCurrentVersionSummaryOutput, agentDefinitionStatusOutput, agentManifestSummaryOutput, agentResponseRatingOutput (+34 more)
+Cohesion: 0.21
+Nodes (3): SyncSource, ThreadWriterService, Injectable
 
 ### Community 203 - "connections/page.tsx"
 Cohesion: 0.29
 Nodes (5): AppCacheModule, Module, NodeEnv, RawEnvironment, validateEnv()
 
 ### Community 205 - "fields-shape.ts"
-Cohesion: 0.15
-Nodes (18): AgentToolStep(), AssistantMessage(), withoutTable(), agentResultsByItem(), agentResultSkeleton(), defineResult(), hasAgentResult(), REGISTRY (+10 more)
+Cohesion: 0.16
+Nodes (17): AgentToolStep(), agentResultsByItem(), agentResultSkeleton(), defineResult(), hasAgentResult(), REGISTRY, ResultEntry, AnchoredResult (+9 more)
 
 ### Community 206 - "DATABASE_URL"
 Cohesion: 0.20
@@ -1270,16 +1278,16 @@ Cohesion: 0.25
 Nodes (5): SearchRouter, Inject, Query, Router, UseMiddlewares
 
 ### Community 216 - "[slug]/auto/page.tsx"
-Cohesion: 0.24
-Nodes (8): headersOf(), SsoRouter, Ctx, Inject, Mutation, Query, Router, UseMiddlewares
+Cohesion: 0.14
+Nodes (18): DeleteSsoProviderInput, deleteSsoProviderOutput, RegisterSsoProviderInput, ssoProviderListInput, ssoProviderListOutput, ssoProviderOutput, ssoPublicProviderOutput, ssoSettingsOutput (+10 more)
 
 ### Community 217 - "built-with.tsx"
 Cohesion: 0.22
 Nodes (5): empty(), GET(), trackerSource(), CONFIG, isSiteId()
 
 ### Community 218 - "use-seconds.ts"
-Cohesion: 0.40
-Nodes (4): askedQuestion, BuilderQuestion, BuilderQuestionOption, optionalText
+Cohesion: 0.17
+Nodes (7): ModelCatalogResult, SettingsRouter, Inject, Mutation, Query, Router, UseMiddlewares
 
 ### Community 219 - "app/package.json"
 Cohesion: 0.32
@@ -1318,16 +1326,20 @@ Cohesion: 0.29
 Nodes (6): Identity matching, Reporting the match, The procedure, Things that look like evidence and are not, When the person genuinely is not findable, Why the obvious approach does not work
 
 ### Community 228 - "Mutation"
-Cohesion: 0.57
-Nodes (4): handler(), bufferedProxyResponse(), decode(), responseCanHaveBody()
+Cohesion: 0.23
+Nodes (10): archiveField(), definitionsFor(), listFields(), WITH_OPTIONS, writeField(), WriteResult, execute(), execute() (+2 more)
+
+### Community 229 - "env.validation.ts"
+Cohesion: 0.26
+Nodes (9): agentModelOutput, archiveRetentionOutput, CatalogModel, catalogModelOutput, modelCatalogOutput, researchKeyOutput, SetAgentModelInput, SetArchiveRetentionDaysInput (+1 more)
 
 ### Community 230 - "FunnelService"
 Cohesion: 0.50
 Nodes (4): devEngines, packageManager, name, version
 
 ### Community 231 - "bufferedProxyResponse"
-Cohesion: 0.42
-Nodes (4): ModelSelection, selectedModel(), DEFAULT_AGENT_MODEL, readAgentModel()
+Cohesion: 0.32
+Nodes (7): ModelSelection, selectedModel(), AgentModelSetting, DEFAULT_AGENT_MODEL, readAgentModel(), writeAgentModel(), writeRatesRefreshedAt()
 
 ### Community 232 - "Directives & Mémoire de Travail - crm-nil"
 Cohesion: 0.12
@@ -1346,16 +1358,16 @@ Cohesion: 0.33
 Nodes (5): Nothing about the person, The shape, and it does not vary, The structured lines, When to write nothing, Writing a brief
 
 ### Community 237 - "auto.router.ts"
-Cohesion: 0.14
-Nodes (11): repFromCrm(), auth, BridgeClaims, BridgeHeader, mint(), AutoDossiersPage(), AutoDossiersPage(), CompaniesPage() (+3 more)
+Cohesion: 0.25
+Nodes (5): repFromCrm(), auth, BridgeClaims, BridgeHeader, mint()
 
 ### Community 238 - "domain-error.middleware.ts"
 Cohesion: 0.40
 Nodes (4): DomainErrorMiddleware, statusToTrpcCode(), TrpcErrorCode, Injectable
 
 ### Community 239 - "(agent-builder)/layout.tsx"
-Cohesion: 0.33
-Nodes (4): CROSSFADE, INSTANT, SkeletonSwap(), SkeletonSwapProps
+Cohesion: 0.22
+Nodes (7): AgentBuilderChatFallback(), AgentBuilderHomeFallback(), Skeleton(), CROSSFADE, INSTANT, SkeletonSwap(), SkeletonSwapProps
 
 ### Community 240 - "release-please-config.json"
 Cohesion: 0.33
@@ -1422,8 +1434,8 @@ Cohesion: 0.50
 Nodes (3): Effet, Usage, Workflow /no-apple
 
 ### Community 259 - ".updateDossierStatus"
-Cohesion: 0.13
-Nodes (24): BrandResult, COMPANY_FIELDS, brandToUpdate(), BrandUpdate, clean(), CompanySnapshot, fillable(), filledFields() (+16 more)
+Cohesion: 0.12
+Nodes (25): brandOutcome(), BrandResult, COMPANY_FIELDS, brandToUpdate(), BrandUpdate, clean(), CompanySnapshot, fillable() (+17 more)
 
 ### Community 261 - "app/README.md"
 Cohesion: 0.50
@@ -1474,8 +1486,20 @@ Cohesion: 0.67
 Nodes (3): [1.6.0](https://github.com/trycompai/crm/compare/v1.5.1...v1.6.0) (2026-08-11), Features, Fixes
 
 ### Community 294 - "class-validator"
-Cohesion: 0.60
-Nodes (4): isConditionalEmptyObjectSpread(), isEmptyObjectExpression(), noConditionalEmptyObjectSpreadRule, unwrapParentheses()
+Cohesion: 0.22
+Nodes (7): CompiledConfig, TrackingConfigService, Injectable, configHash(), mintSiteId(), readTrackingConfig(), TrackingConfig
+
+### Community 317 - "@crm/env"
+Cohesion: 0.32
+Nodes (10): seedIcons(), iconsFromHtml(), readPage(), resolveFavicon(), servesImage(), expandIPv6(), isBlockedAddress(), isBlockedIPv4() (+2 more)
+
+### Community 320 - "next"
+Cohesion: 0.17
+Nodes (10): EnvironmentVariables, IsEnum, IsInt, IsOptional, IsString, IsUrl, Max, Min (+2 more)
+
+### Community 323 - "@pierre/trees"
+Cohesion: 0.22
+Nodes (8): resetTelemetryClient(), calls, Captured, decode(), installUuid(), real, stubFetch(), unzip()
 
 ### Community 342 - "github-star-button.tsx"
 Cohesion: 0.23
@@ -1486,44 +1510,72 @@ Cohesion: 0.19
 Nodes (9): CatalogModel, gatewayCatalog, gatewayModel, gatewayRate, ModelCatalogService, toCatalogModel(), Inject, Injectable (+1 more)
 
 ### Community 349 - "[slug]/page.tsx"
-Cohesion: 0.27
-Nodes (9): OverviewGreeting(), OverviewGreetingFallback(), isScope(), OverviewScopeToggle(), OverviewScopeToggleFallback(), loadOverviewSearchParams, OVERVIEW_SCOPES, overviewParsers (+1 more)
+Cohesion: 0.26
+Nodes (10): OverviewGreeting(), OverviewGreetingFallback(), isScope(), OverviewScopeToggle(), OverviewScopeToggleFallback(), loadOverviewSearchParams, OVERVIEW_SCOPES, overviewParsers (+2 more)
+
+### Community 381 - "settings.contracts.ts"
+Cohesion: 0.25
+Nodes (5): created, retiredSubjectOf(), subjectOf(), tasks, writeContextDevKey()
 
 ### Community 382 - "funnel.service.ts"
-Cohesion: 0.26
-Nodes (5): FunnelService, Injectable, Milestone, MILESTONES, reachedMilestones()
+Cohesion: 0.48
+Nodes (3): FunnelService, Injectable, Milestone
 
 ### Community 384 - "analytics.tsx"
-Cohesion: 0.33
-Nodes (6): client, BuilderEventFollower(), LandingAnalytics(), ANALYTICS_HOSTS, analyticsAllowed(), useMountEffect()
+Cohesion: 0.46
+Nodes (4): LandingAnalytics(), ANALYTICS_HOSTS, analyticsAllowed(), useMountEffect()
+
+### Community 386 - ".getMe"
+Cohesion: 0.36
+Nodes (6): ApiUnauthorizedResponse, ApiOkResponse, ApiOperation, Get, OptionalAuth, Session
 
 ### Community 387 - "built-with.tsx"
 Cohesion: 0.36
 Nodes (4): BuiltWith(), EveLogo(), NextjsLogo(), VercelLogo()
 
 ### Community 388 - "use-seconds.ts"
-Cohesion: 0.39
-Nodes (7): clientSnapshot(), listeners, now, serverSnapshot(), subscribe(), tick(), useSeconds()
+Cohesion: 0.33
+Nodes (8): QueueRows(), clientSnapshot(), listeners, now, serverSnapshot(), subscribe(), tick(), useSeconds()
 
 ### Community 390 - "src/env.ts"
-Cohesion: 0.08
-Nodes (29): grant(), API_KEY_EXPIRATION, replaceSlackAccount(), SessionUser, slackRedirectUri, socialProviders, appUrls, env (+21 more)
+Cohesion: 0.11
+Nodes (21): grant(), API_KEY_EXPIRATION, replaceSlackAccount(), slackRedirectUri, socialProviders, handlers, notifySignedIn(), onSignedIn() (+13 more)
+
+### Community 391 - "src/env.ts"
+Cohesion: 0.43
+Nodes (7): appUrls, env, googleCredentials(), microsoftCredentials(), optional(), pair(), slackCredentials()
+
+### Community 392 - "research-key.service.ts"
+Cohesion: 0.33
+Nodes (4): KeyCheck, ResearchKeyService, Injectable, verifyAnswer
+
+### Community 393 - "bubble.tsx"
+Cohesion: 0.38
+Nodes (6): Bubble(), BubbleContent(), BubbleGroup(), BubbleReactions(), bubbleReactionsVariants, bubbleVariants
 
 ### Community 394 - "Checkpoint Mémoire : Autonomie Totale Hermes-Work (Multi-branches, Credentials & Knowledge Graph)"
 Cohesion: 0.33
 Nodes (5): 1. Sécurité des Accès Distants (SSH Wrappers), 2. Tracking Multi-Branches Exhaustif, 3. Connaissances & Rapports Synchronisés, 4. Knowledge Graph, Checkpoint Mémoire : Autonomie Totale Hermes-Work (Multi-branches, Credentials & Knowledge Graph)
 
+### Community 395 - "🏛️ Trinity Sovereign Hub v2.0 (NextGen Apple HIG)"
+Cohesion: 0.29
+Nodes (6): 📁 Architecture du Répertoire, 🚀 Démarrage Rapide, 🌟 Fonctionnalités Majeures (v2.0), Local, Production Docker (VPS), 🏛️ Trinity Sovereign Hub v2.0 (NextGen Apple HIG)
+
 ### Community 396 - "11. Frontend"
 Cohesion: 0.29
 Nodes (7): 11. Frontend, Create buttons live in the page shell header, Default columns, Forms, Routes — flat, because sheets carry the depth, Sheets, The data table, and its rules
+
+### Community 397 - "PrismaLogBridge"
+Cohesion: 0.47
+Nodes (3): PrismaLogBridge, Injectable, setPrismaLogSink()
 
 ### Community 398 - "Security Policy"
 Cohesion: 0.29
 Nodes (6): Dependencies, Deploying it safely, Reporting a vulnerability, Security Policy, Supported versions, What this is, and what it assumes
 
 ### Community 399 - "query-client.ts"
-Cohesion: 0.47
-Nodes (5): TRPCReactProvider(), getQueryClient(), makeQueryClient(), queryFailure, retryQuery()
+Cohesion: 0.33
+Nodes (3): noUnknownParametersRule, Parameter, ParameterOwner
 
 ### Community 401 - "🏛️ Trinity Sovereign Pipeline (Fail-Closed & Bite Proof)"
 Cohesion: 0.50
@@ -1533,29 +1585,25 @@ Nodes (3): 📌 1. Les Règles Non Négociables, 🔧 2. Commandes de Contrôle,
 Cohesion: 0.50
 Nodes (3): 1. Validation DNS & Certificats SSL, 2. Token Vault & Protection des Pages Enfants, Checkpoint Mémoire : Master Gateway laveineuze.fr & Espace Token Vault Sécurisé (SQLite)
 
-### Community 403 - "page-transition.tsx"
-Cohesion: 0.50
-Nodes (3): directional, enter, PageTransition()
-
 ## Knowledge Gaps
-- **2275 isolated node(s):** `$schema`, `packages`, `bootstrap-sha`, `separate-pull-requests`, `pull-request-header` (+2270 more)
+- **2286 isolated node(s):** `$schema`, `packages`, `bootstrap-sha`, `separate-pull-requests`, `pull-request-header` (+2281 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **95 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Db` connect `Db` to `deals.service.ts`, `.updateDossierStatus`, `lib/crm.ts`, `SyncStateService`, `src/env.ts`, `record-delete.spec.ts`, `channels/crm.ts`, `AgentTriggerService`, `auth.middleware.ts`, `.sync`, `validation/src/index.ts`, `ConversationsService`, `run-runtime.ts`, `sso.service.ts`, `slack-connect.integration.spec.ts`, `slack-people.ts`, `Input`, `GoogleRouter`, `facts.ts`, `field-editor.tsx`, `db/src/workspace.ts`, `model-catalog.service.ts`, `proxy.ts`, `users.router.ts`, `prisma/seed.ts`, `enrichment.service.ts`, `builder-runtime.ts`, `tracking.contracts.ts`, `db/src/client.ts`, `telemetry.ts`, `image-mirror.service.ts`, `icon.tsx`, `brand.ts`, `saved-views.router.ts`, `socials.ts`, `rollup.service.ts`, `capabilities.ts`, `tracking-filing.service.ts`, `context-dev.ts`, `TrackingRetentionController`, `telemetry/src/index.ts`, `enrichment-queue.tsx`, `auth.ts`, `dispatch.e2e.ts`, `session.ts`, `bufferedProxyResponse`, `telemetry/src/client.ts`, `accounts.ts`, `normalizeCurrency`, `src/fields.ts`, `AutoInsuranceService`, `lookup.ts`, `AgentComposer`, `funnel.service.ts`?**
-  _High betweenness centrality (0.088) - this node is a cross-community bridge._
-- **Why does `cn()` connect `cn` to `contact-sheet.tsx`, `button.tsx`, `useTRPC`, `client.tsx`, `attribution.ts`, `data-table.tsx`, `session-purpose.ts`, `getServerQueryClient`, `AuthedTrpcContext`, `lib/dispatch.ts`, `context-logger.ts`, `agent-model.tsx`, `oauth-connection-page.tsx`, `agent-composer.tsx`, `fields.contracts.ts`, `agent-builder-chat.tsx`, `auto-insurance.service.ts`, `client.integration.spec.ts`, `EnvironmentVariables`, `dashboard-chart.tsx`, `product-shot/company-sheet.tsx`, `local-date-time.tsx`, `trpc/server.ts`, `sales-dashboard.tsx`, `capabilities-section.tsx`, `(agent-builder)/layout.tsx`, `slack.module.ts`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
-- **Why does `Input()` connect `agent-builder-chat.tsx` to `cn`, `deals.service.ts`, `contact-sheet.tsx`, `SyncStateService`, `button.tsx`, `useTRPC`, `client.tsx`, `slack/page.tsx`, `.sync`, `auto-insurance.ts`, `activities.contracts.ts`, `slack-connection.service.ts`, `GoogleRouter`, `model-catalog.service.ts`, `enrichment.service.ts`, `fields.contracts.ts`, `icon.tsx`, `api-keys.service.ts`, `saved-views.router.ts`, `contacts.contracts.ts`, `enrichment-queue.tsx`, `SearchRouter`, `settings.ts`, `[slug]/auto/page.tsx`, `src/fields.ts`, `AutoInsuranceService`?**
-  _High betweenness centrality (0.052) - this node is a cross-community bridge._
+- **Why does `Db` connect `Db` to `deals.service.ts`, `.updateDossierStatus`, `.read`, `lib/crm.ts`, `SyncStateService`, `src/env.ts`, `record-delete.spec.ts`, `slack/page.tsx`, `channels/crm.ts`, `AgentTriggerService`, `auth.middleware.ts`, `validation/src/index.ts`, `ConversationsService`, `run-runtime.ts`, `AuthedTrpcContext`, `sso.service.ts`, `slack-connect.integration.spec.ts`, `slack-people.ts`, `GoogleRouter`, `facts.ts`, `field-editor.tsx`, `db/src/workspace.ts`, `class-validator`, `model-catalog.service.ts`, `prisma/seed.ts`, `enrichment.service.ts`, `builder-runtime.ts`, `tracking.contracts.ts`, `db/src/client.ts`, `telemetry.ts`, `image-mirror.service.ts`, `icon.tsx`, `brand.ts`, `api-keys.service.ts`, `saved-views.router.ts`, `next`, `socials.ts`, `rollup.service.ts`, `@pierre/trees`, `capabilities.ts`, `tracking-filing.service.ts`, `EnvironmentVariables`, `context-dev.ts`, `TrackingRetentionController`, `telemetry/src/index.ts`, `enrichment-queue.tsx`, `auth.ts`, `settings.contracts.ts`, `dispatch.e2e.ts`, `session.ts`, `Mutation`, `bufferedProxyResponse`, `accounts.ts`, `lookup.ts`, `settings.contracts.ts`?**
+  _High betweenness centrality (0.087) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `contact-sheet.tsx`, `use-seconds.ts`, `button.tsx`, `useTRPC`, `generated/server.ts`, `client.tsx`, `bubble.tsx`, `attribution.ts`, `data-table.tsx`, `session-purpose.ts`, `getServerQueryClient`, `lib/dispatch.ts`, `context-logger.ts`, `agent-model.tsx`, `oauth-connection-page.tsx`, `agent-composer.tsx`, `enrichment.service.ts`, `fields.contracts.ts`, `agent-builder-chat.tsx`, `auto-insurance.service.ts`, `client.integration.spec.ts`, `dashboard-chart.tsx`, `product-shot/company-sheet.tsx`, `local-date-time.tsx`, `sales-dashboard.tsx`, `capabilities-section.tsx`, `normalizeCurrency`, `(agent-builder)/layout.tsx`?**
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
+- **Why does `Input()` connect `agent-builder-chat.tsx` to `cn`, `contact-sheet.tsx`, `SyncStateService`, `button.tsx`, `generated/server.ts`, `client.tsx`, `outlook-sync.service.ts`, `.sync`, `auto-insurance.ts`, `activities.contracts.ts`, `slack-connection.service.ts`, `GoogleRouter`, `context-logger.ts`, `enrichment.service.ts`, `fields.contracts.ts`, `api-keys.service.ts`, `saved-views.router.ts`, `tracking-ingest.service.ts`, `enrichment-queue.tsx`, `SearchRouter`, `[slug]/auto/page.tsx`, `use-seconds.ts`, `agent-history.tsx`, `agent-record.ts`, `AutoInsuranceService`, `slack.module.ts`?**
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
 - **What connects `$schema`, `packages`, `bootstrap-sha` to the rest of the system?**
-  _2275 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2286 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `cn` be split into smaller, more focused modules?**
-  _Cohesion score 0.03289960858986565 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0342781007751938 - nodes in this community are weakly interconnected._
 - **Should `deals.service.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.12121212121212122 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05924978687127025 - nodes in this community are weakly interconnected._
 - **Should `contact-sheet.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.036329683388506916 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.03236774105807153 - nodes in this community are weakly interconnected._
