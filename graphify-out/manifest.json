@@ -5410,13 +5410,13 @@
     "semantic_hash": ""
   },
   "trinity-hub/backend/app/main.py": {
-    "mtime": 1788999969.1661956,
-    "ast_hash": "f19a3546619e077d073783e6b8a94383",
+    "mtime": 1789000816.5070884,
+    "ast_hash": "afdb33345a375bc22dfae0a3130af64f",
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/app.js": {
-    "mtime": 1788999969.1670778,
-    "ast_hash": "9f4397dd2ec732a17cec15216203f680",
+    "mtime": 1789000816.5074492,
+    "ast_hash": "d89836a28ed005432e66ec153ab67a5c",
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/gauges.js": {
@@ -5430,8 +5430,8 @@
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/palette.js": {
-    "mtime": 1788999969.1675308,
-    "ast_hash": "53f033de1678cfdd9e74e6de37be1234",
+    "mtime": 1789000816.507723,
+    "ast_hash": "ca2e99e1a0c286400d381f1450b8b90d",
     "semantic_hash": ""
   },
   "trinity-hub/frontend/js/state.js": {
@@ -5490,8 +5490,8 @@
     "semantic_hash": ""
   },
   "trinity-hub/frontend/index.html": {
-    "mtime": 1788999969.1665888,
-    "ast_hash": "2d2f7809cad31a0220f3d7851ac797c2",
+    "mtime": 1789000816.5072486,
+    "ast_hash": "5d28390d64a84722f7af6c3f273e1f24",
     "semantic_hash": ""
   },
   "trinity-hub/backend/app/api/agents.py": {
@@ -5565,8 +5565,28 @@
     "semantic_hash": ""
   },
   ".agents/memories/trinity_cockpit_full_tdd_checkpoint.md": {
-    "mtime": 1788999976.280215,
+    "mtime": 1788999997.596869,
     "ast_hash": "4fdd3916f2429d815de69c3b0e74d510",
+    "semantic_hash": ""
+  },
+  "trinity-hub/backend/app/api/logs.py": {
+    "mtime": 1789000816.5068793,
+    "ast_hash": "12d4322be9ae6876af8aaaa6402fea17",
+    "semantic_hash": ""
+  },
+  "trinity-hub/frontend/js/logs-viewer.js": {
+    "mtime": 1789000816.5075622,
+    "ast_hash": "d1ccf9f9574757341b2d7158059b7dbd",
+    "semantic_hash": ""
+  },
+  "trinity-hub/tests/test_logs_engine.py": {
+    "mtime": 1789000816.5078182,
+    "ast_hash": "cfb21686cffced3795a58b3be4093535",
+    "semantic_hash": ""
+  },
+  ".agents/memories/visual_logs_and_hermes_auto_healing_checkpoint.md": {
+    "mtime": 1789000832.374583,
+    "ast_hash": "4af550612bf2b9d3d193076c3adc1c21",
     "semantic_hash": ""
   }
 }
